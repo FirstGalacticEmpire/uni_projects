@@ -1,0 +1,61 @@
+1.
+SELECT * FROM EMPLOYEES
+
+2.
+UPDATE EMPLOYEES
+ SET JOB = 'LECTURER'
+ WHERE SURNAME = 'Green'
+
+3.
+DELETE FROM EMPLOYEES
+WHERE JOB = 'ASSISTANT'
+
+4.
+ROLLBACK
+
+
+1.
+UPDATE employees
+SET salary = salary*1.1
+WHERE
+job = 'LECTURER'
+
+2. 
+ALTER TABLE EMPLOYEES
+MODIFY ADD_SALARY number(7,2)
+
+3. 
+--Not possible
+
+1.
+UPDATE EMPLOYEES
+SET add_salary = add_salary + 200
+WHERE
+SURNAME='Smith'
+
+2.
+SAVEPOINT s1
+
+3.
+UPDATE employees
+SET add_salary = 100
+WHERE
+SURNAME= 'Wilson'
+
+4.
+SAVEPOINT s2
+
+5.
+DELETE FROM employees WHERE surname = 'Young'
+
+6.
+ROLLBACK TO SAVEPOINT s1
+
+7.
+SELECT * FROM employees
+
+8.
+ROLLBACK TO SAVEPOINT s2
+
+9.
+ROLLBACK
