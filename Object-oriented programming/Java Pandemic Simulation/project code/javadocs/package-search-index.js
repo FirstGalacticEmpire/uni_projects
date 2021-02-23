@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"pandemic.agents"},{"l":"pandemic.controls"},{"l":"pandemic.GUI"},{"l":"pandemic.main"},{"l":"pandemic.map"},{"l":"pandemic.pathFinding"},{"l":"pandemic.shops"},{"l":"pandemic.threadControllers"}];updateSearchResults();
