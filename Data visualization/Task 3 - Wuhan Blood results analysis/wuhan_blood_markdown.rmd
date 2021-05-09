@@ -1,0 +1,523 @@
+---
+title:  <center>Wuhan Data Report</center>
+  ![](PP_logo.jpg)
+output:
+  html_notebook:
+    theme: cerulean
+    toc: true
+author: Jan Gruszczynski & Kacper Trebacz
+date: 18.04.2021
+---
+
+# Executive Summary
+The report attempts to analyse and visualize data gathered in Wuhan Hospital during the ongoing pandemic Firstly, the report tries to introduce reader to the demographics of Covid-19 patients.
+Then the correlation of blood parameters is visualized in both conventional and unconventional ways, through creation of a graph from the correlation matrix. Furthermore the report tackles the change of blood parameters throughout the patients stay in the hospital. Finally, attempt at multi-feature visualization is made, preceding 3-D visualization of a machine learning model results. \
+In the process both interesting and obvious patterns were discovered.\
+Surprising correlation was found between aspartate aminotransferase and glutamic-pyruvic transaminase. The discovery of the role of albumin as a predictor of patient outcome was also unexpected. We have also trained a Supported Vector Clasifier, which had around 96% accuracy. However, later we realized that it discovered some well known in medical field predictors.
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+library(GGally)
+library(ggforce)
+library(tidyr)
+library(reshape2)
+gather.matrix <- reshape2:::melt.matrix
+library(plotly)
+library(igraph)
+library(geomnet)
+library(visNetwork)
+library(ggalluvial)
+COLOR_GREEN = "#1a9641"
+COLOR_RED = "#d7191c"
+```
+
+
+# Demographics of COVID patients
+Before we dive into blood sample measures, lets look at the age and gender of people, who survived or died during the hospitalization. We divide patients into 4 age groups. We chose the separations through analysis of slopes of age distribution graphs visualized using violin plots. 4 groups were selected: "0-35", "35-60", "60-75", "75+".
+
+Data processing:
+```{r}
+wuhan_sample = read.csv("wuhan_blood_sample_data_Jan_Feb_2020.csv", sep=";")
+last_id = NA
+for(row_num in 1:nrow(wuhan_sample)){
+  if(is.na(wuhan_sample[row_num, "PATIENT_ID"])){
+    wuhan_sample[row_num, "PATIENT_ID"] <- last_id
+  }else{
+    last_id <- wuhan_sample[row_num, "PATIENT_ID"]
+  }
+}
+
+wuhan_sample$outcome <- factor(wuhan_sample$outcome, labels=c("survived", "died"))
+wuhan_sample$gender <- factor(wuhan_sample$gender, labels = c("male", "female"))
+wuhan_complete_sample = wuhan_sample[,]
+```
+
+
+## Demographics visualized in an alternative way
+```{r}
+age_gender_outcome <- wuhan_complete_sample %>%
+    group_by(PATIENT_ID) %>%
+    dplyr::slice(1) %>%
+    ungroup() %>%
+    select(PATIENT_ID,age,gender, outcome) %>%
+  mutate(age_cat=cut(age, breaks=c(-Inf,35, 60, 75, Inf), labels=c("0-35","35-60","60-75", "75+"))) %>%
+  dplyr::select(-age) %>%
+  count(age_cat,gender, outcome) %>%
+  ungroup()
+
+
+ggplot(data = age_gender_outcome,aes(axis1 = age_cat, axis2 = gender,y = n)) +
+  scale_x_discrete(limits = c("Age category", "Gender"), expand = c(.2, .15)) +
+  xlab("Demographic") +
+  geom_alluvium(aes(fill = outcome)) +
+  scale_fill_manual(values=c("#1a9641", "#d7191c")) +
+  geom_stratum() +
+  geom_text(stat = "stratum", aes(label = after_stat(stratum))) +
+  theme_minimal() +
+  ggtitle("People who were infected by COVID by Age and Gender") +
+  ylab("Number of people")
+```
+By looking at this data we can see that the survival rate is decreasing with age for both males and females. Females are generally less likely to die. However this difference is decreasing with age, and is marginal for 75+ group.
+
+# Analysis of correlations
+```{r, echo=FALSE}
+MID_CORR_THRESHOLD = 0.6
+```
+
+The goal of this section is to properly visualize correlations of many features, and to divide them in highly correlated groups.
+
+## Correlation with outcome
+
+First lets check which parameters are most correlated with the patient's outcome. It means that we want to display all features with absolute value of correlation > 0.6. In order to do that we will preprocess data a little bit. We are going to remove time related columns, because we are not interested in them. Than we group measures by PATIENT_ID and calculate the average. Than we remove attributes that contain too much NA values. In the next step we calculate correlation of attributes and select those that satisfy previously mentioned requirements.
+
+```{r}
+wuhan_grouped <- wuhan_complete_sample[,]
+wuhan_grouped$outcome <- as.numeric(wuhan_grouped$outcome)
+wuhan_grouped$gender <- as.numeric(wuhan_grouped$gender)
+wuhan_grouped <- wuhan_grouped %>%
+  select(-c(Admission.time, Discharge.time, RE_DATE)) %>%
+  group_by(PATIENT_ID) %>%
+  summarise_all(mean, na.rm=TRUE) %>%
+  select(-PATIENT_ID)
+
+wuhan_grouped <- wuhan_grouped[ , colSums(is.na(wuhan_grouped)) < 60]
+# Correlations with outcome
+correlations = cor(wuhan_grouped, use="pairwise.complete.obs")
+single_cor = data.frame(correlations["outcome",])
+single_cor <- cbind(test_name = rownames(single_cor), single_cor)
+rownames(single_cor) <- 1:nrow(single_cor)
+colnames(single_cor)[colnames(single_cor) == 'correlations..outcome....'] <- 'correlation'
+
+single_cor = single_cor %>% filter(test_name != "outcome") %>% filter(abs(correlation) > 0.6) %>% arrange(abs(correlation))
+```
+We obtain the following results:
+```{r}
+ggplot(single_cor, aes(x = correlation, y = reorder(test_name, correlation), fill = correlation > 0)) +
+  geom_col() +
+  ylab("Blood test name") +
+  scale_fill_manual(labels = c("Survival", "Death"), values=c(COLOR_GREEN, COLOR_RED)) +
+  guides(fill=guide_legend(title="Correlation")) + theme_minimal()
+```
+From the following chart we can see that "neutrophils", "High.sensitivity.C.reactive.protein", "Lactate.dehydrogenase", "neutrophilis.count", "D.D.dimer" are highly positively correlated with death of patients, so patients, who had higher levels of those attributes were more likely to die. We can also see that patients who had higher levels/(*appropriate levels) of "calcium", "Prothrombin.activity", "albumin", "X...lymphocyte" were more likely to survive.
+
+## Most correlated variables
+
+Now, we will visualize correlations between most correlated blood tests. We selected them by checking if their maximum correlation with other variables is >= 0.8. If not we will ignore them.
+
+```{r}
+want_ids = c()
+for(row in 1:nrow(correlations)) {
+  if(abs(max(correlations[row,-row]))>=0.8){
+    want_ids = c(want_ids,row)
+  }
+}
+only_high_correlations = correlations[want_ids,want_ids]
+```
+Now we will visualize them using heatmap, made using correlation matrix. We made it interactive so that user could check exact values of correlations.
+```{r}
+dd <- as.dist((1-only_high_correlations)/2)
+hc <- hclust(dd)
+only_high_correlations <-only_high_correlations[hc$order, hc$order]
+only_high_correlations[upper.tri(only_high_correlations)] <- NA
+gathererd = gather(only_high_correlations, na.rm = TRUE)
+colnames(gathererd)<-c("1st Variable::", "2nd Variable")
+p2 <- ggplot(data = gather(only_high_correlations), aes(x=Var1, y=Var2, fill=value))+
+  theme_minimal() +
+  geom_tile(color="white") +
+  scale_fill_gradient2(low = COLOR_GREEN, high = COLOR_RED, mid = "white",
+  midpoint = 0, limit = c(-1,1), space = "Lab",
+  name="Correlations") +
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))
+ggplotly(p2) %>% config(displayModeBar = F) %>% layout(xaxis=list(fixedrange=TRUE)) %>% layout(yaxis=list(fixedrange=TRUE))
+```
+
+From this chart we can easily identify pairs or even groups of highly correlated features. We have chosen less than 20 highly correlated features. If we wanted to show more attributes, chart would become unreadable.
+
+## Correlation visualization using graphs for many variables
+
+After many hours of trial and error, we concluded that the best way to visualize correlations between attributes would be to use graph. (Those with vertices and edges). First we needed to prepare data. We are using the same data as in previous examples. Here we use threshold for absolute value of correlation > 0.6, because it does not really make sense to show lower correlations. From those correlations we created a graph, where nodes are attributes, and edges are correlations. The stronger the correlation the thicker the line connecting two nodes. Additionally we marked all correlations below |0.6| with dashed lines. We clustered nodes using Louvain Community Detection algorithm. Every group has a different color.
+ Those are our results:
+
+```{r}
+THRESHOLD <- 0.6
+MULTIPLIER <- 3
+outcome_id <- which(colnames(correlations) == "outcome")
+correlations_for_graph = correlations[-outcome_id,-outcome_id]
+
+
+want_ids = c()
+for(row in 1:nrow(correlations_for_graph)) {
+  if(abs(max(correlations_for_graph[row,-row]))>THRESHOLD){
+    want_ids = c(want_ids,row)
+  }
+}
+correlations_for_graph = correlations_for_graph[want_ids,want_ids]
+diag(correlations_for_graph)<-0
+correlations_for_graph[lower.tri(correlations_for_graph)] <- 0
+
+nodes <- data.frame(colnames(correlations_for_graph), stringsAsFactors = FALSE)
+nodes <- cbind(nodes,nodes)
+colnames(nodes) <- c("id", "label")
+
+edges <- gather.matrix(correlations_for_graph)
+colnames(edges) <- c("from", "to", "correlation")
+
+edges <- edges[abs(edges$correlation) >THRESHOLD,]
+
+edges$width <- round(abs(edges$correlation*10))
+edges$label <- round(edges$correlation,2)
+edges$dashes = edges$correlation < 0.8
+graph <- graph_from_data_frame(edges, directed = FALSE)
+
+#Louvain Comunity Detection
+cluster <- cluster_louvain(graph)
+
+cluster_df <- data.frame(as.list(membership(cluster)))
+cluster_df <- as.data.frame(t(cluster_df))
+cluster_df$label <- rownames(cluster_df)
+
+#Create group column
+nodes <- left_join(nodes, cluster_df, by = "label")
+colnames(nodes)[3] <- "group"
+
+nodes <- arrange(nodes,group)
+
+edges$width <- round((((abs(edges$correlation) - THRESHOLD)/(1 - THRESHOLD)+0.3)*MULTIPLIER)^(1.5))
+
+#edges legend
+ledges <- data.frame(color = c("black", "blck"),
+ label = c("high correlation", "mid correlation"),
+ dashes=c(FALSE,TRUE),
+ arrows=c("",""),
+ width=c(3,3),
+ font.align = "top")
+
+visNetwork(nodes, edges, background = "white") %>%
+  visIgraphLayout(layout = "layout.fruchterman.reingold", randomSeed = 11) %>%
+  visNodes(shadow = TRUE, font = list( size=30,strokeWidth=1, strokeColor ="white")) %>%
+  visEdges(title = "<p>hello</p>", ) %>%
+  visOptions(highlightNearest = list(enabled = T, degree = 1, hover = T), nodesIdSelection = TRUE) %>%
+  visLegend(addEdges = ledges, useGroups = FALSE, main = "Legend", zoom = FALSE)
+```
+
+Please note: That nodes and the whole graph can be moved by clicking it, also if one zooms in,
+she/he can see correlation values between each nodes.
+From above graph we can see why all 3: "neutrophils", "neutrophilis.count", "X...lymphocyte", were  highly correlated with outcome - they are also highly correlated with each other.
+
+We think that is a somewhat beautiful way to visualize some of the connection between elements of the blood. Some relations are obvious (hemoglobin and hematocrit, serum chloride and serum sodium), but some where unexpected like the relation between: aspartate aminotransferase and
+glutamic-pyruvic transaminase presumably connected to the balance of the amine ions.
+
+
+```{r include = FALSE}
+library(reticulate)
+```
+
+# Analysis of parameter's change in time
+
+Now we would like to focus how patient's blood parameters changed throughout their stay in the hospital.
+To do that we average patients' blood results over consecutive days since admission.
+```{python}
+import pandas as pd
+df = pd.read_csv("wuhan_blood_sample_data_Jan_Feb_2020.csv", sep=";")
+df.PATIENT_ID.fillna(method='ffill', inplace=True)
+df['Admission time'] = pd.to_datetime(df['Admission time'])
+df['Discharge time'] = pd.to_datetime(df['Discharge time'])
+df['Duration of stay'] = df['Discharge time'] - df['Admission time']
+df['Duration of stay'] = df['Duration of stay'].dt.days
+df.insert(0, "days_from_admission", df["RE_DATE"])
+df["days_from_admission"] = pd.to_datetime(df["days_from_admission"])
+df["days_from_admission"] = (df["days_from_admission"] - df["Admission time"]).dt.days
+df = df.groupby(['PATIENT_ID', 'days_from_admission'], as_index=False).mean()
+```
+Side note: It would be better to first group patients that have similar levels of all futures on admission in the hospital using some kind of a clustering algorithm, so that we would compare patient that were in the same stage of Covid-19 infection on admission. Unfortunately we had not enough time to do this, but we are aware of the problem.
+
+## Visualizing the change
+
+Plotting function:
+```{python}
+import seaborn as sns
+import matplotlib.pyplot as plt
+# dead_patients = df[df.outcome == 1]
+# alive_patients = df[df.outcome == 0]
+
+def plot_triple_plot(y, up_ref, lower_ref, df, unit):
+    a4_dims = (35, 30)
+
+    fig, (ax1, ax2, ax3) = plt.subplots(nrows=3, figsize=a4_dims)
+    plt.rc('legend', fontsize=30)
+    plt.rcParams['legend.title_fontsize'] = 30
+
+    palette = ["green", "red"]
+    box_plot = sns.boxplot(data=df, x="days_from_admission", y=y, hue="outcome", showfliers=False, ax=ax1,
+                           palette=palette)
+    box_plot.legend_.set_title("Hospitality outcome:")
+    new_labels = ['Alive', 'Dead']
+    for t, l in zip(box_plot.legend_.texts, new_labels):
+        t.set_text(l)
+
+    swarm_plot = sns.swarmplot(data=df, x="days_from_admission", y=y, hue="outcome",
+                               dodge=True, size=2.25, ax=ax2, palette=palette)
+    swarm_plot.legend_.set_title("Hospitality outcome:")
+
+    for t, l in zip(swarm_plot.legend_.texts, new_labels):
+        t.set_text(l)
+    line_plot = sns.lineplot(data=df, x="days_from_admission",
+                             y=y, hue="outcome", ci=95, palette=palette, ax=ax3)
+
+    line_plot.collections[1].set_label('95% Confidence interval')
+    line_plot.collections[0].set_label("95% Confidence interval")
+    line_plot.legend()
+    line_plot.legend_.set_title("Hospitality outcome:")
+
+    for t, l in zip(line_plot.legend_.texts, new_labels):
+        t.set_text(l)
+
+    line_plot.set(xticks=range(0, 17))
+    swarm_plot.set(xticks=range(0, 17))
+    box_plot.set(xticks=range(0, 17))
+
+    line_plot.set(xlim=(-0.5, 16))
+    box_plot.set(xlim=(None, 16.5))
+    swarm_plot.set(xlim=(None, 16.5))
+
+    # Changing ticks size:
+    ax1.tick_params(axis='both', labelsize=25)
+    ax2.tick_params(axis='both', labelsize=25)
+    ax3.tick_params(axis='both', labelsize=25)
+
+    # Possibly there is a better way to do this:
+    ax3.set(xlabel=None, ylabel=None)
+    ax1.set(xlabel=None, ylabel=None)
+    ax2.set(xlabel=None, ylabel=None)
+    ax2.set_ylabel(str(y) + " " + f"[{str(unit)}]", fontsize=40)
+    ax2.set_xlabel(f"Blue dashed line marks lower and upper reference values for {str(y)} levels in blood.",
+                   fontsize=20)
+    ax3.set_xlabel("Days from admission [num_of_days]", fontsize=40)
+
+    # Plotting reference values
+    ax2.axhline(up_ref, ls='--', color="cornflowerblue")
+    ax2.axhline(lower_ref, ls='--', color="cornflowerblue")
+
+    # Showing the plot
+    plt.show()
+
+df = df.groupby(['PATIENT_ID', 'days_from_admission'], as_index=False).mean()
+df.days_from_admission = df.days_from_admission.apply(lambda x: int(x))
+```
+Plotting function visualizes given blood parameter change over time.
+The values of the parameter are averaged every consecutive day from admission.
+The figure consists of three charts: boxplot chart, swarm-plot chart, and line-plot.
+The decision was made to show all three forms, because single plot can be very misleading, due to lack of data.
+(Especially box plots ticks generated for example for only couple of data points.)
+Such figure can be generated for any blood parameter present in the data, but we show only some of the most interesting ones:
+```{python}
+plot_triple_plot("hemoglobin", 130, 175, df, unit="g/L")
+```
+One would expect that patients infected with Covid-19 would have higher hemoglobin concentration to
+compensate for damaged lung's tissue. We couldn't make such observation.
+```{python}
+plot_triple_plot("(%)lymphocyte", 10, 45, df, unit="%")
+```
+This seems to be pretty straight forward, the more lymphocyte responsible for humoral immune response the patient have the more likely he is to survive.
+```{python}
+plot_triple_plot("calcium", 2.12, 2.62, df, unit="mmol/l ")
+```
+This observation was also expected, as calcium ions play a very important role in the immune response.
+```{python}
+plot_triple_plot("albumin", 35, 55, df, unit="g/L")
+```
+This is very shocking, as the protein albumin is not directly connected to immune-response.\
+We found similar observation suggesting that albumin levels are a very good indicator of the patient's health condition.
+Found article proposed even albumin injections.
+[Link to the found article](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7273060/)
+
+```{python include=FALSE}
+#Reseting the dataframe
+df = pd.read_csv("wuhan_blood_sample_data_Jan_Feb_2020.csv", sep=";")
+df.PATIENT_ID.fillna(method='ffill', inplace=True)
+df['Admission time'] = pd.to_datetime(df['Admission time'])
+df['Discharge time'] = pd.to_datetime(df['Discharge time'])
+df.insert(0, "days_from_admission", df["RE_DATE"])
+df["days_from_admission"] = pd.to_datetime(df["days_from_admission"])
+df["days_from_admission"] = (df["days_from_admission"] - df["Admission time"]).dt.days
+df = df.groupby("PATIENT_ID").mean()
+df = df.drop(columns=["days_from_admission"])
+```
+
+# Trying to visualize more than two features
+Scatter plot seem to be simple, but it was able to provide valuable insights:
+
+## Not that simple scatter plots
+
+```{python include=FALSE}
+def a_function(albumin_value):
+    if albumin_value < 35.0:
+        return "below"
+    elif albumin_value > 55.0:
+        return "above"
+    else:
+        return "in_norm"
+df.outcome = df.outcome.apply(lambda x: "dead" if x == 1 else "alive")
+df.albumin = df.albumin.apply(a_function)
+```
+Plotting function:
+```{python}
+def plot(x, y, size, sizes, new_labels, x_lim, title, df):
+    a4_dims = (17, 8.27)
+    fig, ax = plt.subplots(figsize=a4_dims)
+    palette = ["green", "red"]
+    s = sns.scatterplot(data=df, x=x,
+                        y=y, hue="outcome",
+                        size=size, sizes=sizes,
+                        palette=palette, ax=ax)
+    s.set(xlim=(x_lim, None))
+    plt.legend(loc=1, prop={'size': 15})
+    for text, new_label in zip(s.legend_.texts, new_labels):
+        text.set_text(new_label)
+    plt.title(title, fontsize=22)
+    plt.xlabel(xlabel=x, fontsize=18)
+    plt.ylabel(ylabel=y, fontsize=18)
+    plt.show()
+```
+The figure shows the relation between 3 features and the patient outcome. (x-axis, y-axis, size of markers, and color of markers)
+```{python}
+x, y, size = "neutrophils count", "(%)lymphocyte", "albumin"
+sizes = (30, 100)
+new_labels = ['Hospitality outcome:', 'Alive', 'Dead',
+              'Albumin levels:', 'below norm', 'in norm']
+x_lim = 0
+title = None
+plot(x, y, size, sizes, new_labels, x_lim, title, df)
+```
+Patients with low lymphocyte levels, high neutrophils count and albumin levels below the norm are almost certain to die.
+```{python}
+x, y, size = "Lactate dehydrogenase", "eGFR", "High sensitivity C-reactive protein"
+sizes = (20, 150)
+new_labels = ['Hospitality outcome:', 'Alive', 'Dead',
+              'High sensitivity \nC-reactive protein levels:']
+x_lim = 75
+title = None
+plot(x, y, size, sizes, new_labels, x_lim, title, df)
+```
+This is somewhat unexpected, as C-reactive protein  being the part of the complement system of the immune system seems
+to play a role in the immune response, but the rise of it's level seems to lead to death. Lactate dehydrogenase is a also a
+good outcome indicator.
+```{python include=FALSE}
+df = pd.read_csv("wuhan_blood_sample_data_Jan_Feb_2020.csv", sep=";")
+
+df.PATIENT_ID.fillna(method='ffill', inplace=True)
+df['Admission time'] = pd.to_datetime(df['Admission time'])
+df['Discharge time'] = pd.to_datetime(df['Discharge time'])
+df.insert(0, "days_from_admission", df["RE_DATE"])
+df["days_from_admission"] = pd.to_datetime(df["days_from_admission"])
+df["days_from_admission"] = (df["days_from_admission"] - df["Admission time"]).dt.days
+#df = df.groupby(['PATIENT_ID', 'days_from_admission'], as_index=False).mean()
+```
+
+# Creating a simple model predicting the outcome
+
+Now we are trying to create a model that predicts the patient outcome,
+we have picked 3 features (mentioned above) that seemed to be the most important.
+
+## Support Vector Machine model
+
+We picked this model for the following reason: \
+Results of the model can be visualized using  a hyper-plane. \
+
+We are aware that predicting patient outcome based on these parameters is somewhat unproductive
+as these parameters are well known deteriorating health condition predictors in the medical community. This is more to learn data visualization than to create a useful machine-learning
+application.
+
+Data preprocessing:
+```{python}
+import numpy as np
+xx = df['Lactate dehydrogenase']
+yy = df['eGFR']
+zz = df['High sensitivity C-reactive protein']
+hue = df.outcome
+hue = ["red" if outcome == 1 else "green" for outcome in np.array(hue)]
+df = df.groupby("PATIENT_ID").mean()
+df = df.drop(columns=["days_from_admission"])
+df = df[df['Lactate dehydrogenase'].notna()]
+df = df[df['eGFR'].notna()]
+df = df[df["High sensitivity C-reactive protein"].notna()]
+X = df[["Lactate dehydrogenase", "eGFR", "High sensitivity C-reactive protein"]]
+y = df.outcome
+```
+Training the model:
+```{python}
+from sklearn.model_selection import train_test_split
+from sklearn import svm
+# Splitting data
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.33)
+
+# Creating and fitting the model
+model = svm.SVC(kernel='linear', random_state=2)
+clf = model.fit(X_train, y_train)
+score = model.score(X_test, y_test)
+print("%0.3f" % score)
+
+```
+The model score is very high ( There is a pretty good chance that we over-fit)
+
+## 3-D visualization of the model results
+
+Now we try to visualize the plane that divides points described by the three given features.
+This was not fun, and now we understand in full why is it better to stay away from 3D.
+Unfortunately, r-markdown seems to disable interactivity of the plot. (The figure can be moved in jupyter environment).
+```{python}
+# This is not as intuitive as I thought.
+temp = np.linspace(0, 750, 50)
+x, y = np.meshgrid(temp, temp)
+
+# https://stackoverflow.com/users/1430829/matt-hancock Thanks to limitless knowledge of Matt Hancock.
+z = lambda x, y: (-clf.intercept_[0] - clf.coef_[0][0] * x - clf.coef_[0][1] * y) / clf.coef_[0][2]
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+t = ax.scatter(xx, yy, zz, c=hue)
+ax.plot_surface(x, y, z(x, y))
+ax.set_xlabel('Lactate dehydrogenase')
+ax.set_ylabel('eGFR')
+ax.set_zlabel('High sensitivity C-reactive protein')
+dummy = ax.set_xlim3d(0, None)
+dummy = ax.set_ylim3d(0, None)
+dummy = ax.set_zlim3d(0, None)
+ax.view_init(21, -133)  # 26, 45 #25 -124
+ax.set_title("Green points - alive patients, red points - dead patients,\n "
+             "blue plane based on Support Vector Machine model.")
+plt.show()
+```
+The plane divides red and green points very efficiently, visualizing graphically the model.
+
+Thank you for reading.
+
+# Sources
+* "https://www.statworx.com/ch/blog/interactive-network-visualization-with-r/"
+* "https://datastorm-open.github.io/visNetwork/igraph.html"
+* "http://www.sthda.com/english/wiki/ggplot2-quick-correlation-matrix-heatmap-r-software-and-data-visualization"
+* and more in code comments
