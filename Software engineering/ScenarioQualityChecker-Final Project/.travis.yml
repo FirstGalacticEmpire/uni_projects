@@ -1,0 +1,11 @@
+language: Java
+install: mvn install
+notifications:
+  email:
+    recipients:
+      - trebacz.kacper@gmail.com
+      - jangru4@gmail.com
+      - mikikrus0706@tlen.pl
+      - mfilon13@gmail.com
+    on_success: never
+    on_failure: always

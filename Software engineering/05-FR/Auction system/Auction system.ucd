@@ -1,0 +1,1715 @@
+<?xml version="1.0" standalone="yes"?>
+<UCTDataSet xmlns="http://serliosoft.com/UCTData.xsd">
+  <VersionInfo>
+    <Version>5.1</Version>
+    <SavedWith>15.0.7748</SavedWith>
+    <CreatedWith>13.0.6862</CreatedWith>
+  </VersionInfo>
+  <Project>
+    <TrackChanges>false</TrackChanges>
+  </Project>
+  <TopLevelElement>
+    <RefID>P-82bab1f1-d274-4efd-bf95-d3e28452ca73</RefID>
+  </TopLevelElement>
+  <Package>
+    <UniqueID>P-82bab1f1-d274-4efd-bf95-d3e28452ca73</UniqueID>
+    <Name>Auction system</Name>
+  </Package>
+  <Package>
+    <UniqueID>P-27c308dc-789d-424a-b75a-a2b6d53986c2</UniqueID>
+    <ParentID>P-82bab1f1-d274-4efd-bf95-d3e28452ca73</ParentID>
+    <Name>Business processes</Name>
+    <Sequence>1</Sequence>
+  </Package>
+  <Package>
+    <UniqueID>P-82cdc79c-21e5-42bb-81b5-985910ab6d97</UniqueID>
+    <ParentID>P-82bab1f1-d274-4efd-bf95-d3e28452ca73</ParentID>
+    <Name>Use cases</Name>
+    <Sequence>2</Sequence>
+  </Package>
+  <Package>
+    <UniqueID>P-205f2a38-5d79-4222-9301-09ea58fcd60f</UniqueID>
+    <ParentID>P-82bab1f1-d274-4efd-bf95-d3e28452ca73</ParentID>
+    <Name>Actors</Name>
+    <Sequence>0</Sequence>
+  </Package>
+  <Package>
+    <UniqueID>P-b189d32b-e3d1-4b03-bdfb-ee157641c612</UniqueID>
+    <ParentID>P-82bab1f1-d274-4efd-bf95-d3e28452ca73</ParentID>
+    <Name>Business rules and dictionary</Name>
+    <Sequence>4</Sequence>
+  </Package>
+  <UseCase>
+    <UniqueID>UC-e329d38e-c431-4559-91c3-96cad7c30ed9</UniqueID>
+    <UserID>UC-2</UserID>
+    <ParentID>P-82cdc79c-21e5-42bb-81b5-985910ab6d97</ParentID>
+    <Name>Offer a product at an auction</Name>
+    <Description>The Seller offers a product which he wants to sell at the Auction.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1\ul Seller\cf2\ulnone  offers a \cf3 product\cf2  which he wants to sell at the \cf3 Auction\cf2 .\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>The Seller must have a product to sell.</PreConditions>
+    <PostConditions>The product has been put up for auction.</PostConditions>
+    <Level>User</Level>
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2021-03-25T09:41:35.8382624+01:00</DateAdded>
+    <DateModified>2021-04-10T10:46:21.7874765+02:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-81a20e69-886c-4e0a-91a9-d6efd4c489a7</UniqueID>
+    <UserID>UC-1</UserID>
+    <ParentID>P-27c308dc-789d-424a-b75a-a2b6d53986c2</ParentID>
+    <Name>Auction sale</Name>
+    <Description>Business process describing a sale by the auction mechanism. </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Business process describing a sale by the auction mechanism. \par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <Priority>1</Priority>
+    <PreConditions />
+    <PostConditions />
+    <Level>Summary</Level>
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2021-03-25T11:44:06.4010553+01:00</DateAdded>
+    <DateModified>2021-04-13T21:40:03.679801+02:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-4f54aefb-2c14-4c87-a148-adfe7c332310</UniqueID>
+    <UserID>UC-3</UserID>
+    <ParentID>P-82cdc79c-21e5-42bb-81b5-985910ab6d97</ParentID>
+    <Name>Bid higher than the currently highest offer for the product. </Name>
+    <Description>Buyer bids higher than the currently highest offer for the product to acquire the product.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red128\green0\blue0;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf0\ulnone  bids higher than the currently highest offer for the \cf2 product\cf3  to acquire the \cf2 product\cf3 .\cf0\fs20\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>Buyer knows the current price of the product.</PreConditions>
+    <PostConditions>Buyer successfully outbids the product</PostConditions>
+    <Level />
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2021-04-13T21:30:02.9454983+02:00</DateAdded>
+    <DateModified>2021-04-13T22:34:01.3080009+02:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-388405ad-d340-4997-b6f1-78f18c6280b4</UniqueID>
+    <UserID>UC-4</UserID>
+    <ParentID>P-82cdc79c-21e5-42bb-81b5-985910ab6d97</ParentID>
+    <Name>Buys and receives the product from the Seller.</Name>
+    <Description>Buyer buys and receives the product from the seller.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  buys and receives the \cf3 product\cf2  from the \cf1\ul seller\cf2\ulnone .\cf0\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>The Buyer need to win the Auction.
+Buyer needs to have enough money to pay for the product. </PreConditions>
+    <PostConditions>Buyer obtains the product.</PostConditions>
+    <Level />
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2021-04-13T21:30:02.9520069+02:00</DateAdded>
+    <DateModified>2021-04-13T22:36:22.6577136+02:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-0e842876-7657-412f-b2ec-66982ed99b11</UniqueID>
+    <UserID>UC-5</UserID>
+    <ParentID>P-82cdc79c-21e5-42bb-81b5-985910ab6d97</ParentID>
+    <Name>Transfers the money to the Seller using Payment System. </Name>
+    <Description>Buyer transfer the money to the seller using the Payment System</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  transfer the money to the \cf1\ul seller\cf2\ulnone  using the \cf1\ul Payment System\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>Buyer has to win the action
+Buyer need to have adequate amount of money</PreConditions>
+    <PostConditions>Payment System accepts money transfer</PostConditions>
+    <Level />
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2021-04-13T21:30:02.9560102+02:00</DateAdded>
+    <DateModified>2021-04-13T22:36:55.1859074+02:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-7f4af46b-d6c4-430b-8818-e97929e78c43</UniqueID>
+    <UserID>UC-6</UserID>
+    <ParentID>P-82cdc79c-21e5-42bb-81b5-985910ab6d97</ParentID>
+    <Name>Payment system receives money from the Buyer.</Name>
+    <Description>The payment system receives money transfer from the Buyer</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1\ul payment system\cf2\ulnone  receives money transfer from the \cf1\ul Buyer\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>4</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>Buyer needs to issue a money transfer.
+</PreConditions>
+    <PostConditions>Payment System accepts money transfer</PostConditions>
+    <Level />
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2021-04-13T21:30:02.9610148+02:00</DateAdded>
+    <DateModified>2021-04-13T22:39:21.5857696+02:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-f358231a-9d72-4f16-96d3-fd52d69b2e74</UniqueID>
+    <UserID>UC-7</UserID>
+    <ParentID>P-82cdc79c-21e5-42bb-81b5-985910ab6d97</ParentID>
+    <Name>Payment system transfers money to the Seller.</Name>
+    <Description>Payment System transfers money to the Seller</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Payment System\cf2\ulnone  transfers money to the \cf1\ul Seller\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>5</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>Buyer needs to win an Auction
+Money transferred to the Payment System</PreConditions>
+    <PostConditions>Successful transfer of money</PostConditions>
+    <Level />
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2021-04-13T21:30:02.9650184+02:00</DateAdded>
+    <DateModified>2021-04-13T22:43:59.9291598+02:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-f3235b32-ea7f-450d-ab92-98ba1e16c265</UniqueID>
+    <UserID>UC-8</UserID>
+    <ParentID>P-82cdc79c-21e5-42bb-81b5-985910ab6d97</ParentID>
+    <Name>Hands over the product to Buyer.</Name>
+    <Description>Seller transfers product to the buyer</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Seller\cf2\ulnone  transfers \cf3 product\cf2  to the \cf1\ul buyer\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>6</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>Seller needs to have the product</PreConditions>
+    <PostConditions>Successful transfer of the product</PostConditions>
+    <Level />
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2021-04-13T21:30:02.9694945+02:00</DateAdded>
+    <DateModified>2021-04-13T22:50:35.0397694+02:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-7c3443d2-8b3d-4133-849d-8c63d8d20f59</UniqueID>
+    <UserID>UC-9</UserID>
+    <ParentID>P-82cdc79c-21e5-42bb-81b5-985910ab6d97</ParentID>
+    <Name>Receives money from the Buyer using Payment System.</Name>
+    <Description>Seller receives money from the buyer using Payment System</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Seller\cf2\ulnone  receives money from the \cf1\ul buyer\cf2\ulnone  using \cf1\ul Payment System\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>7</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>Buyer had already transferred money to the Payment System</PreConditions>
+    <PostConditions>Successful transfer of money to the Seller</PostConditions>
+    <Level />
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2021-04-13T21:30:02.9795036+02:00</DateAdded>
+    <DateModified>2021-04-13T22:45:27.2167141+02:00</DateModified>
+  </UseCase>
+  <UseCase>
+    <UniqueID>UC-d9a21cbe-1f95-45f9-9034-2a5f68d25866</UniqueID>
+    <UserID>UC-10</UserID>
+    <ParentID>P-82cdc79c-21e5-42bb-81b5-985910ab6d97</ParentID>
+    <Name>Wins the Auction.</Name>
+    <Description>Buyer wins the bidding auction.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  wins the bidding \cf3 auction\cf2 .\cf0\par
+}
+</RichDescription>
+    <Sequence>8</Sequence>
+    <Priority>1</Priority>
+    <PreConditions>There need to be an Auction</PreConditions>
+    <PostConditions>No other buyer bid, and the buyer wins the auction.</PostConditions>
+    <Level />
+    <Complexity />
+    <UCStatus />
+    <ImplStatus />
+    <AssignedTo />
+    <Release />
+    <TestingSetup />
+    <TestingConfigurations />
+    <DateAdded>2021-04-13T22:22:19.7115578+02:00</DateAdded>
+    <DateModified>2021-04-13T22:44:54.324962+02:00</DateModified>
+  </UseCase>
+  <Actor>
+    <UniqueID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</UniqueID>
+    <UserID>A-1</UserID>
+    <ParentID>P-205f2a38-5d79-4222-9301-09ea58fcd60f</ParentID>
+    <Name>Buyer</Name>
+    <Description>A person intending to purchase a product at an auction.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 A person intending to purchase a product at an auction.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <Complexity />
+    <DateAdded>2021-03-24T18:32:52.3604772+01:00</DateAdded>
+    <DateModified>2021-04-13T22:22:19.7322415+02:00</DateModified>
+  </Actor>
+  <Actor>
+    <UniqueID>A-d1add2b0-7dcf-43c8-82e0-8636d95eaa51</UniqueID>
+    <UserID>A-2</UserID>
+    <ParentID>P-205f2a38-5d79-4222-9301-09ea58fcd60f</ParentID>
+    <Name>Seller</Name>
+    <Description>A person offering goods at an auction. </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 A person offering goods at an auction. \par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <Complexity />
+    <DateAdded>2021-03-24T18:32:41.0562248+01:00</DateAdded>
+    <DateModified>2021-04-13T21:46:44.0054746+02:00</DateModified>
+  </Actor>
+  <Actor>
+    <UniqueID>A-71714ac3-091d-4bcc-bd77-2633f76d7900</UniqueID>
+    <UserID>A-3</UserID>
+    <ParentID>P-205f2a38-5d79-4222-9301-09ea58fcd60f</ParentID>
+    <Name>Payment System</Name>
+    <Description>System that handles the transfer of money between Seller and Buyer</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 System\cf0  that handles the transfer of money between \cf2\ul Seller\cf3\ulnone  and \cf2\ul Buyer\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <Complexity />
+    <DateAdded>2021-04-06T15:28:29.9246638+02:00</DateAdded>
+    <DateModified>2021-04-13T22:00:27.1698471+02:00</DateModified>
+  </Actor>
+  <ElementStub>
+    <ParentID>P-82bab1f1-d274-4efd-bf95-d3e28452ca73</ParentID>
+    <Path>Diagrams.ucp</Path>
+    <ElementID>P-6fb9d06a-59ec-4fb4-9fb7-4b5dd12735a8</ElementID>
+    <Sequence>3</Sequence>
+  </ElementStub>
+  <UCActor>
+    <ParentID>UC-e329d38e-c431-4559-91c3-96cad7c30ed9</ParentID>
+    <ActorID>A-d1add2b0-7dcf-43c8-82e0-8636d95eaa51</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-0e842876-7657-412f-b2ec-66982ed99b11</ParentID>
+    <ActorID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-7f4af46b-d6c4-430b-8818-e97929e78c43</ParentID>
+    <ActorID>A-71714ac3-091d-4bcc-bd77-2633f76d7900</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-f358231a-9d72-4f16-96d3-fd52d69b2e74</ParentID>
+    <ActorID>A-71714ac3-091d-4bcc-bd77-2633f76d7900</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-f3235b32-ea7f-450d-ab92-98ba1e16c265</ParentID>
+    <ActorID>A-d1add2b0-7dcf-43c8-82e0-8636d95eaa51</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-7c3443d2-8b3d-4133-849d-8c63d8d20f59</ParentID>
+    <ActorID>A-d1add2b0-7dcf-43c8-82e0-8636d95eaa51</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-81a20e69-886c-4e0a-91a9-d6efd4c489a7</ParentID>
+    <ActorID>A-d1add2b0-7dcf-43c8-82e0-8636d95eaa51</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-81a20e69-886c-4e0a-91a9-d6efd4c489a7</ParentID>
+    <ActorID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-4f54aefb-2c14-4c87-a148-adfe7c332310</ParentID>
+    <ActorID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-388405ad-d340-4997-b6f1-78f18c6280b4</ParentID>
+    <ActorID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-388405ad-d340-4997-b6f1-78f18c6280b4</ParentID>
+    <ActorID>A-d1add2b0-7dcf-43c8-82e0-8636d95eaa51</ActorID>
+    <Kind>1</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-d9a21cbe-1f95-45f9-9034-2a5f68d25866</ParentID>
+    <ActorID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</ActorID>
+    <Kind>0</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-0e842876-7657-412f-b2ec-66982ed99b11</ParentID>
+    <ActorID>A-71714ac3-091d-4bcc-bd77-2633f76d7900</ActorID>
+    <Kind>1</Kind>
+  </UCActor>
+  <UCActor>
+    <ParentID>UC-7f4af46b-d6c4-430b-8818-e97929e78c43</ParentID>
+    <ActorID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</ActorID>
+    <Kind>1</Kind>
+  </UCActor>
+  <Scenario>
+    <UniqueID>MSS-790fe579-7f37-4658-9459-75d5ad3c451e</UniqueID>
+    <ParentID>UC-e329d38e-c431-4559-91c3-96cad7c30ed9</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-64941187-ef14-4c6a-9efd-d99d101523dd</UniqueID>
+    <ParentID>UC-81a20e69-886c-4e0a-91a9-d6efd4c489a7</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-11655c68-aa3b-4cb6-a831-ed0b4f27efb1</UniqueID>
+    <ParentID>UC-4f54aefb-2c14-4c87-a148-adfe7c332310</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-b772cd8d-68b5-4df1-a647-a427f2613858</UniqueID>
+    <ParentID>UC-388405ad-d340-4997-b6f1-78f18c6280b4</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-0f774ec8-ea0e-4e07-ad40-64adb889058b</UniqueID>
+    <ParentID>UC-0e842876-7657-412f-b2ec-66982ed99b11</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-ada8112c-3bac-40b7-80dc-123cec585ea4</UniqueID>
+    <ParentID>UC-f358231a-9d72-4f16-96d3-fd52d69b2e74</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-1b48254c-6ab5-4815-99b5-95d929cc37d0</UniqueID>
+    <ParentID>UC-7f4af46b-d6c4-430b-8818-e97929e78c43</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-d9e80810-76d3-4b39-8e4f-fbe4c1c867da</UniqueID>
+    <ParentID>UC-f3235b32-ea7f-450d-ab92-98ba1e16c265</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-2940d8b2-6c03-4f99-81c8-ed11dcfe6d53</UniqueID>
+    <ParentID>UC-7c3443d2-8b3d-4133-849d-8c63d8d20f59</ParentID>
+  </Scenario>
+  <Scenario>
+    <UniqueID>MSS-d189ede4-71a7-42d6-930e-0868d6bb8d42</UniqueID>
+    <ParentID>UC-d9a21cbe-1f95-45f9-9034-2a5f68d25866</ParentID>
+  </Scenario>
+  <Requirement>
+    <UniqueID>REQ-6eedf603-2d63-4606-a5b8-3efd3c40a829</UniqueID>
+    <UserID>REQ-1</UserID>
+    <ParentID>P-b189d32b-e3d1-4b03-bdfb-ee157641c612</ParentID>
+    <Name>Bidding at auction</Name>
+    <Description>Bidding at auction requires submitting an amount higher than current by a minimum of EUR 1.00</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Bidding at \cf2 auction\cf1  requires submitting an amount higher than current by a minimum of EUR 1.00\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <Type>Business Rule</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2021-03-25T10:13:29.2024335+01:00</DateAdded>
+    <DateModified>2021-03-25T10:28:02.8329178+01:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Requirement>
+    <UniqueID>REQ-0fda21d9-e58e-4709-8324-5da20cd84589</UniqueID>
+    <UserID>REQ-2</UserID>
+    <ParentID>P-b189d32b-e3d1-4b03-bdfb-ee157641c612</ParentID>
+    <Name>Winning an auction</Name>
+    <Description>Auction is won by Buyer who submitted the highest bid at the end of the auction.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Auction\cf2  is won by \cf3\ul Buyer\cf2\ulnone  who submitted the highest bid at the end of the \cf1 auction\cf2 .\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <Type>Business Rule</Type>
+    <Priority>1</Priority>
+    <Source />
+    <Status />
+    <AssignedTo />
+    <Release />
+    <DateAdded>2021-03-25T10:23:06.4571021+01:00</DateAdded>
+    <DateModified>2021-03-25T12:22:40.6602948+01:00</DateModified>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Requirement>
+  <Goal>
+    <UniqueID>G-b7ac88ce-dc40-4372-b3df-38c5b121426e</UniqueID>
+    <ParentID>A-d1add2b0-7dcf-43c8-82e0-8636d95eaa51</ParentID>
+    <Description>Offer a product at an auction. (UC-9)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 Offer a \cf1 product\cf0  at an \cf1 auction\cf2 . (\cf3\ul UC-9\cf2\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-b431bc88-fe8e-4127-84ae-8bf599e73629</UniqueID>
+    <ParentID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</ParentID>
+    <Description>Bid higher than the currently highest offer for the product.  (UC-3)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 Bid higher than the currently highest offer for the \cf1 product\cf0 .  (\cf2\ul UC-3\cf0\ulnone )\cf3\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-83d7ccab-b95d-4f67-91a9-09a53a7f6476</UniqueID>
+    <ParentID>A-71714ac3-091d-4bcc-bd77-2633f76d7900</ParentID>
+    <Description>Receive money from the Buyer. (UC-6)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 Receive money from the \cf1\ul Buyer\cf2\ulnone . (\cf1\ul UC-6\cf2\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-d8d810e3-fbe8-4168-815a-d407a03a12ad</UniqueID>
+    <ParentID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</ParentID>
+    <Description>Transfers the money to the seller using the Payment System.  (UC-5)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 Transfers the money to the \cf1\ul seller\cf0\ulnone  using the\cf2  \cf1\ul Payment System\cf0\ulnone .  (\cf1\ul UC-5\cf2\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-6bf77ff4-7617-47fd-b6a6-2808c4285255</UniqueID>
+    <ParentID>A-d1add2b0-7dcf-43c8-82e0-8636d95eaa51</ParentID>
+    <Description>Hands over the product to Buyer. (UC-8)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red128\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Hands over the \cf2 product\cf1  to \cf3\ul Buyer\cf1\ulnone . (\cf3\ul UC-8\cf1\ulnone )\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-408e4d2c-a4ff-4deb-b843-4de31c6ba233</UniqueID>
+    <ParentID>A-d1add2b0-7dcf-43c8-82e0-8636d95eaa51</ParentID>
+    <Description>Receives money from the buyer using Payment System. (UC-9)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 Receives money from the \cf1\ul buyer\cf2\ulnone  using \cf1\ul Payment System\cf2\ulnone . (\cf1\ul UC-9\cf2\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-ca20e210-a6e8-4411-b5cc-f92a0aa91298</UniqueID>
+    <ParentID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</ParentID>
+    <Description>Buys and receives the product from the Seller. (UC-4)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 Buys and receives the \cf1 product\cf2  from the \cf3\ul Seller\cf2\ulnone . (\cf3\ul UC-4\cf2\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-f0802556-e753-49c7-80fd-c4fcfe370c6b</UniqueID>
+    <ParentID>A-71714ac3-091d-4bcc-bd77-2633f76d7900</ParentID>
+    <Description>Transfer money to the Seller. (UC-7)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 Transfer money to the \cf1\ul Seller\cf2\ulnone . (\cf1\ul UC-7\cf2\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+  </Goal>
+  <Goal>
+    <UniqueID>G-72487ec4-9656-4123-a9cc-5fac50d8f55a</UniqueID>
+    <ParentID>A-3585a9e3-025b-4a2f-9c4a-bfefddc14f50</ParentID>
+    <Description>Wins the Auction. (UC-10)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 Wins the \cf1 Auction\cf2 . (\cf3\ul UC-10\cf2\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+  </Goal>
+  <Step>
+    <UniqueID>ST-3ea12332-1fa3-477c-8940-47c7fb08b668</UniqueID>
+    <ParentID>MSS-790fe579-7f37-4658-9459-75d5ad3c451e</ParentID>
+    <Description>Seller informs the system about the wish to offer the product at an auction.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red128\green0\blue0;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Seller\cf0\ulnone  informs the system about the wish to offer the \cf2 product\cf0  at an \cf2 auction\cf3 .\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-fad13c4f-416e-4c4e-9931-76e55cc63af0</UniqueID>
+    <ParentID>MSS-790fe579-7f37-4658-9459-75d5ad3c451e</ParentID>
+    <Description>The system asks for product data.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 The system asks for product data.\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-712840ef-fd0b-49d1-9a14-eb6209a045b8</UniqueID>
+    <ParentID>MSS-790fe579-7f37-4658-9459-75d5ad3c451e</ParentID>
+    <Description>Seller provides the product data and the asking price.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Seller\cf0\ulnone  provides the product data and the asking price.\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-c1e3580d-b760-4c08-931f-e9c325d4c7e3</UniqueID>
+    <ParentID>MSS-790fe579-7f37-4658-9459-75d5ad3c451e</ParentID>
+    <Description>The system verifies data integrity.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1 system\cf0  verifies data integrity.\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-2161f813-d4ed-497a-8db3-300ad2baf251</UniqueID>
+    <ParentID>MSS-790fe579-7f37-4658-9459-75d5ad3c451e</ParentID>
+    <Description>The system informs that the product is successfully put at the auction.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 The system informs that the product is successfully put at the auction.\par
+}
+</RichDescription>
+    <Sequence>4</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-94e0a096-0584-4dba-b408-8e610c8e4e47</UniqueID>
+    <ParentID>X-ce3c6087-2bbd-49dc-8614-f37915d798e9</ParentID>
+    <Description>The system informs about invalid input data</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 The system informs about invalid input data\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-f823bdb2-8331-443d-beb8-d4e58cee8eee</UniqueID>
+    <ParentID>X-ce3c6087-2bbd-49dc-8614-f37915d798e9</ParentID>
+    <Description>Continue at step 2.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Continue at step 2.\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-6fdad5e5-d17c-4e1e-9995-f08242472644</UniqueID>
+    <ParentID>MSS-64941187-ef14-4c6a-9efd-d99d101523dd</ParentID>
+    <Description>Seller offers a product at an auction. (UC-2)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Seller\cf2\ulnone  offers a \cf3 product\cf2  at an \cf3 auction\cf2 . (\cf1\ul UC-2\cf2\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-fd0e1a47-bb11-4d83-8eaa-f931292f3cb7</UniqueID>
+    <ParentID>MSS-64941187-ef14-4c6a-9efd-d99d101523dd</ParentID>
+    <Description>Buyer bids higher than the currently highest offer for the product (REQ-1) (UC-3)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red128\green0\blue0;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf0\ulnone  bids higher than the currently highest offer for the \cf2 product\cf0  (\cf1\ul REQ-1\cf3\ulnone )\cf0  \cf3 (\cf1\ul UC-3\cf3\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-fd263d61-7011-4366-accc-899fe99dead9</UniqueID>
+    <ParentID>MSS-64941187-ef14-4c6a-9efd-d99d101523dd</ParentID>
+    <Description>Auction time has elapsed and Buyer wins the auction (REQ-2). </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Auction\cf0  time has elapsed and \cf2\ul Buyer\cf0\ulnone  wins the \cf1 auction\cf0  (\cf2\ul REQ-2\cf3\ulnone )\cf0 . \par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-7e5537a2-e967-48b2-95a3-f25cfceb9c76</UniqueID>
+    <ParentID>MSS-64941187-ef14-4c6a-9efd-d99d101523dd</ParentID>
+    <Description>Buyer transfers the amount due to the Seller. (UC-5), (UC-6)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf0\ulnone  transfers the amount due to the \cf1\ul Seller\cf2\ulnone .\cf0  \cf2 (UC-5), (\cf1\ul UC-6\cf2\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-ed130b3a-db22-43f6-8f10-db105018df63</UniqueID>
+    <ParentID>MSS-64941187-ef14-4c6a-9efd-d99d101523dd</ParentID>
+    <Description>Seller hands over the product to Buyer  (UC-8).</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Seller\cf2\ulnone  hands over the \cf3 product\cf2  to \cf1\ul Buyer\cf2\ulnone   (\cf1\ul UC-8\cf2\ulnone ).\cf0\par
+}
+</RichDescription>
+    <Sequence>4</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-b6042641-ae8e-47c7-a01f-d9c0abea892c</UniqueID>
+    <ParentID>X-49df7ef1-560a-493e-85f8-364f061a574a</ParentID>
+    <Description>Continue at Step 2.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Continue at Step 2.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-b13e796e-d43e-4e2b-8a65-108fbe3c9fae</UniqueID>
+    <ParentID>X-2d5cfd5c-505c-4f03-8704-0cf6000b1679</ParentID>
+    <Description>Use case ends</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Use case ends\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-2f90bd11-3e44-490c-b8de-4ce187e95db2</UniqueID>
+    <ParentID>MSS-64941187-ef14-4c6a-9efd-d99d101523dd</ParentID>
+    <Description>Use case ends</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Use case ends\par
+}
+</RichDescription>
+    <Sequence>6</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-80f98b65-d172-4ec4-bd08-5ddfcdaac713</UniqueID>
+    <ParentID>MSS-64941187-ef14-4c6a-9efd-d99d101523dd</ParentID>
+    <Description>Seller receives money from the Buyer. (UC-9), (UC-7)</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Seller\cf2\ulnone  receives money from the \cf1\ul Buyer\cf2\ulnone . (UC-9), (\cf1\ul UC-7\cf2\ulnone )\cf0\par
+}
+</RichDescription>
+    <Sequence>5</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-2140cde3-46fd-4bac-941b-abbeb22a481f</UniqueID>
+    <ParentID>MSS-64941187-ef14-4c6a-9efd-d99d101523dd</ParentID>
+    <Description />
+    <Sequence>7</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-b216aec0-e4d2-4877-ac3f-4cf6dc1692b2</UniqueID>
+    <ParentID>MSS-11655c68-aa3b-4cb6-a831-ed0b4f27efb1</ParentID>
+    <Description>Buyer outbids the current price of the product using the system</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  outbids the current price of the \cf3 product\cf2  using the \cf3 system\cf0\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-79018dfd-8621-46f2-af6d-5ecc50291457</UniqueID>
+    <ParentID>MSS-b772cd8d-68b5-4df1-a647-a427f2613858</ParentID>
+    <Description>Buyer buys the product at the auction.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  buys the \cf3 product\cf2  at the \cf3 auction\cf2 .\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-bac94e22-7eb8-4f77-bde2-412a2afc6818</UniqueID>
+    <ParentID>MSS-0f774ec8-ea0e-4e07-ad40-64adb889058b</ParentID>
+    <Description>Buyer issues a money transfer to the Payment System</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  issues a money transfer to the \cf1\ul Payment System\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-4a22e134-b937-496f-913a-9310996fdce3</UniqueID>
+    <ParentID>MSS-11655c68-aa3b-4cb6-a831-ed0b4f27efb1</ParentID>
+    <Description>Buyer checks the current bid price for the product using the system.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  checks the current bid price for the \cf3 product\cf2  using the \cf3 system\cf2 .\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-af97e8c0-f5fd-478c-a0c0-da1c8b6bc3a4</UniqueID>
+    <ParentID>X-fb8e9de7-3301-4e0f-97c6-f452319130ea</ParentID>
+    <Description>He backs from the bidding process</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 He backs from the bidding process\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-2a6ba41c-a036-49be-9b32-aca3b04df50c</UniqueID>
+    <ParentID>MSS-11655c68-aa3b-4cb6-a831-ed0b4f27efb1</ParentID>
+    <Description>The system changes the current bid price of the product changes.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1 system\cf0  changes the current bid price of the \cf1 product\cf2  changes.\cf0\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-b1678098-844d-4002-859e-2dce63bce0de</UniqueID>
+    <ParentID>MSS-b772cd8d-68b5-4df1-a647-a427f2613858</ParentID>
+    <Description>Seller receives the money from the Buyer using Payment System</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Seller\cf2\ulnone  receives the money from the \cf1\ul Buyer\cf2\ulnone  using \cf1\ul Payment System\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-c3dfd817-b1b3-4bff-8c2e-8e5abac7e03a</UniqueID>
+    <ParentID>MSS-b772cd8d-68b5-4df1-a647-a427f2613858</ParentID>
+    <Description>Buyer transfers the money to the seller using Payment System</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  transfers the money to the \cf1\ul seller\cf2\ulnone  using \cf1\ul Payment System\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-c0c31c78-d8f3-4620-9cce-396ba4d846a0</UniqueID>
+    <ParentID>X-0f09b5cc-297d-4bc5-814e-090e25ded73e</ParentID>
+    <Description>The auction is canceled</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1 auction\cf2  is canceled\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-b43276bf-0659-401f-8766-8a92613aa82e</UniqueID>
+    <ParentID>X-0f09b5cc-297d-4bc5-814e-090e25ded73e</ParentID>
+    <Description>Penalty price is imposed on the buyer by the system</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue255;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Penalty price is imposed on the \cf2\ul buyer\cf1\ulnone  by the \cf3 system\cf1\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-81fbe968-bb55-48e8-afd0-5dba89be2c95</UniqueID>
+    <ParentID>MSS-b772cd8d-68b5-4df1-a647-a427f2613858</ParentID>
+    <Description>Buyer receives the product. </Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  receives the \cf3 product\cf2 . \cf0\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-4710647e-f678-4f47-9184-4ac61603ce55</UniqueID>
+    <ParentID>MSS-0f774ec8-ea0e-4e07-ad40-64adb889058b</ParentID>
+    <Description />
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-2487c361-15c1-4692-909a-eb701aabcde3</UniqueID>
+    <ParentID>X-7d2d2ce6-18df-4cf3-a50f-0a07c042069c</ParentID>
+    <Description>Transfer is canceled</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Transfer is canceled\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-c49edae7-8df1-4242-815d-3b2cfcd56d38</UniqueID>
+    <ParentID>MSS-ada8112c-3bac-40b7-80dc-123cec585ea4</ParentID>
+    <Description>Seller puts an item on the Auction</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Seller\cf2\ulnone  puts an item on the \cf3 Auction\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-edf11bcc-9c4e-4bdb-8f74-3642e873f422</UniqueID>
+    <ParentID>MSS-ada8112c-3bac-40b7-80dc-123cec585ea4</ParentID>
+    <Description>Buyer buys an item on the auction.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  buys an item on the \cf3 auction\cf2 .\cf0\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-18dfdde9-e91e-41c9-a204-a63aacf50818</UniqueID>
+    <ParentID>MSS-ada8112c-3bac-40b7-80dc-123cec585ea4</ParentID>
+    <Description>Buyer sends money to the Payment System</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  sends money to the \cf1\ul Payment System\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-658c4423-72cc-4184-bb76-48ab0e8bf685</UniqueID>
+    <ParentID>MSS-ada8112c-3bac-40b7-80dc-123cec585ea4</ParentID>
+    <Description>Payment System transfers money to the Seller,</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Payment System\cf2\ulnone  transfers money to the \cf1\ul Seller\cf2\ulnone ,\cf0\par
+}
+</RichDescription>
+    <Sequence>3</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-c85ce55a-a05b-4e7d-9cbb-07d447f3a335</UniqueID>
+    <ParentID>X-3d64e31a-7520-47e4-9300-41d888b1dee7</ParentID>
+    <Description>Auction is repeated in the next bidding course.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Auction\cf2  is repeated in the next bidding course.\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-c5be33c8-67db-40cf-9f8c-da3a196a8789</UniqueID>
+    <ParentID>MSS-1b48254c-6ab5-4815-99b5-95d929cc37d0</ParentID>
+    <Description>Buyer wins an bidding on the action</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  wins an bidding on the action\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-428cccf4-c3f1-4aca-afb9-7411f2546747</UniqueID>
+    <ParentID>MSS-1b48254c-6ab5-4815-99b5-95d929cc37d0</ParentID>
+    <Description>Buyer transfers money to the payment system</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  transfers money to the \cf1\ul payment system\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-df2da875-67bb-4e41-8175-065cb29f938e</UniqueID>
+    <ParentID>MSS-d9e80810-76d3-4b39-8e4f-fbe4c1c867da</ParentID>
+    <Description>Buyer wins an Auction</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  wins an \cf3 Auction\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-bf8e297e-faa8-4d72-8ef7-50d227860111</UniqueID>
+    <ParentID>MSS-d9e80810-76d3-4b39-8e4f-fbe4c1c867da</ParentID>
+    <Description>Money is transferred from buyer to Seller using Payment System</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Money\cf0  is transferred from \cf2\ul buyer\cf3\ulnone  to \cf2\ul Seller\cf3\ulnone  using \cf2\ul Payment System\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-b9c4584d-e356-4fe7-818f-c9af7984e00a</UniqueID>
+    <ParentID>MSS-d9e80810-76d3-4b39-8e4f-fbe4c1c867da</ParentID>
+    <Description>Seller transfers product to the Buyer.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Seller\cf2\ulnone  transfers \cf3 product\cf2  to the \cf1\ul Buyer\cf2\ulnone .\cf0\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-b25b73a3-5a04-40f9-a3ef-96538de50469</UniqueID>
+    <ParentID>X-054ed3f4-4824-4868-bbc0-f0762e47ff6f</ParentID>
+    <Description>Auction is canceled by the system.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Auction\cf2  is canceled by the \cf1 system\cf2 .\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-65212e90-39a2-477f-8a46-c1e6885bd3a5</UniqueID>
+    <ParentID>MSS-2940d8b2-6c03-4f99-81c8-ed11dcfe6d53</ParentID>
+    <Description>Money transfer is issued to the buyer using Payment System</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 Money transfer is issued to the \cf1\ul buyer\cf2\ulnone  using \cf1\ul Payment System\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-875aeda9-c557-40f2-8166-a6436bf2704e</UniqueID>
+    <ParentID>MSS-2940d8b2-6c03-4f99-81c8-ed11dcfe6d53</ParentID>
+    <Description>Buyer wins an Auction</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  wins an \cf3 Auction\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-872bd4c2-b5f2-433b-a108-d6442cb89581</UniqueID>
+    <ParentID>MSS-2940d8b2-6c03-4f99-81c8-ed11dcfe6d53</ParentID>
+    <Description>Buyer transfers money to the Payment System</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  transfers money to the \cf1\ul Payment System\cf0\ulnone\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-e2201aa6-9cfa-4ea5-a958-0e45f4f14d4b</UniqueID>
+    <ParentID>X-9c4ecc1d-141e-42a1-be8b-cac653dfc85b</ParentID>
+    <Description>Transfer is repeated by the system.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 Transfer is repeated by the \cf1 system\cf2 .\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-7105df17-1167-48f6-8f45-143a88eee0e4</UniqueID>
+    <ParentID>MSS-d189ede4-71a7-42d6-930e-0868d6bb8d42</ParentID>
+    <Description>Buyer bids on Auction</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  bids on \cf3 Auction\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-3ebf6485-1263-4946-ab8d-28ee0d2c183e</UniqueID>
+    <ParentID>MSS-d189ede4-71a7-42d6-930e-0868d6bb8d42</ParentID>
+    <Description>No other buyer bids on Auction</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 No other \cf1\ul buyer\cf2\ulnone  bids on \cf3 Auction\cf0\par
+}
+</RichDescription>
+    <Sequence>1</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-d6972b6b-fa0f-473d-8af2-1504f4c2c978</UniqueID>
+    <ParentID>MSS-d189ede4-71a7-42d6-930e-0868d6bb8d42</ParentID>
+    <Description>Buyer wins the Auction</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  wins the \cf3 Auction\cf0\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Step>
+    <UniqueID>ST-6d6efeff-06b1-4a45-a8ce-c59d76d3b3c8</UniqueID>
+    <ParentID>X-1491c8f1-7be2-4c54-b986-40aac3f27f84</ParentID>
+    <Description>Go to step 1.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Go to step 1.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Step>
+  <Extension>
+    <UniqueID>X-ce3c6087-2bbd-49dc-8614-f37915d798e9</UniqueID>
+    <ParentID>ST-c1e3580d-b760-4c08-931f-e9c325d4c7e3</ParentID>
+    <Description>Incorrect or incomplete product data was entered.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Incorrect or incomplete product data was entered.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-49df7ef1-560a-493e-85f8-364f061a574a</UniqueID>
+    <ParentID>ST-fd0e1a47-bb11-4d83-8eaa-f931292f3cb7</ParentID>
+    <Description>Buyer's offer has been outbid, and Buyer wants to outbid the currently highest offer.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf0\ulnone 's offer has been outbid, and \cf1\ul Buyer\cf0\ulnone  wants to outbid the currently highest offer.\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-2d5cfd5c-505c-4f03-8704-0cf6000b1679</UniqueID>
+    <ParentID>ST-fd263d61-7011-4366-accc-899fe99dead9</ParentID>
+    <Description>Auction time has elapsed and Buyer has lost the auction.</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Auction\cf2  time has elapsed and \cf3\ul Buyer\cf2\ulnone  has lost the \cf1 auction\cf2 .\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-fb8e9de7-3301-4e0f-97c6-f452319130ea</UniqueID>
+    <ParentID>ST-4a22e134-b937-496f-913a-9310996fdce3</ParentID>
+    <Description>The Buyer has not enough money</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 The \cf1\ul Buyer\cf2\ulnone  has not enough money\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-0f09b5cc-297d-4bc5-814e-090e25ded73e</UniqueID>
+    <ParentID>ST-c3dfd817-b1b3-4bff-8c2e-8e5abac7e03a</ParentID>
+    <Description>Buyer has not enough money</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  has not enough money\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-7d2d2ce6-18df-4cf3-a50f-0a07c042069c</UniqueID>
+    <ParentID>ST-bac94e22-7eb8-4f77-bde2-412a2afc6818</ParentID>
+    <Description>System detects fraud</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 System\cf2  detects fraud\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-3d64e31a-7520-47e4-9300-41d888b1dee7</UniqueID>
+    <ParentID>ST-c49edae7-8df1-4242-815d-3b2cfcd56d38</ParentID>
+    <Description>Nobody bids on the action</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 Nobody bids on the action\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-054ed3f4-4824-4868-bbc0-f0762e47ff6f</UniqueID>
+    <ParentID>ST-bf8e297e-faa8-4d72-8ef7-50d227860111</ParentID>
+    <Description>Buyer didn't have enough money after the bidding</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\ul\f0\fs20 Buyer\cf2\ulnone  didn't have enough money after the bidding\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-9c4ecc1d-141e-42a1-be8b-cac653dfc85b</UniqueID>
+    <ParentID>ST-65212e90-39a2-477f-8a46-c1e6885bd3a5</ParentID>
+    <Description>There is an error</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 There is an error\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <Extension>
+    <UniqueID>X-1491c8f1-7be2-4c54-b986-40aac3f27f84</UniqueID>
+    <ParentID>ST-3ebf6485-1263-4946-ab8d-28ee0d2c183e</ParentID>
+    <Description>Other buyer bids on Auction</Description>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red0\green0\blue255;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\f0\fs20 Other \cf1\ul buyer\cf2\ulnone  bids on \cf3 Auction\cf0\par
+}
+</RichDescription>
+    <Sequence>0</Sequence>
+    <jsonTestStepBag>{"TestScenarioSteps":[]}</jsonTestStepBag>
+  </Extension>
+  <UserID>
+    <DefaultPrefix>UC-</DefaultPrefix>
+    <NextValue>11</NextValue>
+  </UserID>
+  <UserID>
+    <DefaultPrefix>A-</DefaultPrefix>
+    <NextValue>4</NextValue>
+  </UserID>
+  <UserID>
+    <DefaultPrefix>REQ-</DefaultPrefix>
+    <NextValue>3</NextValue>
+  </UserID>
+  <UserID>
+    <DefaultPrefix>DEF-</DefaultPrefix>
+    <NextValue>5</NextValue>
+  </UserID>
+  <UserID>
+    <DefaultPrefix>S-</DefaultPrefix>
+    <NextValue>1</NextValue>
+  </UserID>
+  <DictionaryEntry>
+    <UniqueID>D2-2c5b2529-59c1-4053-bf46-0ba451d7a77b</UniqueID>
+    <Name>Auction</Name>
+    <Description>An auction is a form of buying and selling goods or services transaction in which the Seller specifies the asking price of the product, while the Buyer may offer their own bidding, each time submitting an amount higher than the currently offered. The auction ends after the specified time has elapsed. If at least one purchase offer has been submitted, the product is purchased by the Buyer who offered the highest amount. </Description>
+    <Aliases />
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue255;}
+\viewkind4\uc1\pard\f0\fs20 An \cf1 auction\cf0  is a form of buying and selling goods or services transaction in which the \cf2\ul Seller\cf0\ulnone  specifies the asking price of the product, while the \cf2\ul Buyer\cf0\ulnone  may offer their own bidding, each time submitting an amount higher than the currently offered. The \cf1 auction\cf0  ends after the specified time has elapsed. If at least one purchase offer has been submitted, the product is purchased by the \cf2\ul Buyer\cf0\ulnone  who offered the highest amount. \par
+}
+</RichDescription>
+    <ParentID>P-b189d32b-e3d1-4b03-bdfb-ee157641c612</ParentID>
+    <UserID>DEF-1</UserID>
+    <Sequence>0</Sequence>
+  </DictionaryEntry>
+  <DictionaryEntry>
+    <UniqueID>D2-1117c075-b136-4e53-a4e2-366bbc7ed4d0</UniqueID>
+    <Name>product</Name>
+    <Description>Product is the item offered for sale. "an article or substance that is manufactured or refined for sale."</Description>
+    <Aliases>goods</Aliases>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 Product\cf0  is the item offered for sale. "an article or substance that is manufactured or refined for sale."\par
+}
+</RichDescription>
+    <ParentID>P-b189d32b-e3d1-4b03-bdfb-ee157641c612</ParentID>
+    <UserID>DEF-2</UserID>
+    <Sequence>1</Sequence>
+  </DictionaryEntry>
+  <DictionaryEntry>
+    <UniqueID>D2-6b1fa12c-4751-4a0b-b02b-fdda0525d1ca</UniqueID>
+    <Name>system</Name>
+    <Description>System controlling the auction, and the authenticity of money transfers.</Description>
+    <Aliases />
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+{\colortbl ;\red128\green0\blue0;\red0\green0\blue0;}
+\viewkind4\uc1\pard\cf1\f0\fs20 System\cf2  controlling the \cf1 auction\cf2 , and the authenticity of money transfers.\cf0\par
+}
+</RichDescription>
+    <ParentID>P-b189d32b-e3d1-4b03-bdfb-ee157641c612</ParentID>
+    <UserID>DEF-3</UserID>
+    <Sequence>2</Sequence>
+  </DictionaryEntry>
+  <DictionaryEntry>
+    <UniqueID>D2-c4abb230-3472-4a3d-a348-afc72001d667</UniqueID>
+    <Name>Money</Name>
+    <Description>a current medium of exchange</Description>
+    <Aliases>dollars</Aliases>
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20 a current medium of exchange\par
+}
+</RichDescription>
+    <ParentID>P-b189d32b-e3d1-4b03-bdfb-ee157641c612</ParentID>
+    <UserID>DEF-4</UserID>
+    <Sequence>3</Sequence>
+  </DictionaryEntry>
+  <DictionaryField>
+    <Name>Asking price</Name>
+    <UniqueID>DF-37c07b18-f082-42d4-b2d7-2ca7ce04c76d</UniqueID>
+    <ParentID>D2-1117c075-b136-4e53-a4e2-366bbc7ed4d0</ParentID>
+    <ElementType>number</ElementType>
+    <Description>Starting price [pln]</Description>
+    <Sequence>0</Sequence>
+  </DictionaryField>
+  <DictionaryField>
+    <Name>Duration</Name>
+    <UniqueID>DF-79632759-2966-416f-937a-736ecff66123</UniqueID>
+    <ParentID>D2-2c5b2529-59c1-4053-bf46-0ba451d7a77b</ParentID>
+    <ElementType>number</ElementType>
+    <Description>Time, in minutes, of the Auction.</Description>
+    <Sequence>0</Sequence>
+  </DictionaryField>
+  <DictionaryField>
+    <Name>Quantity</Name>
+    <UniqueID>DF-9f703d52-98af-4360-b107-aba5ff4f83ba</UniqueID>
+    <ParentID>D2-1117c075-b136-4e53-a4e2-366bbc7ed4d0</ParentID>
+    <ElementType>number</ElementType>
+    <Description>Quantity of things contained in product</Description>
+    <Sequence>1</Sequence>
+  </DictionaryField>
+  <DictionaryFieldConstraint>
+    <ParentID>DF-37c07b18-f082-42d4-b2d7-2ca7ce04c76d</ParentID>
+    <ConstraintKind>RANGE</ConstraintKind>
+    <RangeFrom>0</RangeFrom>
+    <RangeTo>infinity</RangeTo>
+    <UniqueID>DC-9961f43f-9435-48e5-bcce-41fe53fcdda7</UniqueID>
+  </DictionaryFieldConstraint>
+  <DictionaryFieldConstraint>
+    <ParentID>DF-37c07b18-f082-42d4-b2d7-2ca7ce04c76d</ParentID>
+    <ConstraintKind>REQUIRED</ConstraintKind>
+    <UniqueID>DC-a69848bb-b592-4fdd-9fb8-fe3a490b6b8d</UniqueID>
+  </DictionaryFieldConstraint>
+  <DictionaryFieldConstraint>
+    <ParentID>DF-37c07b18-f082-42d4-b2d7-2ca7ce04c76d</ParentID>
+    <ConstraintKind>COUNT</ConstraintKind>
+    <UniqueID>DC-cf9241f0-3b35-47b7-9337-7e53bcc68860</UniqueID>
+    <Count>1</Count>
+  </DictionaryFieldConstraint>
+  <DictionaryFieldConstraint>
+    <ParentID>DF-37c07b18-f082-42d4-b2d7-2ca7ce04c76d</ParentID>
+    <ConstraintKind>CUSTOM</ConstraintKind>
+    <Description>The price should be an integer.</Description>
+    <UniqueID>DC-c708f6dd-2fca-41b6-a5ec-aa7f4a1dab44</UniqueID>
+  </DictionaryFieldConstraint>
+  <BuiltInField>
+    <UniqueID>1</UniqueID>
+    <Name>Priority</Name>
+    <AppliesTo>0</AppliesTo>
+    <Category>Details</Category>
+    <Description>Priority of the use case.</Description>
+    <DefaultValue>1</DefaultValue>
+    <Choices />
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>2</UniqueID>
+    <Name>Level</Name>
+    <AppliesTo>0</AppliesTo>
+    <Category>Details</Category>
+    <Description>The level of detail in the use case.</Description>
+    <DefaultValue />
+    <Choices>Summary;User;Subfunction</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>3</UniqueID>
+    <Name>Complexity</Name>
+    <AppliesTo>0</AppliesTo>
+    <Category>Details</Category>
+    <Description>An indication of the difficulty of implementation.</Description>
+    <DefaultValue />
+    <Choices>Low;Medium;High</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>4</UniqueID>
+    <Name>UseCaseStatus</Name>
+    <AppliesTo>0</AppliesTo>
+    <Category>Details</Category>
+    <Description>Status of the use case specification.</Description>
+    <DefaultValue />
+    <Choices>Name Only;Initial;Base;Complete;Deferred</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>5</UniqueID>
+    <Name>ImplStatus</Name>
+    <AppliesTo>0</AppliesTo>
+    <Category>Details</Category>
+    <Description>Status of the use case implementation.</Description>
+    <DefaultValue />
+    <Choices>Scheduled;Started;Partially Complete;Complete;Partially Deferred;Deferred</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>6</UniqueID>
+    <Name>AssignedTo</Name>
+    <AppliesTo>0</AppliesTo>
+    <Category>Details</Category>
+    <Description>Who is responsible for this use case.</Description>
+    <DefaultValue />
+    <Choices />
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>7</UniqueID>
+    <Name>Release</Name>
+    <AppliesTo>0</AppliesTo>
+    <Category>Details</Category>
+    <Description>Which release this use case is applicable to.</Description>
+    <DefaultValue />
+    <Choices />
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>100</UniqueID>
+    <Name>ReqType</Name>
+    <AppliesTo>3</AppliesTo>
+    <Category>Details</Category>
+    <Description>The type of requirement.</Description>
+    <DefaultValue>Non-functional</DefaultValue>
+    <Choices>Functional;Non-functional;Business Rule;Constraint;Performance;Test;Change Request</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>101</UniqueID>
+    <Name>Priority</Name>
+    <AppliesTo>3</AppliesTo>
+    <Category>Details</Category>
+    <Description>Priority of the requirement.</Description>
+    <DefaultValue>1</DefaultValue>
+    <Choices />
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>102</UniqueID>
+    <Name>Source</Name>
+    <AppliesTo>3</AppliesTo>
+    <Category>Details</Category>
+    <Description>Where did the requirement originate?</Description>
+    <DefaultValue />
+    <Choices />
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>103</UniqueID>
+    <Name>Status</Name>
+    <AppliesTo>3</AppliesTo>
+    <Category>Details</Category>
+    <Description>Status of the requirement.</Description>
+    <DefaultValue />
+    <Choices>Proposed;Approved;Rejected;Deferred;Implemented;Mandatory;Obsolete</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>104</UniqueID>
+    <Name>AssignedTo</Name>
+    <AppliesTo>3</AppliesTo>
+    <Category>Details</Category>
+    <Description>Who is responsible for this requirement?</Description>
+    <DefaultValue />
+    <Choices />
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>105</UniqueID>
+    <Name>Release</Name>
+    <AppliesTo>3</AppliesTo>
+    <Category>Details</Category>
+    <Description>Which release this requirement is applicable to.</Description>
+    <DefaultValue />
+    <Choices />
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>200</UniqueID>
+    <Name>Complexity</Name>
+    <AppliesTo>1</AppliesTo>
+    <Category>Details</Category>
+    <Description>Complexity of this actor's interactions with the system.</Description>
+    <DefaultValue />
+    <Choices>Low;Medium;High</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>300</UniqueID>
+    <Name>Priority</Name>
+    <AppliesTo>6</AppliesTo>
+    <Category>Details</Category>
+    <Description>Priority for resolving issue.</Description>
+    <DefaultValue />
+    <Choices>Low;Medium;High</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>301</UniqueID>
+    <Name>Status</Name>
+    <AppliesTo>6</AppliesTo>
+    <Category>Details</Category>
+    <Description>State of issue.</Description>
+    <DefaultValue />
+    <Choices>New;Assigned;Resolved;Deferred</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>302</UniqueID>
+    <Name>Type</Name>
+    <AppliesTo>6</AppliesTo>
+    <Category>Details</Category>
+    <Description>Type of issue.</Description>
+    <DefaultValue />
+    <Choices>Question;Approval;Clarification;Defect;Feature</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>303</UniqueID>
+    <Name>Complexity</Name>
+    <AppliesTo>6</AppliesTo>
+    <Category>Details</Category>
+    <Description>Complexity of issue to be resolved.</Description>
+    <DefaultValue />
+    <Choices>Low;Medium;High</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>304</UniqueID>
+    <Name>Risk</Name>
+    <AppliesTo>6</AppliesTo>
+    <Category>Details</Category>
+    <Description>Risk to project while unresolved.</Description>
+    <DefaultValue />
+    <Choices>Low;Medium;High</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>400</UniqueID>
+    <Name>Status</Name>
+    <AppliesTo>7</AppliesTo>
+    <Category>Details</Category>
+    <Description>State of test scenario.</Description>
+    <DefaultValue />
+    <Choices>New;Partially defined;Defined</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>401</UniqueID>
+    <Name>TestType</Name>
+    <AppliesTo>7</AppliesTo>
+    <Category>Details</Category>
+    <Description>Type of test.</Description>
+    <DefaultValue />
+    <Choices>Acceptance;Usability;Performance;Load;Security;Bounds;White box</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>402</UniqueID>
+    <Name>Complexity</Name>
+    <AppliesTo>7</AppliesTo>
+    <Category>Details</Category>
+    <Description>Complexity of test.</Description>
+    <DefaultValue />
+    <Choices>Low;Medium;High</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>403</UniqueID>
+    <Name>Priority</Name>
+    <AppliesTo>7</AppliesTo>
+    <Category>Details</Category>
+    <Description>Priority of the test scenario.</Description>
+    <DefaultValue>1</DefaultValue>
+    <Choices />
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>501</UniqueID>
+    <Name>Priority</Name>
+    <AppliesTo>9</AppliesTo>
+    <Category>Details</Category>
+    <Description>Priority of the user story.</Description>
+    <DefaultValue />
+    <Choices>Must;Should;Could;Won't</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>502</UniqueID>
+    <Name>Size</Name>
+    <AppliesTo>9</AppliesTo>
+    <Category>Details</Category>
+    <Description>The relative complexity of the user story.</Description>
+    <DefaultValue />
+    <Choices>X-Small;Small;Med;Large;X-Large</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>503</UniqueID>
+    <Name>AssignedTo</Name>
+    <AppliesTo>9</AppliesTo>
+    <Category>Details</Category>
+    <Description>Who is responsible for this user story?</Description>
+    <DefaultValue />
+    <Choices />
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+  <BuiltInField>
+    <UniqueID>504</UniqueID>
+    <Name>Status</Name>
+    <AppliesTo>9</AppliesTo>
+    <Category>Details</Category>
+    <Description>Status of the user story.</Description>
+    <DefaultValue />
+    <Choices>Backlog;Doing;Review;Done</Choices>
+    <ChoicesExclusive>false</ChoicesExclusive>
+    <Multiline>false</Multiline>
+  </BuiltInField>
+</UCTDataSet>

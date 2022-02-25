@@ -1,0 +1,1 @@
+{"header":{"actors":["actor1","actor2"],"system_actors":["system_actor","system_actor2"],"title":"sample_title"},"steps":[{"text": "NO_KEYWORD Sample step 1", "sub_steps": null},{"text": "FOR_EACH Sample step 2", "sub_steps": [{"text": "IF Sample sub_step_1", "sub_steps": [{"text": "NO_KEYWORD Sample sub_sub_step 1", "sub_steps": null}]}]}]}

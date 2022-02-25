@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="7.069981">
+<testcase classname="Login." name="Login" time="7.069981">
+<system-out><![CDATA[Given I have cleared the database...........................................passed
+Given I have registered as user "john" with password "john", name "john" and with address "Colourful St".passed
+Given I've moved to the login page..........................................passed
+When I fill the login form with username "john" and password "john", and I submit it.passed
+Then I should see the accounts-list page....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

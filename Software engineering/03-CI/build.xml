@@ -1,0 +1,59 @@
+﻿<project name="Grain-Bank" default="compile">
+	<path id="jetty.cp">
+		<fileset dir="/home/janek/Desktop/se_2/CI/Ant/Jetty"/>
+	</path>
+	<path id="lib.cp">
+		<pathelement location="/home/janek/Desktop/se_2/CI/Ant/grain-bank/lib/freemarker.jar"/>
+		<pathelement location="/home/janek/Desktop/se_2/CI/Ant/grain-bank/lib/servlet-api-2.5.jar"/>
+		<path refid="jetty.cp"/>
+	</path>
+	<path id="dist.cp">
+		<path refid="lib.cp"/>
+		<pathelement location="/home/janek/Desktop/se_2/CI/Ant/grain-bank/bank_runnable.jar"/>
+	</path>
+	<target name="init" depends="">
+		<mkdir dir="bin"/>
+		<mkdir dir="dist"/>
+	</target>
+	<target name="compile" depends="init">
+		<echo message="Compile ${ant.project.name} project." />
+		<echo message="Scope of this target:" />
+		<echo message="* compile project source code (located in src directory) to bin directory" />
+		<echo message="This target depends on:" />
+		<echo message="* project's initialization" />
+		<javac  classpathref="lib.cp" srcdir="src" destdir="bin" includeantruntime="false" />
+	</target>
+	<target name="copy" depends="init">
+		<copy todir="bin">
+			<fileset dir="/home/janek/Desktop/se_2/CI/Ant/grain-bank/res"/>
+		</copy>
+	</target>
+	<target name="dist" depends="compile,copy,init">
+		<echo message="Prepare the jar for distribution of ${ant.project.name} project." />
+		<echo message="Scope of this target:" />
+		<echo message="* create bank.jar file in dist directory from binary code in bin directory" />
+		<echo message="The target depends on:" />
+		<echo message="* project compilation (code must be compiled)" />
+		<echo message="* copy static contents of the project (static files must be in bin directory)" />
+		<echo message="* project's init (dist directory must exist)" />
+		<jar destfile="bank_runnable.jar">
+			<fileset dir="bin"/>
+		</jar>
+	</target>
+	<target name="clean" depends="">
+		<delete dir="bin"/>
+	</target>
+	<target name="clean-all" depends="clean">
+		<delete dir="dist"/>
+	</target>
+	<target name="run" depends="dist">
+		<echo message="Run ${ant.project.name} project." />
+		<echo message="Scope of this target:" />
+		<echo message="* run put.io.selenium.atm.SimpleServer class" />
+		<echo message="  from the bank_runnable.jar file," />
+		<echo message="  remember to provide the path to the required libraries" />
+		<echo message="The target depends on:" />
+		<echo message="* Prepare the jar file" />
+		<java classname="put.io.selenium.atm.SimpleServer" classpathref="dist.cp" />
+	</target>
+</project>

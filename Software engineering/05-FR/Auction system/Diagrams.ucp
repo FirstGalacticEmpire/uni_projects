@@ -1,0 +1,86 @@
+<?xml version="1.0" standalone="yes"?>
+<UCTDataSet xmlns="http://serliosoft.com/UCTData.xsd">
+  <VersionInfo>
+    <Version>5.1</Version>
+    <SavedWith>15.0.7748</SavedWith>
+    <CreatedWith>13.0.6862</CreatedWith>
+  </VersionInfo>
+  <TopLevelElement>
+    <RefID>P-6fb9d06a-59ec-4fb4-9fb7-4b5dd12735a8</RefID>
+  </TopLevelElement>
+  <Package>
+    <UniqueID>P-6fb9d06a-59ec-4fb4-9fb7-4b5dd12735a8</UniqueID>
+    <ExternalParentID>P-82bab1f1-d274-4efd-bf95-d3e28452ca73</ExternalParentID>
+    <Name>Diagrams</Name>
+    <Sequence>-1</Sequence>
+  </Package>
+  <Actor>
+    <UniqueID>A-b6cb2e46-1af2-47fb-b732-23d1387e4b1f</UniqueID>
+    <UserID>A-4-1</UserID>
+    <ParentID>P-6fb9d06a-59ec-4fb4-9fb7-4b5dd12735a8</ParentID>
+    <Name>Seller</Name>
+    <Sequence>0</Sequence>
+    <DateAdded>2021-04-06T15:25:19.6189249+02:00</DateAdded>
+    <DateModified>2021-04-06T15:25:49.6220823+02:00</DateModified>
+  </Actor>
+  <Actor>
+    <UniqueID>A-e9f2babb-c3a7-4d21-a791-edb953d48d03</UniqueID>
+    <UserID>A-4-2</UserID>
+    <ParentID>P-6fb9d06a-59ec-4fb4-9fb7-4b5dd12735a8</ParentID>
+    <Name>Buyer</Name>
+    <Sequence>1</Sequence>
+    <DateAdded>2021-04-06T15:25:24.5790717+02:00</DateAdded>
+    <DateModified>2021-04-06T15:25:56.9119079+02:00</DateModified>
+  </Actor>
+  <Actor>
+    <UniqueID>A-4d28d5c5-bf47-43ba-882e-68bb5ed288d0</UniqueID>
+    <UserID>A-4-3</UserID>
+    <ParentID>P-6fb9d06a-59ec-4fb4-9fb7-4b5dd12735a8</ParentID>
+    <Name>Payment System</Name>
+    <Description />
+    <RichDescription>{\rtf1\ansi\ansicpg1250\deff0\deflang1045{\fonttbl{\f0\fnil\fcharset238 Segoe UI;}}
+\viewkind4\uc1\pard\f0\fs20\par
+}
+</RichDescription>
+    <Sequence>2</Sequence>
+    <Complexity />
+    <DateAdded>2021-04-06T15:26:18.5129768+02:00</DateAdded>
+    <DateModified>2021-04-06T15:45:06.0153236+02:00</DateModified>
+  </Actor>
+  <Diagram>
+    <UniqueID>D-9e6698a2-d05e-4d71-b3b9-0a7c2e2eef67</UniqueID>
+    <ParentID>P-6fb9d06a-59ec-4fb4-9fb7-4b5dd12735a8</ParentID>
+    <Name>Context diagram</Name>
+    <Sequence>0</Sequence>
+    <FileName>Context diagram.ndx</FileName>
+    <Type>0</Type>
+  </Diagram>
+  <Diagram>
+    <UniqueID>D-c586fc5c-43fd-43f2-8cd4-a86492ddb433</UniqueID>
+    <ParentID>P-6fb9d06a-59ec-4fb4-9fb7-4b5dd12735a8</ParentID>
+    <Name>Use case diagram</Name>
+    <Sequence>1</Sequence>
+    <FileName>Use case diagram.ndx</FileName>
+    <Type>0</Type>
+  </Diagram>
+  <UserID>
+    <DefaultPrefix>UC-4-</DefaultPrefix>
+    <NextValue>1</NextValue>
+  </UserID>
+  <UserID>
+    <DefaultPrefix>A-4-</DefaultPrefix>
+    <NextValue>4</NextValue>
+  </UserID>
+  <UserID>
+    <DefaultPrefix>REQ-4-</DefaultPrefix>
+    <NextValue>1</NextValue>
+  </UserID>
+  <UserID>
+    <DefaultPrefix>DEF-4-</DefaultPrefix>
+    <NextValue>1</NextValue>
+  </UserID>
+  <UserID>
+    <DefaultPrefix>S-4-</DefaultPrefix>
+    <NextValue>1</NextValue>
+  </UserID>
+</UCTDataSet>
