@@ -1,0 +1,29 @@
+skittles = cv2.imread('./skittles.jpg', cv2.IMREAD_COLOR)
+
+
+def find_skittles(skittles):
+
+  # skittles = cv2.resize(skittles, None, fx=0.75, fy=0.75)
+  #BGR input image
+  # imshow(skittles)
+  skittles_gray = cv2.cvtColor(skittles, cv2.COLOR_BGR2GRAY)
+  # ret,thresh1 = cv2.threshold(skittles_gray,220,255,cv2.THRESH_BINARY)
+  # # imshow(thresh1)
+
+  # struct = np.ones([5, 5], np.uint8)
+  # test = cv2.erode(thresh1, None, iterations=1)
+  # test2 = cv2.dilate(test, None, iterations=3)
+  # # imshow(test2)
+
+  # contours, hierarchy = cv2.findContours(test2, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+  # print(len(contours))
+  # ccc = cv2.drawContours(skittles, contours, -1, (255,0,0),3)
+  # imshow(ccc)
+  # thresh1_pixels = thresh1.reshape([-1, 3])
+  # pix_show(skittles_pixels, 16)
+  # print(thresh1_pixels.shape)
+  # Initializing K-means algorithm
+  # model = DBSCAN(eps=1, min_samples=150)
+  # model.fit(thresh1_pixels)
+
+  # print(model.labels_)
