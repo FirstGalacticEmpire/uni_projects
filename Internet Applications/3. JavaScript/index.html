@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<h1>My book collection</h1>
+<button class="add_book">Add a new book</button>
+<div id="buttons">
+    <div class=big_author>Author</div>
+    <div class=big_title>Tittle</div>
+</div>
+<div class="collection"></div>
+
+<script>
+    const collection = document.querySelector('.collection');
+    const add_button = document.querySelector('.add_book');
+
+    const addButtonListener = () => {
+        const row = document.createElement('div')
+        row.className = "row";
+
+        const author_div = document.createElement('div');
+        author_div.className = "author";
+
+        const author_input = document.createElement('input');
+        const author_span = document.createElement('span');
+        const title_div = document.createElement('div');
+
+        title_div.className = "title";
+        const title_input = document.createElement('input');
+        const title_span = document.createElement('span');
+
+        const button_div = document.createElement('div');
+        button_div.className = "buttons";
+
+        const save_button = document.createElement('button');
+        save_button.innerText = "Save";
+
+        const remove_button = document.createElement('button');
+        remove_button.innerText = "Remove";
+
+        title_div.appendChild(title_input);
+        title_div.appendChild(title_span);
+
+        author_div.appendChild(author_input);
+        author_div.appendChild(author_span);
+
+        button_div.appendChild(save_button);
+        button_div.appendChild(remove_button);
+
+        row.appendChild(title_div);
+        row.appendChild(author_div);
+        row.appendChild(button_div);
+
+        collection.appendChild(row);
+
+        save_button.addEventListener('click', () => {
+            if (save_button.innerText === 'Save') {
+                save_button.innerText = 'Edit';
+
+                author_input.style.display = 'none';
+                title_input.style.display = 'none';
+
+                author_span.style.display = 'block';
+                title_span.style.display = 'block';
+
+                author_span.innerText = author_input.value;
+                title_span.innerText = title_input.value;
+            } else {
+                save_button.innerText = 'Save';
+
+                author_span.style.display = 'none';
+                title_span.style.display = 'none';
+
+                title_input.style.display = 'inline-block';
+                author_input.style.display = 'inline-block';
+            }
+        })
+
+        remove_button.addEventListener('click', (e) => {
+            row.remove();
+        })
+    }
+
+    add_button.addEventListener('click', addButtonListener)
+</script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>JSON</title>
+    <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $.getJSON("http://localhost/jesony/guitars.json", {
+                format: "json"
+            }, function (a_dictionary) {
+                for (let i = 0; i < a_dictionary.Guitars.Guitar.length; i++) {
+                    $('#my_guitars').append('<li> Brand: ' + a_dictionary.Guitars.Guitar[i].Brand + '  Model: ' +
+                        a_dictionary.Guitars.Guitar[i].Model + '</li>');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<div></div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Get Text Input Field Value in JavaScript</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // const XMLHttpRequest = require('xhr2');
+        // const cheerio = require('cheerio');
+
+        function makeRequest(url) {
+            return new Promise(function (resolve, reject) {
+                const xhr = new XMLHttpRequest();
+                xhr.open("GET", url, true);
+                xhr.onload = function () {
+                    if (this.status >= 200) { // && this.status < 300
+                        // const $ = cheerio.load(this.response);
+                        // let my_array = $(this.responseText)('a').map((_, a) => $(a).attr('href'))// Extract the href (url) from each link
+                        //     .toArray() // Convert cheerio object to array
+                        // // const $
+                        resolve(this.responseText);
+                    } else {
+                        // console.log("XD");
+                        reject({
+                            status: this.status,
+                            statusText: xhr.statusText
+                        });
+                    }
+                };
+                xhr.onerror = function () {
+                    return reject({
+                        status: this.status,
+                        statusText: xhr.statusText
+                    });
+                };
+                xhr.send(); //ignore for get request
+            });
+        }
+
+    </script>
+</head>
+<body>
+<label for="myInput"></label>
+<input type="text" placeholder="Type something..." id="myInput">
+<button type="button" onclick="getInputValue();">Get Value</button>
+<div id="myDiv"> </div>
+
+
+<script>
+    function getInputValue(){
+        const inputVal = document.getElementById("myInput").value;
+        const my_div = document.querySelector('#myDiv');
+        // my_div.innerText = inputVal
+        //Cors need to be turned off.
+        makeRequest(inputVal) //package.json
+            .then(function (data) {
+                my_div.innerText = data;
+                // console.log(data);
+            })
+            .catch(function (error) {
+                my_div.innerText = error.statusText;
+                // console.error('Augh, there was an error!', error.statusText);
+            });
+
+
+
+    }
+</script>
+</body>
+</html>

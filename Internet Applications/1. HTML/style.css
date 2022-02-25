@@ -1,0 +1,42 @@
+li {
+    list-style-type: square
+}
+
+body {
+    /*color: black;*/
+    /*background-image: url("https://i.imgur.com/wISU6YR.jpeg");*/
+    background-size: 500px;
+    /*background-repeat: repeat-y*/
+}
+
+#price {
+    color: green;
+    font-weight: bold;
+
+}
+
+.paragraph1 {
+    font-style: italic;
+}
+
+h1 + h2 {
+    letter-spacing: 5px;
+    color: red;
+}
+
+p + p {
+    color: gray !important;
+}
+
+td[colspan="2"] p {
+    color: deeppink;
+    font-size: small;
+}
+
+td img {
+    border: 5px solid green;
+}
+
+td img:hover {
+    border: 5px solid red;
+}

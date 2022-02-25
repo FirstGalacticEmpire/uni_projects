@@ -1,0 +1,34 @@
+﻿@{ 
+    if (Session["rules"] == null) {
+        Session["rules"] = new List<string>();
+    }
+    var rules = Session["rules"] as List<string>;
+    if (IsPost) {
+        if (!Request["rule"].IsEmpty())
+        {
+            rules.Add(Request["rule"]);
+            Session["rules"] = rules;
+        }
+        Response.Redirect("~/Pages/Rules.cshtml");
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="~/Pages/Rules.cshtml" method="post">
+        <input type="text" name="rule" placeholder="Rules of fight club:" />
+        <input type="submit" value="Submit" />
+    </form>
+	
+    <ol>
+        @foreach (var rule in rules)
+        {
+            <li>@rule</li>
+        }
+    </ol>
+</body>
+</html>

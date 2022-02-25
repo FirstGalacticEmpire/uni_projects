@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Kitku2",
+    "description": "jakis opis",
+    "coverImg": "cat_image.png",
+    "rating": 7
+  },
+  {
+    "id": 2,
+    "name": "Kitku3",
+    "description": "description",
+    "coverImg": "cat_image.png",
+    "rating": 9
+  },
+  {
+    "id": 3,
+    "name": "Kitku1",
+    "description": "description",
+    "coverImg": "cat_image.png",
+    "rating": 1
+  },
+  {
+    "id": 4,
+    "name": "Kitku5",
+    "description": "description",
+    "coverImg": "cat_image.png",
+    "rating": 5
+  }
+]
