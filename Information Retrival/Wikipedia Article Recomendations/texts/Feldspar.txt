@@ -1,0 +1,46 @@
+
+
+Feldspars are a group of rock-forming aluminium tectosilicate minerals, containing sodium, calcium, potassium or barium.[2] The most common members of the feldspar group are the plagioclase (sodium-calcium) feldspars and the alkali (potassium-sodium) feldspars.[3] Feldspars make up about 60% of the Earth's crust,[2] and 41% of the Earth's continental crust by weight.[4][5] The IMA symbol for feldspar is Fsp.[6]
+
+Feldspars crystallize from magma as both intrusive and extrusive igneous rocks[7] and are also present in many types of metamorphic rock.[8] Rock formed almost entirely of calcic plagioclase feldspar is known as anorthosite.[9] Feldspars are also found in many types of sedimentary rocks.[10]
+
+The feldspar group of minerals consists of tectosilicates, silicate minerals in which silicon ions are linked by shared oxygen ions to form a three-dimensional network. Compositions of major elements in common feldspars can be expressed in terms of three endmembers:
+
+Solid solutions between K-feldspar and albite are called alkali feldspar.[11] Solid solutions between albite and anorthite are called plagioclase,[11] or, more properly, plagioclase feldspar. Only limited solid solution occurs between K-feldspar and anorthite, and in the two other solid solutions, immiscibility occurs at temperatures common in the crust of the Earth. Albite is considered both a plagioclase and alkali feldspar.
+
+The ratio of alkali feldspar to plagioclase feldspar, together with the proportion of quartz, is the basis for the QAPF classification of igneous rock.[12][13][14] Calcium-rich plagioclase is the first feldspar to crystallize from a cooling magma, but the plagioclase becomes increasingly sodium-rich as crystallization continues. This defines the continuous Bowen's reaction series. K-feldspar is the final feldspar to crystallize from the magma.[15][16]
+
+Alkali feldspars are grouped into two types: those containing potassium in combination with sodium, aluminium, or silicon; and those where potassium is replaced by barium. The first of these include:
+
+Potassium and sodium feldspars are not perfectly miscible in the melt at low temperatures, therefore intermediate compositions of the alkali feldspars occur only in higher temperature environments.[20] Sanidine is stable at the highest temperatures, and microcline at the lowest.[17][18] Perthite is a typical texture in alkali feldspar, due to exsolution of contrasting alkali feldspar compositions during cooling of an intermediate composition. The perthitic textures in the alkali feldspars of many granites can be seen with the naked eye.[21] Microperthitic textures in crystals are visible using a light microscope, whereas cryptoperthitic textures can be seen only with an electron microscope.
+
+Buddingtonite is an ammonium feldspar with the chemical formula: NH4AlSi3O8.[22] It is a mineral associated with hydrothermal alteration of the primary feldspar minerals. 
+
+Barium feldspars form as the result of the substitution of barium for potassium in the mineral structure. Barium feldspars are sometimes classified as a separate group of feldspars,[3] and sometimes they are classified as a sub-group of alkali feldspars.[23]
+
+The barium feldspars are monoclinic and include the following:
+
+The plagioclase feldspars are triclinic. The plagioclase series follows (with percent anorthite in parentheses):
+
+Intermediate compositions of plagioclase feldspar also may exsolve to two feldspars of contrasting composition during cooling, but diffusion is much slower than in alkali feldspar, and the resulting two-feldspar intergrowths typically are too fine-grained to be visible with optical microscopes. The immiscibility gaps in the plagioclase solid solutions are complex compared to the gap in the alkali feldspars. The play of colors visible in some feldspar of labradorite composition is due to very fine-grained exsolution lamellae known as Bøggild intergrowth. The specific gravity in the plagioclase series increases from albite (2.62) to anorthite (2.72–2.75).
+
+The structure of a feldspar crystal is based on aluminosilicate tetrahedra. Each tetrahedron consists of an aluminium or silicon ion surrounded by four oxygen ions. Each oxygen ion, in turn, is shared by a neighbouring tetrahedron to form a three-dimensional network. The structure can be visualized as long chains of aluminosilicate tetrahedra, sometimes described as crankshaft chains because their shape is kinked. Each crankshaft chain links to neighbouring crankshaft chains to form a three-dimensional network of fused four-member rings. The structure is open enough for cations (typically sodium, potassium, or calcium) to fit into the structure and provide charge balance.[26]
+
+The name feldspar derives from the German Feldspat, a compound of the words Feld ("field") and Spat ("flake"). Spat had long been used as the word for "a rock easily cleaved into flakes"; Feldspat was introduced in the 18th century as a more specific term, referring perhaps to its common occurrence in rocks found in fields (Urban Brückmann, 1783) or to its occurrence as "fields" within granite and other minerals (René-Just Haüy, 1804).[27]
+The change from Spat to -spar was influenced by the English word spar,[28] meaning a non-opaque mineral with good cleavage.[29] Feldspathic refers to materials that contain feldspar. The alternate spelling, felspar, has fallen out of use. The term 'felsic', meaning light coloured minerals such as quartz and feldspars, is an acronymic word derived from feldspar and silica, unrelated to the redundant spelling 'felspar'.
+
+Chemical weathering of feldspars happens by hydrolysis and produces clay minerals, including illite, smectite, and kaolinite. Hydrolysis of feldspars begins with the feldspar dissolving in water, which happens best in acidic or basic solutions and less well in neutral ones.[30] The speed at which feldspars are weathered is controlled by how quickly they are dissolved.[30] Dissolved feldspar reacts with H+ or OH− ions and precipitates clays. The reaction also produces new ions in solution, with the variety of ion controlled by the type of feldspar reacting.
+
+The abundance of feldspars in the Earth's crust means that clays are very abundant weathering products.[31] About 40% of minerals in sedimentary rocks are clays, and clays are the dominant minerals in the most common sedimentary rocks, mudrocks.[32] They are also an important component of soils.[32] Feldspar that has been replaced by clay looks chalky compared to more crystalline and glassy unweathered feldspar grains.[33]
+
+Feldspars, especially plagioclase feldspars, are not very stable at the earth's surface due to their high formation temperature.[32] This lack of stability is why feldspars are easily weathered to clays. Because of this tendency to weather easily, feldspars are usually not prevalent in sedimentary rocks. Sedimentary rocks that contain large amounts of feldspar indicate that the sediment did not undergo much chemical weathering before being buried. This means it was probably transported a short distance in cold and/or dry conditions that didn't promote weathering, and that it was quickly buried by other sediment.[34] Sandstones with large amounts of feldspar are called arkoses.[34]
+
+About 20 million tonnes of feldspar were produced in 2010, mostly by three countries: Italy (4.7 Mt), Turkey (4.5 Mt), and China (2 Mt).[35]
+
+Feldspar is a common raw material used in glassmaking, ceramics, and to some extent as a filler and extender in paint, plastics, and rubber. In glassmaking, alumina from feldspar improves product hardness, durability, and resistance to chemical corrosion. In ceramics, the alkalis in feldspar (calcium oxide, potassium oxide, and sodium oxide) act as a flux, lowering the melting temperature of a mixture. Fluxes melt at an early stage in the firing process, forming a glassy matrix that bonds the other components of the system together. In the US, about 66% of feldspar is consumed in glassmaking, including glass containers and glass fibre. Ceramics (including electrical insulators, sanitary ware, pottery, tableware, and tile) and other uses, such as fillers, accounted for the remainder.[36]
+
+Bon Ami, which had a mine near Little Switzerland, North Carolina, used feldspar as an abrasive in its cleaners. The Little Switzerland Business Association says the McKinney Mine was the largest feldspar mine in the world, and North Carolina was the largest producer. Feldspar had been discarded in the process of mining mica until William Dibbell sent a premium quality product to the Ohio company Golding and Sons around 1910.[37]
+
+In earth sciences and archaeology, feldspars are used for potassium-argon dating, argon-argon dating, and luminescence dating.
+
+In October 2012, the Mars Curiosity rover analysed a rock that turned out to have a high feldspar content.[38]

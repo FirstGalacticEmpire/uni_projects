@@ -1,0 +1,20 @@
+Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks, introduced in 2014 by Kyunghyun Cho et al.[1] The GRU is like a long short-term memory (LSTM) with a forget gate,[2] but has fewer parameters than LSTM, as it lacks an output gate.[3] 
+GRU's performance on certain tasks of polyphonic music modeling, speech signal modeling and natural language processing was found to be similar to that of LSTM.[4][5] GRUs have been shown to exhibit better performance on certain smaller and less frequent datasets.[6][7]
+
+There are several variations on the full gated unit, with gating done using the previous hidden state and the bias in various combinations, and a simplified form called minimal gated unit.[8]
+
+The operator  denotes the Hadamard product in the following.
+
+Initially, for , the output vector is . 
+
+Variables
+
+Activation functions
+
+Alternative activation functions are possible, provided that .
+
+Alternate forms can be created by changing  and [9]
+
+The minimal gated unit is similar to the fully gated unit, except the update and reset gate vector is merged into a forget gate. This also implies that the equation for the output vector must be changed:[10]
+
+Variables

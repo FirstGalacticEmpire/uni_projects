@@ -1,0 +1,112 @@
+Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time. For classification tasks, the output of the random forest is the class selected by most trees. For regression tasks, the mean or average prediction of the individual trees is returned.[1][2] Random decision forests correct for decision trees' habit of overfitting to their training set.[3]: 587–588  Random forests generally outperform decision trees, but their accuracy is lower than gradient boosted trees. However, data characteristics can affect their performance.[4][5]
+
+The first algorithm for random decision forests was created in 1995 by Tin Kam Ho[1] using the random subspace method,[2] which, in Ho's formulation, is a way to implement the "stochastic discrimination" approach to classification proposed by Eugene Kleinberg.[6][7][8]
+
+An extension of the algorithm was developed by Leo Breiman[9] and Adele Cutler,[10] who registered[11] "Random Forests" as a trademark in 2006 (as of 2019[update], owned by Minitab, Inc.).[12] The extension combines Breiman's "bagging" idea and random selection of features, introduced first by Ho[1] and later independently by Amit and Geman[13] in order to construct a collection of decision trees with controlled variance.
+
+Random forests are frequently used as "blackbox" models in businesses, as they generate reasonable predictions across a wide range of data while requiring little configuration.
+
+The general method of random decision forests was first proposed by Ho in 1995.[1] Ho established that forests of trees splitting with oblique hyperplanes can gain accuracy as they grow without suffering from overtraining, as long as the forests are randomly restricted to be sensitive to only selected feature dimensions.  A subsequent work along the same lines[2] concluded that other splitting methods behave similarly, as long as they are randomly forced to be insensitive to some feature dimensions.  Note that this observation of a more complex classifier (a larger forest) getting more accurate nearly monotonically is in sharp contrast to the common belief that the complexity of a classifier can only grow to a certain level of accuracy before being hurt by overfitting.  The explanation of the forest method's resistance to overtraining can be found in Kleinberg's theory of stochastic discrimination.[6][7][8]
+
+The early development of Breiman's notion of random forests was influenced by the work of Amit and
+Geman[13] who introduced the idea of searching over a random subset of the
+available decisions when splitting a node, in the context of growing a single
+tree.  The idea of random subspace selection from Ho[2] was also influential in the design of random forests.  In this method a forest of trees is grown,
+and variation among the trees is introduced by projecting the training data
+into a randomly chosen subspace before fitting each tree or each node.  Finally, the idea of
+randomized node optimization, where the decision at each node is selected by a
+randomized procedure, rather than a deterministic optimization was first
+introduced by Dietterich.[14]
+
+The proper introduction of random forests was made in a paper
+by Leo Breiman.[9]  This paper describes a method of building a forest of
+uncorrelated trees using a CART like procedure, combined with randomized node
+optimization and bagging.  In addition, this paper combines several
+ingredients, some previously known and some novel, which form the basis of the
+modern practice of random forests, in particular:
+
+The report also offers the first theoretical result for random forests in the
+form of a bound on the generalization error which depends on the strength of the
+trees in the forest and their correlation.
+
+Decision trees are a popular method for various machine learning tasks. Tree learning "come[s] closest to meeting the requirements for serving as an off-the-shelf procedure for data mining", say Hastie et al., "because it is invariant under scaling and various other transformations of feature values, is robust to inclusion of irrelevant features, and produces inspectable models. However, they are seldom accurate".[3]: 352 
+
+In particular, trees that are grown very deep tend to learn highly irregular patterns: they overfit their training sets, i.e. have low bias, but very high variance. Random forests are a way of averaging multiple deep decision trees, trained on different parts of the same training set, with the goal of reducing the variance.[3]: 587–588  This comes at the expense of a small increase in the bias and some loss of interpretability, but generally greatly boosts the performance in the final model.
+
+Forests are like the pulling together of decision tree algorithm efforts. Taking the teamwork of many trees thus improving the performance of a single random tree. Though not quite similar, forests give the effects of a K-fold cross validation.
+
+The training algorithm for random forests applies the general technique of bootstrap aggregating, or bagging, to tree learners. Given a training set X = x1, ..., xn with responses Y = y1, ..., yn, bagging repeatedly (B times) selects a random sample with replacement of the training set and fits trees to these samples:
+
+After training, predictions for unseen samples x' can be made by averaging the predictions from all the individual regression trees on x':
+
+or by taking the majority vote in the case of classification trees.
+
+This bootstrapping procedure leads to better model performance because it decreases the variance of the model, without increasing the bias. This means that while the predictions of a single tree are highly sensitive to noise in its training set, the average of many trees is not, as long as the trees are not correlated. Simply training many trees on a single training set would give strongly correlated trees (or even the same tree many times, if the training algorithm is deterministic); bootstrap sampling is a way of de-correlating the trees by showing them different training sets.
+
+Additionally, an estimate of the uncertainty of the prediction can be made as the standard deviation of the predictions from all the individual regression trees on x':
+
+The number of samples/trees, B, is a free parameter. Typically, a few hundred to several thousand trees are used, depending on the size and nature of the training set. An optimal number of trees B can be found using cross-validation, or by observing the out-of-bag error: the mean prediction error on each training sample xi, using only the trees that did not have xi in their bootstrap sample.[15]
+The training and test error tend to level off after some number of trees have been fit.
+
+The above procedure describes the original bagging algorithm for trees. Random forests also include another type of bagging scheme: they use a modified tree learning algorithm that selects, at each candidate split in the learning process, a random subset of the features. This process is sometimes called "feature bagging". The reason for doing this is the correlation of the trees in an ordinary bootstrap sample: if one or a few features are very strong predictors for the response variable (target output), these features will be selected in many of the B trees, causing them to become correlated. An analysis of how bagging and random subspace projection contribute to accuracy gains under different conditions is given by Ho.[16]
+
+Typically, for a classification problem with p features, √p (rounded down) features are used in each split.[3]: 592   For regression problems the inventors recommend p/3 (rounded down) with a minimum node size of 5 as the default.[3]: 592  In practice the best values for these parameters will depend on the problem, and they should be treated as tuning parameters.[3]: 592 
+
+Adding one further step of randomization yields extremely randomized trees, or ExtraTrees. While similar to ordinary random forests in that they are an ensemble of individual trees, there are two main differences: first, each tree is trained using the whole learning sample (rather than a bootstrap sample), and second, the top-down splitting in the tree learner is randomized. Instead of computing the locally optimal cut-point for each feature under consideration (based on, e.g., information gain or the Gini impurity), a random cut-point is selected. This value is selected from a uniform distribution within the feature's empirical range (in the tree's training set). Then, of all the randomly generated splits, the split that yields the highest score is chosen to split the node. Similar to ordinary random forests, the number of randomly selected features to be considered at each node can be specified. Default values for this parameter are  for classification and  for regression, where  is the number of features in the model.[17]
+
+Random forests can be used to rank the importance of variables in a regression or classification problem in a natural way.  The following technique was described in Breiman's original paper[9] and is implemented in the R package randomForest.[10]
+
+The first step in measuring the variable importance in a data set  is to fit a random forest to the data.  During the fitting process the out-of-bag error for each data point is recorded and averaged over the forest (errors on an independent test set can be substituted if bagging is not used during training).
+
+To measure the importance of the -th feature after training, the values of the -th feature are permuted among the training data and the out-of-bag error is again computed on this perturbed data set.  The importance score for the -th feature is computed by averaging the difference in out-of-bag error before and after the permutation over all trees.  The score is normalized by the standard deviation of these differences.
+
+Features which produce large values for this score are ranked as more important than features which produce small values. The statistical definition of the variable importance measure was given and analyzed by Zhu et al.[18]
+
+This method of determining variable importance has some drawbacks.  For data including categorical variables with different number of levels, random forests are biased in favor of those attributes with more levels. Methods such as partial permutations[19][20][4]
+and growing unbiased trees[21][22] can be used to solve the problem.  If the data contain groups of correlated features of similar relevance for the output, then smaller groups are favored over larger groups.[23]
+
+A relationship between random forests and the k-nearest neighbor algorithm (k-NN) was pointed out by Lin and Jeon in 2002.[24] It turns out that both can be viewed as so-called weighted neighborhoods schemes. These are models built from a training set  that make predictions  for new points x' by looking at the "neighborhood" of the point, formalized by a weight function W:
+
+Here,  is the non-negative weight of the i'th training point relative to the new point x' in the same tree. For any particular x', the weights for points  must sum to one. Weight functions are given as follows:
+
+Since a forest averages the predictions of a set of m trees with individual weight functions , its predictions are
+
+This shows that the whole forest is again a weighted neighborhood scheme, with weights that average those of the individual trees. The neighbors of x' in this interpretation are the points  sharing the same leaf in any tree . In this way, the neighborhood of x' depends in a complex way on the structure of the trees, and thus on the structure of the training set. Lin and Jeon show that the shape of the neighborhood used by a random forest adapts to the local importance of each feature.[24]
+
+As part of their construction, random forest predictors naturally lead to a dissimilarity measure among the observations. One can also define a random forest dissimilarity measure between unlabeled data: the idea is to construct a random forest predictor that distinguishes the "observed" data from suitably generated synthetic data.[9][25]
+The observed data are the original unlabeled data and the synthetic data are drawn from a reference distribution. A random forest dissimilarity can be attractive because it handles mixed variable types very well, is invariant to monotonic transformations of the input variables, and is robust to outlying observations. The random forest dissimilarity easily deals with a large number of semi-continuous variables due to its intrinsic variable selection; for example, the "Addcl 1" random forest dissimilarity weighs the contribution of each variable according to how dependent it is on other variables. The random forest dissimilarity has been used in a variety of applications, e.g. to find clusters of patients based on tissue marker data.[26]
+
+Instead of decision trees, linear models have been proposed and evaluated as base estimators in random forests, in particular multinomial logistic regression and naive Bayes classifiers.[5][27][28] In cases that the relationship between the predictors and the target variable is linear, the base learners may have an equally high accuracy as the ensemble learner.[29][5]
+
+In machine learning, kernel random forests establish the connection between random forests and kernel methods. By slightly modifying their definition, random forests can be rewritten as kernel methods, which are more interpretable and easier to analyze.[30]
+
+Leo Breiman[31] was the first person to notice the link between random forest and kernel methods. He pointed out that random forests which are grown using i.i.d. random vectors in the tree construction are equivalent to a kernel acting on the true margin. Lin and Jeon[32] established the connection between random forests and adaptive nearest neighbor, implying that random forests can be seen as adaptive kernel estimates. Davies and Ghahramani[33] proposed Random Forest Kernel and show that it can empirically outperform state-of-art kernel methods. Scornet[30] first defined KeRF estimates and gave the explicit link between KeRF estimates and random forest. He also gave explicit expressions for kernels based on centered random forest[34] and uniform random forest,[35] two simplified models of random forest. He named these two KeRFs Centered KeRF and Uniform KeRF, and proved upper bounds on their rates of consistency.
+
+Centered forest[34] is a simplified model for Breiman's original random forest, which uniformly selects an attribute among all attributes and performs splits at the center of the cell along the pre-chosen attribute. The algorithm stops when a fully binary tree of level  is built, where  is a parameter of the algorithm.
+
+Uniform forest[35] is another simplified model for Breiman's original random forest, which uniformly selects a feature among all features and performs splits at a point uniformly drawn on the side of the cell, along the preselected feature.
+
+Given a training sample   of -valued independent random variables distributed as the independent prototype pair , where . We aim at predicting the response , associated with the random variable , by estimating the regression function . A random regression forest is an ensemble of  randomized regression trees. Denote  the predicted value at point  by the -th tree, where  are independent random variables, distributed as a generic random variable , independent of the sample . This random variable can be used to describe the randomness induced by node splitting and the sampling procedure for tree construction. The trees are combined to form the finite forest estimate .
+For regression trees, we have , where  is the cell containing , designed with randomness  and dataset , and .
+
+Thus random forest estimates satisfy, for all , . Random regression forest has two levels of averaging, first over the samples in the target cell of a tree, then over all trees. Thus the contributions of observations that are in cells with a high density of data points are smaller than that of observations which belong to less populated cells. In order to improve the random forest methods and compensate the misestimation, Scornet[30] defined KeRF by
+
+which is equal to the mean of the 's falling in the cells containing  in the forest. If we define the connection function of the  finite forest as , i.e. the proportion of cells shared between  and , then almost surely we have , which defines the KeRF.
+
+The construction of Centered KeRF of level  is the same as for centered forest, except that predictions are made by , the corresponding kernel function, or connection function is
+
+Uniform KeRF is built in the same way as uniform forest, except that predictions are made by , the corresponding kernel function, or connection function is
+
+Predictions given by KeRF and random forests are close if the number of points in each cell is controlled:
+
+When the number of trees  goes to infinity, then we have infinite random forest and infinite KeRF. Their estimates are close if the number of observations in each cell is bounded:
+
+Assume that , where  is a centered Gaussian noise, independent of , with finite variance . Moreover,  is uniformly distributed on  and  is Lipschitz. Scornet[30] proved upper bounds on the rates of consistency for centered KeRF and uniform KeRF.
+
+Providing  and , there exists a constant  such that, for all ,
+.
+
+Providing  and , there exists a constant  such that,
+.
+
+While random forests often achieve higher accuracy than a single decision tree, they sacrifice the intrinsic interpretability present in decision trees. Decision trees are among a fairly small family of machine learning models that are easily interpretable along with linear models, rule-based models, and attention-based models. This interpretability is one of the most desirable qualities of decision trees. It allows developers to confirm that the model has learned realistic information from the data and allows end-users to have trust and confidence in the decisions made by the model.[5][3] For example, following the path that a decision tree takes to make its decision is quite trivial, but following the paths of tens or hundreds of trees is much harder. To achieve both performance and interpretability, some model compression techniques allow transforming a random forest into a minimal "born-again" decision tree that faithfully reproduces the same decision function.[5][36] If it is established that the predictive attributes are linearly correlated with the target variable, using random forest may not enhance the accuracy of the base learner.[5][29] Furthermore, in problems with multiple categorical variables, random forest may not be able to increase the accuracy of the base learner.[37]

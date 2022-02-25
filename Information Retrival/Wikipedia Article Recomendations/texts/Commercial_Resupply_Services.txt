@@ -1,0 +1,42 @@
+Commercial Resupply Services (CRS) are a series of flights awarded by NASA for the delivery of cargo and supplies to the International Space Station (ISS) on commercially operated spacecraft.[1] The first CRS contracts were signed in 2008 and awarded $1.6 billion to SpaceX for twelve cargo Dragon and $1.9 billion to Orbital Sciences[note 1] for eight Cygnus flights, covering deliveries to 2016. The Falcon 9 and Antares rockets were also developed under the CRS program to deliver cargo spacecraft to the ISS.
+
+The first operational resupply missions were flown by SpaceX in 2012 (SpaceX CRS-1)[2] and Orbital Sciences in 2014 (Cygnus CRS Orb-1).[3][failed verification]
+
+A second phase of contracts (known as CRS-2) was solicited in 2014. In 2015, NASA extended CRS-1 to twenty flights for SpaceX and ten flights for Orbital ATK[note 1].[4][5] CRS-2 contracts were awarded in January 2016 to Orbital ATK[note 1] Cygnus, Sierra Nevada Corporation Dream Chaser, and SpaceX Dragon 2, for cargo transport flights beginning in 2019 and expected to last through 2024.
+
+NASA has been directed to pursue commercial spaceflight options since at least 1984, with the Commercial Space Launch Act of 1984 and Launch Services Purchase Act of 1990. By the 2000s funding was authorized for the Commercial Orbital Transportation Services program, followed by the Commercial Crew Development program.
+
+On 23 December 2008, NASA announced the initial awarding of cargo contracts - twelve flights to SpaceX and eight flights to Orbital Sciences Corporation.[6] PlanetSpace, which was not selected, submitted a protest to the Government Accountability Office.[7] On 22 April 2009, the GAO publicly released its decision to deny the protest, allowing the program to continue.[8]
+
+The Antares and Falcon 9 launch vehicles and Cygnus and Dragon cargo spacecraft were developed using Space Act Agreements under NASA's Commercial Orbital Transportation Services (COTS) program.[9]
+
+The first flight contracted by NASA, COTS Demo Flight 1, took place on 8 December 2010, demonstrating a Dragon capsule's ability to remain in orbit, receive and respond to ground commands, and communicate with NASA's Tracking and Data Relay Satellite System. On 15 August 2011, SpaceX announced that NASA had combined the objectives of the COTS Demo Flight 2 and following Flight 3 into a single mission.[10][11] The rescoped COTS Demo Flight 2 successfully launched on 22 May 2012, delivering cargo to the ISS. The spacecraft reentered on 31 May, landed in the Pacific Ocean, and was recovered, completed CRS certification requirements.[12][13]
+
+Orbital Sciences first launched the Antares rocket from the Mid-Atlantic Regional Spaceport on 21 April 2013 with a test payload.[14] Orbital Sciences completed the Cygnus Orb-D1 demonstration flight on 29 September 2013, and the operational Cygnus CRS Orb-1 was launched 9 January 2014.[15][16][17][18]
+
+Transport flights began under Commercial Resupply Services phase 1 (CRS-1) in 2012:
+
+Following the failure, the Antares 230 system was upgraded with newly built RD-181 first-stage engines to provide greater payload performance and increased reliability.[30] The next two spacecraft were launched on the Atlas V, with the switch to more powerful launch vehicles and the introduction of Enhanced Cygnus enabling Orbital ATK to cover their initial CRS contracted payload obligation by OA-7.[31][32]
+
+During August 2015, Orbital ATK disclosed that they had received an extension of the resupply program for three extra missions. These flights enable NASA to cover ISS resupply needs until CRS-2 begins.[31]
+
+NASA began a formal process to initiate Phase 2 of the Commercial Resupply Services, or CRS-2, in early 2014.[38] Later that year, an "Industry Day" was held in Houston, with seven high-level requirements disclosed to interested parties.[39]
+
+CRS-1 contractors Orbital Sciences[note 1] and SpaceX each submitted CRS-2 proposals, joined by Sierra Nevada, Boeing, and Lockheed Martin.[40]
+
+SNC's proposal would use a cargo version of its Dream Chaser crew vehicle, the 'Dream Chaser Cargo System'. The proposed cargo Dream Chaser included an additional expendable cargo module for uplift and trash disposal. Downmass would only be provided via the Dream Chaser spaceplane itself.[40] Boeing's proposal likewise used a cargo version of its CST-100 crew vehicle.[41][42]
+
+Lockheed Martin proposed a new cargo spacecraft called Jupiter, derived from the designs of the NASA's MAVEN and Juno spacecraft. It would have included a robotic arm based on Canadarm technology and a 4.4-meter (14 ft) diameter cargo transport module called Exoliner based on the Automated Transfer Vehicle, to be jointly developed with Thales Alenia Space.[42][43][44]
+
+Three companies were awarded contracts on January 14, 2016.[45][39] Sierra Nevada Corporation's Dream Chaser, the SpaceX Dragon 2, and Orbital ATK[note 1] Cygnus were selected, each for a minimum of six launches.[45][46] The maximum potential value of all the contracts was indicated to be $14 billion, but the minimum value is considerably less. CRS-2 launches commenced in 2019 and will extend to at least 2024.
+
+Three more CRS-2 missions for Dragon 2 covering up to CRS-29 were announced in December 2020.[47][48]
+
+The contracts were expected to include a variety of requirements:[39]
+
+When NASA issued the CRS-2 request for proposal (RFP) in September 2014, it received interest from five companies – Lockheed Martin Corporation (Lockheed Martin), Boeing, Orbital ATK, Sierra Nevada, and SpaceX. NASA made a competitive range determination to remove Boeing and Lockheed Martin.
+
+Orbital ATK, Sierra Nevada, and SpaceX were awarded CRS-2 contracts in January 2016 with initial task orders awarded in June 2016.  Each of the three companies is guaranteed at least six (6) cargo missions under the CRS-2 contract. As of December 2017, NASA had awarded $2.6 billion on three contracts with a combined, not-to-exceed value of $14 billion. NASA officials explained that selecting three companies rather than two for CRS-2 increases cargo capabilities and ensures more redundancy in the event of a contractor failure or schedule delay.
+The CRS-2 flights commenced in November 2019 with the launch of Cygnus NG-12 mission.[49]
+
+Inside cargo is typically transported to and from the space station in "the form factor of single Cargo Transfer Bag Equivalent (CTBE) [which is the] unit for size of bag used to transport cargo from visiting vehicles,[50] such as SpaceX Dragon, Northrop Grumman Cygnus, or JAXA H-II Transfer Vehicle (HTV).  The bags are sized at 48 cm × 41 cm × 23 cm (19 in × 16.25 in × 9 in) and limited in transport mass to 27 kg (60 lb) each.[50] CTBE units are also used to price, and charge, commercial users of US Orbital Segment stowage space.[51]

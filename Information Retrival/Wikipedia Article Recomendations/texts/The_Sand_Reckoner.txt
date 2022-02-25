@@ -1,0 +1,43 @@
+The Sand Reckoner (Greek: Ψαμμίτης, Psammites) is a work by Archimedes, an Ancient Greek mathematician of the 3rd century BC, in which he set out to determine an upper bound for the number of grains of sand that fit into the universe. In order to do this, he had to estimate the size of the universe according to the contemporary model, and invent a way to talk about extremely large numbers. The work, also known in Latin as Archimedis Syracusani Arenarius & Dimensio Circuli, which is about eight pages long in translation, is addressed to the Syracusan king Gelo II (son of Hiero II), and is probably the most accessible work of Archimedes; in some sense, it is the first research-expository paper.[1]
+
+First, Archimedes had to invent a system of naming large numbers.  The number system in use at that time could express numbers up to a myriad (μυριάς — 10,000), and by utilizing the word myriad itself, one can immediately extend this to naming all numbers up to a myriad myriads (108).[3] Archimedes called the numbers up to 108 "first order" and called 108 itself the "unit of the second order". Multiples of this unit then became the second order, up to this unit taken a myriad-myriad times, 108·108=1016. This became the "unit of the third order", whose multiples were the third order, and so on. Archimedes continued naming numbers in this way up to a myriad-myriad times the unit of the 108-th order, i.e., .[2]
+
+After having done this, Archimedes called the orders he had defined the "orders of the first period", and called the last one, , the "unit of the second period".  He then constructed the orders of the second period by taking multiples of this unit in a way analogous to the way in which the orders of the first period were constructed.  Continuing in this manner, he eventually arrived at the orders of the myriad-myriadth period.  The largest number named by Archimedes was the last number in this period, which is
+
+Another way of describing this number is a one followed by (short scale) eighty quadrillion (80·1015) zeroes.
+
+Archimedes' system is reminiscent of a positional numeral system with base 108, which is remarkable because the ancient Greeks used a very simple system for writing numbers, which employs 27 different letters of the alphabet for the units 1 through 9, the tens 10 through 90 and the hundreds 100 through 900.
+
+Archimedes also discovered and proved the law of exponents, , necessary to manipulate powers of 10.
+
+Archimedes then estimated an upper bound for the number of grains of sand required to fill the Universe. To do this, he used the heliocentric model of Aristarchus of Samos. The original work by Aristarchus has been lost. This work by Archimedes however is one of the few surviving references to his theory,[4] whereby the Sun remains unmoved while the Earth orbits the Sun. In Archimedes's own words:
+
+The reason for the large size of this model is that the Greeks were unable to observe stellar parallax with available techniques, which implies that any parallax is extremely subtle and so the stars must be placed at great distances from the Earth (assuming heliocentrism to be true).
+
+According to Archimedes, Aristarchus did not state how far the stars were from the Earth. Archimedes therefore had to make the following assumptions:
+
+This assumption can also be expressed by saying that the stellar parallax caused by the motion of the Earth around its orbit equals the solar parallax caused by motion around the Earth. Put in a ratio:
+
+
+
+In order to obtain an upper bound, Archimedes made the following assumptions of their dimensions:
+
+Archimedes then concluded that the diameter of the Universe was no more than 1014 stadia (in modern units,  about 2 light years), and that it would require no more than 1063 grains of sand to fill it. With these measurements, each grain of sand in Archimedes's thought-experiment would have been approximately 19 μm (0.019 mm) in diameter.
+
+Archimedes claims that forty poppy-seeds laid side by side would equal one Greek dactyl (finger-width) which was approximately 19 mm (3/4 inch) in length. Since volume proceeds as the cube of a linear dimension ("For it has been proved that spheres have the triplicate ratio to one another of their diameters") then a sphere one dactyl in diameter would contain (using our current number system) 403, or 64,000 poppy seeds.
+
+He then claimed (without evidence) that each poppy seed could contain a myriad (10,000) grains of sand. Multiplying the two figures together he proposed 640,000,000 as the number of hypothetical grains of sand in a sphere one dactyl in diameter.
+
+To make further calculations easier, he rounded up 640 million to one billion, noting only that the first number is smaller than the second, and that therefore the number of grains of sand calculated subsequently will exceed the actual number of grains. Recall that Archimedes's meta-goal with this essay was to show how to calculate with what were previously considered impossibly large numbers, not simply to accurately calculate the number of grains of sand in the universe.
+
+A Greek stadium had a length of 600 Greek feet, and each foot was 16 dactyls long, so there were 9,600 dactyls in a stadium. Archimedes rounded this number up to 10,000 (a myriad) to make calculations easier, noting again that the resulting number will exceed the actual number of grains of sand.
+
+The cube of 10,000 is a trillion (1012); and multiplying a billion (the number of grains of sand in a dactyl-sphere) by a trillion (number of dactyl-spheres in a stadium-sphere) yields 1021, the number of grains of sand in a stadium-sphere.
+
+Archimedes had estimated that the Aristarchian Universe was 1014 stadia in diameter, so there would accordingly be (1014)3 stadium-spheres in the universe, or 1042. Multiplying 1021 by 1042 yields 1063, the number of grains of sand in the Aristarchian Universe.[6]
+
+Following Archimedes's estimate of a myriad (10,000) grains of sand in a poppy seed; 64,000 poppy seeds in a dactyl-sphere; the length of a stadium as 10,000 dactyls; and accepting 19mm as the width of a dactyl, the diameter of Archimedes's typical sand grain would be 18.3 μm, which today we would call a grain of silt. Currently, the smallest grain of sand would be defined as 50 μm in diameter.
+
+Archimedes made some interesting experiments and computations along the way. One experiment was to estimate the angular size of the Sun, as seen from the Earth. Archimedes's method is especially interesting as it takes into account the finite size of the eye's pupil,[7] and therefore may be the first known example of experimentation in psychophysics, the branch of psychology dealing with the mechanics of human perception, whose development is generally attributed to Hermann von Helmholtz. Another interesting computation accounts for solar parallax and the different distances between the viewer and the Sun, whether viewed from the center of the Earth or from the surface of the Earth at sunrise. This may be the first known computation dealing with solar parallax.[1]
+
+

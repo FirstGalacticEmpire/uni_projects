@@ -1,0 +1,13 @@
+Abrasion is the process of scuffing, scratching, wearing down, marring, or rubbing away.  It can be intentionally imposed in a controlled process using an abrasive. Abrasion can be an undesirable effect of exposure to normal use or exposure to the elements.
+
+Ancient artists, working in stone, used abrasion to create sculptures. The artist selected dense stones like carbonite and emery and rubbed them consistently against comparatively softer stones like limestone and granite. The artist used different sizes and shapes of abrasives, or turned them in various ways as they rubbed, to create effects on the softer stone's surface. Water was continuously poured over the surface to carry away particles. Abrasive technique in stone shaping was a long, tedious process that, with patience, resulted in eternal works of art in stone.
+
+The Archard equation is a simple model used to describe sliding wear and is based on the theory of asperity contact.
+
+The resistance of materials and structures to abrasion can be measured by a variety of test methods.[1] These often use a specified abrasive or other controlled means of abrasion.  Under the conditions of the test, the results can be reported or can be compared items subjected to similar tests. 
+
+Such standardized measurements can produce two quantities: abrasion rate and normalized abrasion rate (also called abrasion resistance index). The former is the amount of mass lost per 1000 cycles of abrasion. The latter is the ratio of former with the known abrasion rate for some specific reference material.[2]
+
+One type of instrument used to get the abrasion rate and normalized abrasion rate is the abrasion scrub tester, which is made up of a mechanical arm, liquid pump, and programmable electronics. The machine draws the mechanical arm with attached brush (or sandpaper, sponge, etc.) over the surface of the material that is being tested. The operator sets a pre-programmed number of passes for a repeatable and controlled result. The liquid pump can provide detergent or other liquids to the mechanical arm during testing to simulate washing and other normal uses.[3]
+
+The use of proper lubricants can help control abrasion in some instances.  Some items can be covered with an abrasion-resistant material.  Controlling the cause of abrasion is sometimes an option.

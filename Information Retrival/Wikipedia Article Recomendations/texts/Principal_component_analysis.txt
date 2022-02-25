@@ -1,0 +1,233 @@
+The principal components of a collection of points in a real coordinate space are a sequence of  unit vectors, where the -th vector is the direction of a line that best fits the data while being orthogonal to the first  vectors. Here, a best-fitting line is defined as one that minimizes the average squared distance from the points to the line. These directions constitute an orthonormal basis in which different individual dimensions of the data are linearly uncorrelated. Principal component analysis (PCA) is the process of computing the principal components and using them to perform a change of basis on the data, sometimes using only the first few principal components and ignoring the rest.
+
+PCA is used in exploratory data analysis and for making predictive models. It is commonly used for dimensionality reduction by projecting each data point onto only the first few principal components to obtain lower-dimensional data while preserving as much of the data's variation as possible. The first principal component can equivalently be defined as a direction that maximizes the variance of the projected data. The -th principal component can be taken as a direction orthogonal to the first  principal components that maximizes the variance of the projected data.
+
+From either objective, it can be shown that the principal components are eigenvectors of the data's covariance matrix. Thus, the principal components are often computed by eigendecomposition of the data covariance matrix or singular value decomposition of the data matrix. PCA is the simplest of the true eigenvector-based multivariate analyses and is closely related to factor analysis. Factor analysis typically incorporates more domain specific assumptions about the underlying structure and solves eigenvectors of a slightly different matrix. PCA is also related to canonical correlation analysis (CCA). CCA defines coordinate systems that optimally describe the cross-covariance between two datasets while PCA defines a new orthogonal coordinate system that optimally describes variance in a single dataset.[1][2][3][4] Robust and L1-norm-based variants of standard PCA have also been proposed.[5][6][4]
+
+PCA was invented in 1901 by Karl Pearson,[7] as an analogue of the principal axis theorem in mechanics; it was later independently developed and named by Harold Hotelling in the 1930s.[8] Depending on the field of application, it is also named the discrete Karhunen–Loève transform (KLT) in signal processing, the Hotelling transform in multivariate quality control, proper orthogonal decomposition (POD) in mechanical engineering, singular value decomposition (SVD) of X (invented in the last quarter of the 19th century[9]), eigenvalue decomposition (EVD) of XTX in linear algebra, factor analysis (for a discussion of the differences between PCA and factor analysis see Ch. 7 of Jolliffe's Principal Component Analysis),[10] Eckart–Young theorem (Harman, 1960), or empirical orthogonal functions (EOF) in meteorological science, empirical eigenfunction decomposition (Sirovich, 1987), empirical component analysis (Lorenz, 1956), quasiharmonic modes (Brooks et al., 1988), spectral decomposition in noise and vibration, and empirical modal analysis in structural dynamics.
+
+PCA can be thought of as fitting a p-dimensional ellipsoid to the data, where each axis of the ellipsoid represents a principal component. If some axis of the ellipsoid is small, then the variance along that axis is also small.
+
+To find the axes of the ellipsoid, we must first center the values of each variable in the dataset on 0 by subtracting the mean of the variable's observed values from each of those values. These transformed values are used instead of the original observed values for each of the variables. Then, we compute the covariance matrix of the data and calculate the eigenvalues and corresponding eigenvectors of this covariance matrix. Then we must normalize each of the orthogonal eigenvectors to turn them into unit vectors. Once this is done, each of the mutually orthogonal unit eigenvectors can be interpreted as an axis of the ellipsoid fitted to the data. This choice of basis will transform our covariance matrix into a diagonalised form with the diagonal elements representing the variance of each axis. The proportion of the variance that each eigenvector represents can be calculated by dividing the eigenvalue corresponding to that eigenvector by the sum of all eigenvalues.
+
+Biplots and scree plots (degree of explained variance) are used to explain findings of the PCA.
+
+PCA is defined as an orthogonal linear transformation that transforms the data to a new coordinate system such that the greatest variance by some scalar projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on.[10][page needed]
+
+Consider an  data matrix, X, with column-wise zero empirical mean (the sample mean of each column has been shifted to zero), where each of the n rows represents a different repetition of the experiment, and each of the p columns gives a particular kind of feature (say, the results from a particular sensor).
+
+Mathematically, the transformation is defined by a set of size  of p-dimensional vectors of weights or coefficients  that map each row vector  of X to a new vector of principal component scores , given by
+
+in such a way that the individual variables  of t considered over the data set successively inherit the maximum possible variance from X, with each coefficient vector w constrained to be a unit vector (where  is usually selected to be less than  to reduce dimensionality).
+
+In order to maximize variance, the first weight vector w(1) thus has to satisfy
+
+Equivalently, writing this in matrix form gives
+
+Since w(1) has been defined to be a unit vector, it equivalently also satisfies
+
+The quantity to be maximised can be recognised as a Rayleigh quotient. A standard result for a positive semidefinite matrix such as XTX is that the quotient's maximum possible value is the largest eigenvalue of the matrix, which occurs when w is the corresponding eigenvector.
+
+With w(1) found, the first principal component of a data vector x(i) can then be given as a score t1(i) = x(i) ⋅ w(1) in the transformed co-ordinates, or as the corresponding vector in the original variables, {x(i) ⋅ w(1)} w(1).
+
+The k-th component can be found by subtracting the first k − 1 principal components from X:
+
+and then finding the weight vector which extracts the maximum variance from this new data matrix
+
+It turns out that this gives the remaining eigenvectors of XTX, with the maximum values for the quantity in brackets given by their corresponding eigenvalues. Thus the weight vectors are eigenvectors of XTX.
+
+The k-th principal component of a data vector x(i) can therefore be given as a score tk(i) = x(i) ⋅ w(k) in the transformed coordinates, or as the corresponding vector in the space of the original variables, {x(i) ⋅ w(k)} w(k), where w(k) is the kth eigenvector of XTX.
+
+The full principal components decomposition of X can therefore be given as
+
+where W is a p-by-p matrix of weights whose columns are the eigenvectors of XTX. The transpose of W is sometimes called the whitening or sphering transformation. Columns of W multiplied by the square root of corresponding eigenvalues, that is, eigenvectors scaled up by the variances, are called loadings in PCA or in Factor analysis.
+
+XTX itself can be recognized as proportional to the empirical sample covariance matrix of the dataset XT.[10]: 30–31 
+
+The sample covariance Q between two of the different principal components over the dataset is given by:
+
+where the eigenvalue property of w(k) has been used to move from line 2 to line 3. However eigenvectors w(j) and w(k) corresponding to eigenvalues of a symmetric matrix are orthogonal (if the eigenvalues are different), or can be orthogonalised (if the vectors happen to share an equal repeated value). The product in the final line is therefore zero; there is no sample covariance between different principal components over the dataset.
+
+Another way to characterise the principal components transformation is therefore as the transformation to coordinates which diagonalise the empirical sample covariance matrix.
+
+In matrix form, the empirical covariance matrix for the original variables can be written
+
+The empirical covariance matrix between the principal components becomes
+
+where Λ is the diagonal matrix of eigenvalues λ(k) of XTX. λ(k) is equal to the sum of the squares over the dataset associated with each component k, that is, λ(k) = Σi tk2(i) = Σi (x(i) ⋅ w(k))2.
+
+The transformation T = X W maps a data vector x(i) from an original space of p variables to a new space of p variables which are uncorrelated over the dataset. However, not all the principal components need to be kept. Keeping only the first L principal components, produced by using only the first L eigenvectors, gives the truncated transformation
+
+where the matrix TL now has n rows but only L columns. In other words, PCA learns a linear transformation  where the columns of p × L matrix  form an orthogonal basis for the L features (the components of representation t) that are decorrelated.[11] By construction, of all the transformed data matrices with only L columns, this score matrix maximises the variance in the original data that has been preserved, while minimising the total squared reconstruction error  or .
+
+Such dimensionality reduction can be a very useful step for visualising and processing high-dimensional datasets, while still retaining as much of the variance in the dataset as possible. For example, selecting L = 2 and keeping only the first two principal components finds the two-dimensional plane through the high-dimensional dataset in which the data is most spread out, so if the data contains clusters these too may be most spread out, and therefore most visible to be plotted out in a two-dimensional diagram; whereas if two directions through the data (or two of the original variables) are chosen at random, the clusters may be much less spread apart from each other, and may in fact be much more likely to substantially overlay each other, making them indistinguishable.
+
+Similarly, in regression analysis, the larger the number of explanatory variables allowed, the greater is the chance of overfitting the model, producing conclusions that fail to generalise to other datasets. One approach, especially when there are strong correlations between different possible explanatory variables, is to reduce them to a few principal components and then run the regression against them, a method called principal component regression.
+
+Dimensionality reduction may also be appropriate when the variables in a dataset are noisy. If each column of the dataset contains independent identically distributed Gaussian noise, then the columns of T will also contain similarly identically distributed Gaussian noise (such a distribution is invariant under the effects of the matrix W, which can be thought of as a high-dimensional rotation of the co-ordinate axes). However, with more of the total variance concentrated in the first few principal components compared to the same noise variance, the proportionate effect of the noise is less—the first few components achieve a higher signal-to-noise ratio. PCA thus can have the effect of concentrating much of the signal into the first few principal components, which can usefully be captured by dimensionality reduction; while the later principal components may be dominated by noise, and so disposed of without great loss. If the dataset is not too large, the significance of the principal components can be tested using parametric bootstrap, as an aid in determining how many principal components to retain.[12]
+
+The principal components transformation can also be associated with another matrix factorization, the singular value decomposition (SVD) of X,
+
+Here Σ is an n-by-p rectangular diagonal matrix of positive numbers σ(k), called the singular values of X; U is an n-by-n matrix, the columns of which are orthogonal unit vectors of length n called the left singular vectors of X; and W is a p-by-p whose columns are orthogonal unit vectors of length p and called the right singular vectors of X.
+
+In terms of this factorization, the matrix XTX can be written
+
+where   is the square diagonal matrix with the singular values of X and the excess zeros chopped off that satisfies . Comparison with the eigenvector factorization of XTX establishes that the right singular vectors W of X are equivalent to the eigenvectors of XTX, while the singular values σ(k) of   are equal to the square-root of the eigenvalues λ(k) of XTX.
+
+Using the singular value decomposition the score matrix T can be written
+
+so each column of T is given by one of the left singular vectors of X multiplied by the corresponding singular value. This form is also the polar decomposition of T.
+
+Efficient algorithms exist to calculate the SVD of X without having to form the matrix XTX, so computing the SVD is now the standard way to calculate a principal components analysis from a data matrix[citation needed], unless only a handful of components are required.
+
+As with the eigen-decomposition, a truncated n × L score matrix TL can be obtained by considering only the first L largest singular values and their singular vectors:
+
+The truncation of a matrix M or T using a truncated singular value decomposition in this way produces a truncated matrix that is the nearest possible matrix of rank L to the original matrix, in the sense of the difference between the two having the smallest possible Frobenius norm, a result known as the Eckart–Young theorem [1936].
+
+Given a set of points in Euclidean space, the first principal component corresponds to a line that passes through the multidimensional mean and minimizes the sum of squares of the distances of the points from the line[disputed  – discuss]. The second principal component corresponds to the same concept after all correlation with the first principal component has been subtracted from the points. The singular values (in Σ) are the square roots of the eigenvalues of the matrix XTX. Each eigenvalue is proportional to the portion of the "variance" (more correctly of the sum of the squared distances of the points from their multidimensional mean) that is associated with each eigenvector. The sum of all the eigenvalues is equal to the sum of the squared distances of the points from their multidimensional mean. PCA essentially rotates the set of points around their mean in order to align with the principal components. This moves as much of the variance as possible (using an orthogonal transformation) into the first few dimensions. The values in the remaining dimensions, therefore, tend to be small and may be dropped with minimal loss of information (see below). PCA is often used in this manner for dimensionality reduction. PCA has the distinction of being the optimal orthogonal transformation for keeping the subspace that has largest "variance" (as defined above). This advantage, however, comes at the price of greater computational requirements if compared, for example, and when applicable, to the discrete cosine transform, and in particular to the DCT-II which is simply known as the "DCT". Nonlinear dimensionality reduction techniques tend to be more computationally demanding than PCA.
+
+PCA is sensitive to the scaling of the variables. If we have just two variables and they have the same sample variance and are positively correlated, then the PCA will entail a rotation by 45° and the "weights" (they are the cosines of rotation) for the two variables with respect to the principal component will be equal. But if we multiply all values of the first variable by 100, then the first principal component will be almost the same as that variable, with a small contribution from the other variable, whereas the second component will be almost aligned with the second original variable. This means that whenever the different variables have different units (like temperature and mass), PCA is a somewhat arbitrary method of analysis. (Different results would be obtained if one used Fahrenheit rather than Celsius for example.) Pearson's original paper was entitled "On Lines and Planes of Closest Fit to Systems of Points in Space" – "in space" implies physical Euclidean space where such concerns do not arise. One way of making the PCA less arbitrary is to use variables scaled so as to have unit variance, by standardizing the data and hence use the autocorrelation matrix instead of the autocovariance matrix as a basis for PCA. However, this compresses (or expands) the fluctuations in all dimensions of the signal space to unit variance.
+
+Mean subtraction (a.k.a. "mean centering") is necessary for performing classical PCA to ensure that the first principal component describes the direction of maximum variance. If mean subtraction is not performed, the first principal component might instead correspond more or less to the mean of the data. A mean of zero is needed for finding a basis that minimizes the mean square error of the approximation of the data.[13]
+
+Mean-centering is unnecessary if performing a principal components analysis on a correlation matrix, as the data are already centered after calculating correlations. Correlations are derived from the cross-product of two standard scores (Z-scores) or statistical moments (hence the name: Pearson Product-Moment Correlation). Also see the article by Kromrey & Foster-Johnson (1998) on "Mean-centering in Moderated Regression: Much Ado About Nothing".
+
+PCA is a popular primary technique in pattern recognition. It is not, however, optimized for class separability.[14] However, it has been used to quantify the distance between two or more classes by calculating center of mass for each class in principal component space and reporting Euclidean distance between center of mass of two or more classes.[15] The linear discriminant analysis is an alternative which is optimized for class separability.
+
+Some properties of PCA include:[10][page needed]
+
+The statistical implication of this property is that the last few PCs are not simply unstructured left-overs after removing the important PCs. Because these last PCs have variances as small as possible they are useful in their own right. They can help to detect unsuspected near-constant linear relationships between the elements of x, and they may also be useful in regression, in selecting a subset of variables from x, and in outlier detection.
+
+Before we look at its usage, we first look at diagonal elements,
+
+Then, perhaps the main statistical implication of the result is that not only can we decompose the combined variances of all the elements of x into decreasing contributions due to each PC, but we can also decompose the whole covariance matrix into contributions  from each PC. Although not strictly decreasing, the elements of  will tend to become smaller as  increases, as  is nonincreasing for increasing , whereas the elements of  tend to stay about the same size because of the normalization constraints: .
+
+As noted above, the results of PCA depend on the scaling of the variables. This can be cured by scaling each feature by its standard deviation, so that one ends up with dimensionless features with unital variance.[16]
+
+The applicability of PCA as described above is limited by certain (tacit) assumptions[17] made in its derivation. In particular, PCA can capture linear correlations between the features but fails when this assumption is violated (see Figure 6a in the reference). In some cases, coordinate transformations can restore the linearity assumption and PCA can then be applied (see kernel PCA).
+
+Another limitation is the mean-removal process before constructing the covariance matrix for PCA. In fields such as astronomy, all the signals are non-negative, and the mean-removal process will force the mean of some astrophysical exposures to be zero, which consequently creates unphysical negative fluxes,[18] and forward modeling has to be performed to recover the true magnitude of the signals.[19] As an alternative method, non-negative matrix factorization focusing only on the non-negative elements in the matrices, which is well-suited for astrophysical observations.[20][21][22] See more at Relation between PCA and Non-negative Matrix Factorization.
+
+PCA is at a disadvantage if the data has not been standardized before applying the algorithm to it. PCA transforms original data into data that is relevant to the principal components of that data, which means that the new data variables cannot be interpreted in the same ways that the originals were. They are linear interpretations of the original variables. Also, if PCA is not performed properly, there is a high likelihood of information loss.[23]
+
+PCA relies on a linear model. If a dataset has a pattern hidden inside it that is nonlinear, then PCA can actually steer the analysis in the complete opposite direction of progress.[24][page needed] Researchers at Kansas State University discovered that the sampling error in their experiments impacted the bias of PCA results. "If the number of subjects or blocks is smaller than 30, and/or the researcher is interested in PC's beyond the first, it may be better to first correct for the serial correlation, before PCA is conducted".[25] The researchers at Kansas State also found that PCA could be "seriously biased if the autocorrelation structure of the data is not correctly handled".[25]
+
+Dimensionality reduction results in a loss of information, in general. PCA-based dimensionality reduction tends to minimize that information loss, under certain signal and noise models.
+
+Under the assumption that
+
+that is, that the data vector  is the sum of the desired information-bearing signal  and a noise signal  one can show that PCA can be optimal for dimensionality reduction, from an information-theoretic point-of-view.
+
+In particular, Linsker showed that if  is Gaussian and  is Gaussian noise with a covariance matrix proportional to the identity matrix, the PCA maximizes the mutual information  between the desired information  and the dimensionality-reduced output .[26]
+
+If the noise is still Gaussian and has a covariance matrix proportional to the identity matrix (that is, the components of the vector  are iid), but the information-bearing signal  is non-Gaussian (which is a common scenario), PCA at least minimizes an upper bound on the information loss, which is defined as[27][28]
+
+The optimality of PCA is also preserved if the noise  is iid and at least more Gaussian (in terms of the Kullback–Leibler divergence) than the information-bearing signal .[29] In general, even if the above signal model holds, PCA loses its information-theoretic optimality as soon as the noise  becomes dependent.
+
+The following is a detailed description of PCA using the covariance method (see also here) as opposed to the correlation method.[30]
+
+The goal is to transform a given data set X of dimension p to an alternative data set Y of smaller dimension L. Equivalently, we are seeking to find the matrix Y, where Y is the Karhunen–Loève transform (KLT) of matrix X:
+
+Suppose you have data comprising a set of observations of p variables, and you want to reduce the data so that each observation can be described with only L variables, L < p. Suppose further, that the data are arranged as a set of n data vectors  with each  representing a single grouped observation of the p variables.
+
+Mean subtraction is an integral part of the solution towards finding a principal component basis that minimizes the mean square error of approximating the data.[31] Hence we proceed by centering the data as follows:
+
+In some applications, each variable (column of B) may also be scaled to have a variance equal to 1 (see Z-score).[32]  This step affects the calculated principal components, but makes them independent of the units used to measure the different variables.
+
+That is, the first column of  is the projection of the data points onto the first principal component, the second column is the projection onto the second principal component, etc.
+
+Let X be a d-dimensional random vector expressed as column vector. Without loss of generality, assume X has zero mean.
+
+We want to find  a d × d orthonormal transformation matrix P so that PX has a diagonal covariance matrix (that is, PX is a random vector with all its distinct components pairwise uncorrelated).
+
+A quick computation assuming  were unitary yields:
+
+Hence  holds if and only if  were diagonalisable by .
+
+This is very constructive, as cov(X) is guaranteed to be a non-negative definite matrix and thus is guaranteed to be diagonalisable by some unitary matrix.
+
+In practical implementations, especially with high dimensional data (large p), the naive covariance method is rarely used because it is not efficient due to high computational and memory costs of explicitly determining the covariance matrix. The covariance-free approach avoids the np2 operations of explicitly calculating and storing the covariance matrix XTX, instead utilizing one of matrix-free methods, for example, based on the function evaluating the product XT(X r) at the cost of 2np operations.
+
+One way to compute the first principal component efficiently[37] is shown in the following pseudo-code, for a data matrix X with zero mean, without ever computing its covariance matrix.
+
+This power iteration algorithm simply calculates the vector XT(X r), normalizes, and places the result back in r. The eigenvalue is approximated by rT (XTX) r, which is the Rayleigh quotient on the unit vector r for the covariance matrix XTX . If the largest singular value is well separated from the next largest one, the vector r gets close to the first principal component of X within the number of iterations c, which is small relative to p, at the total cost 2cnp. The power iteration convergence can be accelerated without noticeably sacrificing the small cost per iteration using more advanced matrix-free methods, such as the Lanczos algorithm or the Locally Optimal Block Preconditioned Conjugate Gradient (LOBPCG) method.
+
+Subsequent principal components can be computed one-by-one via deflation or simultaneously as a block. In the former approach, imprecisions in already computed approximate principal components additively affect the accuracy of the subsequently computed principal components, thus increasing the error with every new computation. The latter approach in the block power method replaces single-vectors r and s with block-vectors, matrices R and S. Every column of R approximates one of the leading principal components, while all columns are iterated simultaneously. The main calculation is evaluation of the product XT(X R). Implemented, for example, in LOBPCG, efficient blocking eliminates the accumulation of the errors, allows using high-level BLAS matrix-matrix product functions, and typically leads to faster convergence, compared to the single-vector one-by-one technique.
+
+Non-linear iterative partial least squares (NIPALS) is a variant the classical power iteration with matrix deflation by subtraction implemented for computing the first few components in a principal component or partial least squares analysis. For very-high-dimensional datasets, such as those generated in the *omics sciences (for example, genomics, metabolomics) it is usually only necessary to compute the first few PCs. The non-linear iterative partial least squares (NIPALS) algorithm updates iterative approximations to the leading scores and loadings t1 and r1T by the power iteration multiplying on every iteration by X on the left and on the right, that is, calculation of the covariance matrix is avoided, just as in the matrix-free implementation of the power iterations to XTX, based on the function evaluating the product XT(X r) = ((X r)TX)T.
+
+The matrix deflation by subtraction is performed by subtracting the outer product, t1r1T from X leaving the deflated residual matrix used to calculate the subsequent leading PCs.[38]
+For large data matrices, or matrices that have a high degree of column collinearity, NIPALS suffers from loss of orthogonality of PCs due to machine precision round-off errors accumulated in each iteration and matrix deflation by subtraction.[39] A Gram–Schmidt re-orthogonalization algorithm is applied to both the scores and the loadings at each iteration step to eliminate this loss of orthogonality.[40] NIPALS reliance on single-vector multiplications cannot take advantage of high-level BLAS and results in slow convergence for clustered leading singular values—both these deficiencies are resolved in more sophisticated matrix-free block solvers, such as the Locally Optimal Block Preconditioned Conjugate Gradient (LOBPCG) method.
+
+In an "online" or "streaming" situation with data arriving piece by piece rather than being stored in a single batch, it is useful to make an estimate of the PCA projection that can be updated sequentially. This can be done efficiently, but requires different algorithms.[41]
+
+In PCA, it is common that we want to introduce qualitative variables as supplementary elements. For example, many quantitative variables have been measured on plants. For these plants, some qualitative variables are available as, for example, the species to which the plant belongs. These data were subjected to PCA for quantitative variables. When analyzing the results, it is natural to connect the principal components to the qualitative variable species.
+For this, the following results are produced.
+
+These results are what is called introducing a qualitative variable as supplementary element. This procedure is detailed in and Husson, Lê & Pagès 2009 and Pagès 2013.
+Few software offer this option in an "automatic" way. This is the case of SPAD that historically, following the work of Ludovic Lebart, was the first to propose this option, and the R package FactoMineR.
+
+In quantitative finance, principal component analysis can be directly applied to the risk management of interest rate derivative portfolios.[42] Trading multiple swap instruments which are usually a function of 30–500 other market quotable swap instruments is sought to be reduced to usually 3 or 4 principal components, representing the path of interest rates on a macro basis. Converting risks to be represented as those to factor loadings (or multipliers) provides assessments and understanding beyond that available to simply collectively viewing risks to individual 30–500 buckets.
+
+PCA has also been applied to equity portfolios in a similar fashion,[43] both to portfolio risk and to risk return. One application is to reduce portfolio risk, where allocation strategies are applied to the "principal portfolios" instead of the underlying stocks.[44] A second is to enhance portfolio return, using the principal components to select stocks with upside potential.[citation needed]
+
+A variant of principal components analysis is used in neuroscience to identify the specific properties of a stimulus that increase a neuron's probability of generating an action potential.[45] This technique is known as spike-triggered covariance analysis. In a typical application an experimenter presents a white noise process as a stimulus (usually either as a sensory input to a test subject, or as a current injected directly into the neuron) and records a train of action potentials, or spikes, produced by the neuron as a result. Presumably, certain features of the stimulus make the neuron more likely to spike. In order to extract these features, the experimenter calculates the covariance matrix of the spike-triggered ensemble, the set of all stimuli (defined and discretized over a finite time window, typically on the order of 100 ms) that immediately preceded a spike. The eigenvectors of the difference between the spike-triggered covariance matrix and the covariance matrix of the prior stimulus ensemble (the set of all stimuli, defined over the same length time window) then indicate the directions in the space of stimuli along which the variance of the spike-triggered ensemble differed the most from that of the prior stimulus ensemble. Specifically, the eigenvectors with the largest positive eigenvalues correspond to the directions along which the variance of the spike-triggered ensemble showed the largest positive change compared to the variance of the prior. Since these were the directions in which varying the stimulus led to a spike, they are often good approximations of the sought after relevant stimulus features.
+
+In neuroscience, PCA is also used to discern the identity of a neuron from the shape of its action potential. Spike sorting is an important procedure because extracellular recording techniques often pick up signals from more than one neuron. In spike sorting, one first uses PCA to reduce the dimensionality of the space of action potential waveforms, and then performs clustering analysis to associate specific action potentials with individual neurons.
+
+PCA as a dimension reduction technique is particularly suited to detect coordinated activities of large neuronal ensembles. It has been used in determining collective variables, that is, order parameters, during phase transitions in the brain.[46]
+
+Correspondence analysis (CA)
+was developed by Jean-Paul Benzécri[47]
+and is conceptually similar to PCA, but scales the data (which should be non-negative) so that rows and columns are treated equivalently. It is traditionally applied to contingency tables.
+CA decomposes the chi-squared statistic associated to this table into orthogonal factors.[48]
+Because CA is a descriptive technique, it can be applied to tables for which the chi-squared statistic is appropriate or not.
+Several variants of CA are available including detrended correspondence analysis and canonical correspondence analysis. One special extension is multiple correspondence analysis, which may be seen as the counterpart of principal component analysis for categorical data.[49]
+
+Principal component analysis creates variables that are linear combinations of the original variables. The new variables have the property that the variables are all orthogonal. The PCA transformation can be helpful as a pre-processing step before clustering. PCA is a variance-focused approach seeking to reproduce the total variable variance, in which components reflect both common and unique variance of the variable. PCA is generally preferred for purposes of data reduction (that is, translating variable space into optimal factor space) but not when the goal is to detect the latent construct or factors.
+
+Factor analysis is similar to principal component analysis, in that factor analysis also involves linear combinations of variables. Different from PCA, factor analysis is a correlation-focused approach seeking to reproduce the inter-correlations among variables, in which the factors "represent the common variance of variables, excluding unique variance".[50] In terms of the correlation matrix, this corresponds with focusing on explaining the off-diagonal terms (that is, shared co-variance), while PCA focuses on explaining the terms that sit on the diagonal. However, as a side result, when trying to reproduce the on-diagonal terms, PCA also tends to fit relatively well the off-diagonal correlations.[10]: 158  Results given by PCA and factor analysis are very similar in most situations, but this is not always the case, and there are some problems where the results are significantly different. Factor analysis is generally used when the research purpose is detecting data structure (that is, latent constructs or factors) or causal modeling. If the factor model is incorrectly formulated or the assumptions are not met, then factor analysis will give erroneous results.[51]
+
+It has been asserted that the relaxed solution of k-means clustering, specified by the cluster indicators, is given by the principal components, and the PCA subspace spanned by the principal directions is identical to the cluster centroid subspace.[52][53] However, that PCA is a useful relaxation of k-means clustering was not a new result,[54] and it is straightforward to uncover counterexamples to the statement that the cluster centroid subspace is spanned by the principal directions.[55]
+
+Non-negative matrix factorization (NMF) is a dimension reduction method where only non-negative elements in the matrices are used, which is therefore a promising method in astronomy,[20][21][22] in the sense that astrophysical signals are non-negative. The PCA components are orthogonal to each other, while the NMF components are all non-negative and therefore constructs a non-orthogonal basis.
+
+In PCA, the contribution of each component is ranked based on the magnitude of its corresponding eigenvalue, which is equivalent to the fractional residual variance (FRV) in analyzing empirical data.[18] For NMF, its components are ranked based only on the empirical FRV curves.[22] The residual fractional eigenvalue plots, that is,  as a function of component number  given a total of  components, for PCA has a flat plateau, where no data is captured to remove the quasi-static noise, then the curves dropped quickly as an indication of over-fitting and captures random noise.[18] The FRV curves for NMF is decreasing continuously[22] when the NMF components are constructed sequentially,[21] indicating the continuous capturing of quasi-static noise; then converge to higher levels than PCA,[22] indicating the less over-fitting property of NMF.
+
+It is often difficult to interpret the principal components when the data include many variables of various origins, or when some variables are qualitative. This leads the PCA user to a delicate elimination of several variables. If observations or variables have an excessive impact on the direction of the axes, they should be removed and then projected as supplementary elements. In addition, it is necessary to avoid interpreting the proximities between the points close to the center of the factorial plane.
+
+The iconography of correlations, on the contrary, which is not a projection on a system of axes, does not have these drawbacks. We can therefore keep all the variables.
+
+The principle of the diagram is to underline the "remarkable" correlations of the correlation matrix, by a solid line (positive correlation) or dotted line (negative correlation).
+
+A strong correlation is not "remarkable" if it is not direct, but caused by the effect of a third variable. Conversely, weak correlations can be "remarkable". For example, if a variable Y depends on several independent variables, the correlations of Y with each of them are weak and yet "remarkable".
+
+A particular disadvantage of PCA is that the principal components are usually linear combinations of all input variables. Sparse PCA overcomes this disadvantage by finding linear combinations that contain just a few input variables. It extends the classic method of principal component analysis (PCA) for the reduction of dimensionality of data by adding sparsity constraint on the input variables.
+Several approaches have been proposed, including
+
+The methodological and theoretical developments of Sparse PCA as well as its applications in scientific studies were recently reviewed in a survey paper.[62]
+
+Most of the modern methods for nonlinear dimensionality reduction find their theoretical and algorithmic roots in PCA or K-means. Pearson's original idea was to take a straight line (or plane) which will be "the best fit" to a set of data points. Trevor Hastie expanded on this concept by proposing Principal curves[66] as the natural extension for the geometric interpretation of PCA, which explicitly constructs a manifold for data approximation followed by projecting the points onto it, as is illustrated by Fig.
+See also the elastic map algorithm and principal geodesic analysis.[67] Another popular generalization is kernel PCA, which corresponds to PCA performed in a reproducing kernel Hilbert space associated with a positive definite kernel.
+
+In multilinear subspace learning,[68] PCA is generalized to multilinear PCA (MPCA) that extracts features directly from tensor representations. MPCA is solved by performing PCA in each mode of the tensor iteratively. MPCA has been applied to face recognition, gait recognition, etc. MPCA is further extended to uncorrelated MPCA, non-negative MPCA and robust MPCA.
+
+N-way principal component analysis may be performed with models such as Tucker decomposition, PARAFAC, multiple factor analysis, co-inertia analysis, STATIS, and DISTATIS.
+
+While PCA finds the mathematically optimal method (as in minimizing the squared error), it is still sensitive to outliers in the data that produce large errors, something that the method tries to avoid in the first place. It is therefore common practice to remove outliers before computing PCA. However, in some contexts, outliers can be difficult to identify. For example, in data mining algorithms like correlation clustering, the assignment of points to clusters and outliers is not known beforehand.
+A recently proposed generalization of PCA[69] based on a weighted PCA increases robustness by assigning different weights to data objects based on their estimated relevancy.
+
+Outlier-resistant variants of PCA have also been proposed, based on L1-norm formulations (L1-PCA).[5][3]
+
+Robust principal component analysis (RPCA) via decomposition in low-rank and sparse matrices is a modification of PCA that works well with respect to grossly corrupted observations.[70][71][72]
+
+Independent component analysis (ICA) is directed to similar problems as principal component analysis, but finds additively separable components rather than successive approximations.
+
+Given a matrix , it tries to decompose it into two matrices such that . A key difference from techniques such as PCA and ICA is that some of the entries of  are constrained to be 0. Here  is termed the regulatory layer. While in general such a decomposition can have multiple solutions, they prove that if the following conditions are satisfied :
+
+then the decomposition is unique up to multiplication by a scalar.[73]
+
+Discriminant analysis of principal components (DAPC) is a multivariate method used to identify and describe clusters of genetically related individuals. Genetic variation is partitioned into two components: variation between groups and within groups, and it maximizes the former. Linear discriminants are linear combinations of alleles which best separate the clusters. Alleles that most contribute to this discrimination are therefore those that are the most markedly different across groups. The contributions of alleles to the groupings identified by DAPC can allow identifying regions of the genome driving the genetic divergence among groups[74]
+In DAPC, data is first transformed using a principal components analysis (PCA) and subsequently clusters are identified using discriminant analysis (DA).
+
+A DAPC can be realized on R using the package Adegenet. (more info: https://adegenet.r-forge.r-project.org/)

@@ -1,0 +1,11 @@
+A viral envelope is the outermost layer of many types of viruses.[1] It protects the genetic material in their life cycle when traveling between host cells. Not all viruses have envelopes.
+
+The envelopes are typically derived from portions of the host cell membranes (phospholipids and proteins), but include some viral glycoproteins. They may help viruses avoid the host immune system. Glycoproteins on the surface of the envelope serve to identify and bind to receptor sites on the host's membrane. The viral envelope then fuses with the host's membrane, allowing the capsid and viral genome to enter and infect the host.[citation needed]
+
+All enveloped viruses also have a capsid, another protein layer, between the envelope and the genome.[1]
+
+The cell from which a virus buds often dies or is weakened, and sheds more viral particles for an extended period. The lipid bilayer envelope of these viruses is relatively sensitive to desiccation, heat, and amphiphiles such as soap and detergents, therefore these viruses are easier to sterilize than non-enveloped viruses, have limited survival outside host environments, and typically must transfer directly from host to host. Enveloped viruses possess great adaptability and can change in a short time in order to evade the immune system. Enveloped viruses can cause persistent infections.[citation needed]
+
+The following are some examples of enveloped viruses:
+
+The following are some examples of virus without envelopes:

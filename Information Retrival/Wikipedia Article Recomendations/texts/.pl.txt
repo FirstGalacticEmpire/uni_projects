@@ -1,0 +1,11 @@
+.pl is the Internet country code top-level domain (ccTLD) for Poland, administered by NASK, the Polish research and development organization. It is one of the founding members of CENTR.
+
+The .pl domain was created in 1990, following the mitigation of the COCOM embargo on technological collaboration with post-communist countries. The first subdomain in .pl was .pwr.pl, belonging to the Wrocław University of Technology.
+
+In 2008 the number of registered .pl domain names exceeded one million, whereas at the end of 2013 the registry comprised more than 2.4 million domain names.[2][1]
+
+Each domain must be registered in the National Domain Name Registry.
+
+Several functional and regional domain endings exist. Most popular are:
+
+There are 118 regional domain endings in the .pl zone.[3] Some of them are:

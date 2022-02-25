@@ -1,0 +1,40 @@
+Mean shift is a non-parametric feature-space mathematical analysis technique for locating the maxima of a density function, a so-called mode-seeking algorithm.[1] Application domains include cluster analysis in computer vision and image processing.[2]
+
+The mean shift procedure is usually credited to work by Fukunaga and Hostetler in 1975.[3] It is, however, reminiscent of earlier work by Schnell in 1964.[4]
+
+Mean shift is a procedure for locating the maxima—the modes—of a density function given discrete data sampled from that function.[1] This is an iterative method, and we start with an initial estimate .  Let a kernel function  be given.  This function determines the weight of nearby points for re-estimation of the mean.  Typically a Gaussian kernel on the distance to the current estimate is used, .  The weighted mean of the density in the window determined by  is
+
+where  is the neighborhood of , a set of points for which .
+
+The difference  is called mean shift in Fukunaga and Hostetler.[3] 
+The mean-shift algorithm now sets , and repeats the estimation until  converges.
+
+Although the mean shift algorithm has been widely used in many applications, a rigid proof for the convergence of the algorithm using a general kernel in a high dimensional space is still not known.[5] Aliyari Ghassabeh showed the convergence of the mean shift algorithm in one-dimension with a differentiable, convex, and strictly decreasing profile function.[6] However, the one-dimensional case has limited real world applications. Also, the convergence of the algorithm in higher dimensions with a finite number of the stationary (or isolated) points has been proved.[5][7] However, sufficient conditions for a general kernel function to have finite stationary (or isolated) points have not been provided.
+
+Gaussian Mean-Shift is an Expectation–maximization algorithm.[8]
+
+Let data be a finite set  embedded in the -dimensional Euclidean space, . Let  be a flat kernel that is the characteristic function of the -ball in ,
+
+In each iteration of the algorithm,  is performed for all  simultaneously. The first question, then, is how to estimate the density function given a sparse set of samples. One of the simplest approaches is to just smooth the data, e.g., by convolving it with a fixed kernel of width ,
+
+where  are the input samples and  is the kernel function (or Parzen window).  is the only parameter in the algorithm and is called the bandwidth. This approach is known as kernel density estimation or the Parzen window technique. Once we have computed  from equation above, we can find its local maxima using gradient ascent or some other optimization technique. The problem with this "brute force" approach is that, for higher dimensions, it becomes computationally prohibitive to evaluate  over the complete search space. Instead, mean shift uses a variant of what is known in the optimization literature as multiple restart gradient descent. Starting at some guess for a local maximum, , which can be a random input data point , mean shift computes the gradient of the density estimate  at  and takes an uphill step in that direction.[9]
+
+Kernel definition: Let  be the -dimensional Euclidean space, . The norm of  is a non-negative number, . A function  is said to be a kernel if there exists a profile,  , such that
+
+
+and 
+
+The two most frequently used kernel profiles for mean shift are:
+
+where the standard deviation parameter  works as the bandwidth parameter, .
+
+Consider a set of points in two-dimensional space. Assume a circular window centered at C and having radius r as the kernel. Mean shift is a hill climbing algorithm which involves shifting this kernel iteratively to a higher density region until convergence. Every shift is defined by a mean shift vector. The mean shift vector always points toward the direction of the maximum increase in the density. At every iteration the kernel is shifted to the centroid or the mean of the points within it. The method of calculating this mean depends on the choice of the kernel. In this case if a Gaussian kernel is chosen instead of a flat kernel, then every point will first be assigned a weight which will decay exponentially as the distance from the kernel's center increases. At convergence, there will be no direction at which a shift can accommodate more points inside the kernel.
+
+The mean shift algorithm can be used for visual tracking.  The simplest such algorithm would create a confidence map in the new image based on the color histogram of the object in the previous image, and use mean shift to find the peak of a confidence map near the object's old position. The confidence map is a probability density function on the new image, assigning each pixel of the new image a probability, which is the probability of the pixel color occurring in the object in the previous image. A few algorithms, such as kernel-based object tracking,[10] 
+ensemble tracking,[11] 
+CAMshift [12][13] 
+expand on this idea.
+
+Let  and  be the -dimensional input and filtered image pixels in the joint spatial-range domain. For each pixel,
+
+Variants of the algorithm can be found in machine learning and image processing packages:

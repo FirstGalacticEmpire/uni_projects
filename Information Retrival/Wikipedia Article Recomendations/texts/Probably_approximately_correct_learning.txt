@@ -1,0 +1,25 @@
+In computational learning theory, probably approximately correct (PAC) learning is a framework for mathematical analysis of machine learning. It was proposed in 1984 by Leslie Valiant.[1]
+
+In this framework, the learner receives samples and must select a generalization function (called the hypothesis) from a certain class of possible functions. The goal is that, with high probability (the "probably" part), the selected function will have low generalization error (the "approximately correct" part). The learner must be able to learn the concept given any arbitrary approximation ratio, probability of success, or distribution of the samples.
+
+The model was later extended to treat noise (misclassified samples).
+
+An important innovation of the PAC framework is the introduction of computational complexity theory concepts to machine learning. In particular, the learner is expected to find efficient functions (time and space requirements bounded to a polynomial of the example size), and the learner itself must implement an efficient procedure (requiring an example count bounded to a polynomial of the concept size, modified by the approximation and likelihood bounds).
+
+In order to give the definition for something that is PAC-learnable, we first have to introduce some terminology.[2][3]
+
+For the following definitions, two examples will be used.  The first is the problem of character recognition given an array of  bits encoding a binary-valued image.  The other example is the problem of finding an interval that will correctly classify points within the interval as positive and the points outside of the range as negative.
+
+Let  be a set called the instance space or the encoding of all the samples.  In the character recognition problem, the instance space is .  In the interval problem the instance space, , is the set of all bounded intervals in , where  denotes the set of all real numbers.
+
+A concept is a subset .  One concept is the set of all patterns of bits in  that encode a picture of the letter "P".  An example concept from the second example is the set of open intervals, , each of which contains only the positive points.  A concept class  is a collection of concepts over .  This could be the set of all subsets of the array of bits that are skeletonized 4-connected (width of the font is 1).
+
+Let  be a procedure that draws an example, , using a probability distribution  and gives the correct label , that is 1 if  and 0 otherwise.
+
+Now, given , assume there is an algorithm  and a polynomial  in  (and other relevant parameters of the class ) such that, given a sample of size  drawn according to , then, with probability of at least ,  outputs a hypothesis  that has an average error less than or equal to  on  with the same distribution .  Further if the above statement for algorithm  is true for every concept  and for every distribution  over , and for all   then  is (efficiently) PAC learnable (or distribution-free PAC learnable).  We can also say that  is a PAC learning algorithm for .
+
+Under some regularity conditions these conditions are equivalent: [4]
+
+https://users.soe.ucsc.edu/~manfred/pubs/lrnk-olivier.pdf
+
+Moran, Shay; Yehudayoff, Amir (2015). "Sample compression schemes for VC classes". arXiv:1503.06960 [cs.LG].

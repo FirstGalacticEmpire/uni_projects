@@ -1,0 +1,36 @@
+Central European Time (CET) is a standard time which is 1 hour ahead of Coordinated Universal Time (UTC).
+The time offset from UTC can be written as UTC+01:00.
+It is used in most parts of Europe and in a few North African countries.
+CET is also known as Middle European Time (MET, German: MEZ) and by colloquial names such as Amsterdam Time, Berlin Time, Brussels Time, Madrid Time, Paris Time, Rome Time, and Warsaw Time.
+
+The 15th meridian east is the central axis for UTC+01:00 in the world system of time zones.
+
+As of 2011, all member states of the European Union observe summer time (daylight saving time), from the last Sunday in March to the last Sunday in October.
+States within the CET area switch to Central European Summer Time (CEST, UTC+02:00) for the summer.[1]
+
+In Africa, UTC+01:00 is called West Africa Time (WAT), where it is used by several countries, year round.[2]
+Algeria, Morocco, and Tunisia also refer to it as Central European Time.[3]
+
+As of 2017,[4] Central European Time is currently used in Albania, Andorra, Austria, Belgium, Bosnia and Herzegovina, Croatia, Czech Republic, Denmark, France, Germany, Hungary, Italy, Kosovo*, Liechtenstein, Luxembourg, Malta, Monaco, Montenegro, Netherlands, North Macedonia, Norway, Poland, San Marino, Serbia, Slovakia, Slovenia, Spain (except Canary Islands), Sweden, Switzerland and Vatican City.[3]
+
+After World War II Monaco, Andorra and Gibraltar implemented CET.[19]
+
+Portugal used CET in the years 1966–1976 and 1992–1996.
+
+The time around the world is based on Universal Coordinated Time (UTC) which is roughly synonymous with Greenwich Mean Time (GMT). From late March to late October, clocks in the United Kingdom are put forward by one hour for British Summer Time (BST). Since 1997, most of the European Union aligned with the British standards for BST.
+
+In 1968[23] there was a three-year experiment called British Standard Time, when the UK and Ireland experimentally employed British Summer Time (GMT+1) all year round; clocks were put forward in March 1968 and not put back until October 1971.[24]
+
+Central European Time is sometimes referred to as continental time in the UK.
+
+Several African countries use UTC+01:00 all year long, where it is known as West Africa Time (WAT), although Algeria, Morocco and Tunisia use the term Central European Time despite being located in North Africa.[3]
+
+Between 2005 and 2008, Tunisia observed daylight saving time.[25] Libya also used CET during the years 1951–1959, 1982–1989, 1996–1997 and 2012–2013.
+
+For other countries see UTC+01:00 and West Africa Time.
+
+Legal, political and economic, as well as physical or geographical criteria are used in the drawing of time zones so official time zones rarely adhere to meridian lines. The CET time zone, were it drawn by purely geographical terms, would consist of exactly the area between meridians 7°30′ E and 22°30′ E. As a result, there are European locales that despite lying in an area with a "physical" or "nominal" UTC+01:00 time, actually use another time zone (UTC+02:00 in particular – there are no "physical" UTC+01:00 areas that employ UTC+00:00). Conversely, there are European areas that have gone for UTC+01:00, even though their "physical" time zone is UTC (typically), UTC−01:00 (westernmost Spain), or UTC+02:00 (e.g. the very easternmost parts of Norway, Sweden, Poland and Serbia). On the other hand, people in Spain still have all work and meal hours one hour later than France and Germany despite sharing the same time zone.[26] Historically Gibraltar maintained UTC+01:00 all year until the opening of the land border with Spain in 1982, when it followed its neighbour and introduced CEST. The following is a list of such "incongruences":
+
+These areas are located between 7°30′ E and 22°30′ E ("physical" UTC+1)[27][28]
+
+These areas are located either west of 7°30′ E or east of 22°30′ E (outside nominal UTC+01:00)[27][28]

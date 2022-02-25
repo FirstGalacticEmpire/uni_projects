@@ -1,0 +1,141 @@
+Over one hundred video games based on the Star Wars franchise have been released,[1] dating back to some of the earliest home consoles. Some are based directly on films while others rely heavily on the Star Wars Expanded Universe.
+
+Star Wars games have gone through three significant development eras: early licensed games (1979-1993), games developed after the creation of LucasArts (1993-2013), and games created after the closure of LucasArts (2014–present), which are currently licensed to Electronic Arts, and include an EA Star Wars logo.
+
+The first Star Wars games were developed by a variety of companies after Star Wars creator George Lucas licensed the rights to Star Wars video games; several of these games were released under the “Lucasfilm Games” banner. Early licensed games, released during the 8-bit and 16-bit eras of gaming, barely featured any kind of narrative, and many were action titles that either retold the stories of the original trilogy (1977-1983) or focused on a single scene of a film.
+
+Later on, Lucas took interest in the increasing success of the video game market, and decided to create his own video game development company, LucasArts, so he could have more creative control over the games and their narratives. During this era, graphics evolved enough for games to be able to tell complex narratives, leading to games that featured more advanced retellings of the stories of the films, with voice-overs and CGI cut scenes, as well as original titles with new narratives that were set in the same continuity as the films. After The Walt Disney Company's purchase of Lucasfilm in 2012 and the closure of LucasArts the following year, the games developed during the first two eras were discarded from the canon in 2014 and reassigned to the non-canonical Star Wars Legends label.
+
+Following LucasArts' closure, the rights to produce Star Wars video games were reassigned solely to Electronic Arts. Games published during this era are considered canonical to the franchise, and have featured more influence from the Lucasfilm Story Group, responsible for managing aspects of Star Wars canon. The EA Star Wars license had been set to expire in 2023, but in 2021, Lucasarts announced new partnerships for others to produce Star Wars and other Lucasfilm games alongside Electronic Arts.
+
+Although many hobbyists and independent game developers have created freeware games based on the Star Wars movie series and brand, this page lists only the games that have been developed or published by LucasArts, or officially licensed by Lucasfilm.
+
+As of 2020, there have been over 90 million copies of Star Wars games sold.[citation needed]
+
+In 1978, Apple Computer produced an unlicensed Star Wars game on cassette tape for its Apple II. As a "space pilot trainee", the player destroys TIE fighters using a first-person heads-up display.[2][3] The first video game cartridge bearing the name Star Wars appeared that year on the RCA Studio II clones Sheen M1200 and Mustang Telespiel Computer.[4]
+
+The first official licensed Star Wars electronic game was Kenner's 1979 table-top Star Wars Electronic Battle Command.[5] The game had three levels of play (basic, intermediate, and advanced). Players took turns examining star systems with the aim of avoiding black holes, locating enemies, and searching for MAGNA, "the FORCE-giving star". The game was billed as "the most exciting computer game you will ever play".[6]
+
+Licensed releases for the Atari 2600  began with The Empire Strikes Back (1982) in which the player piloted a snowspeeder during the Battle of Hoth, destroying AT-AT walkers. Several other games appeared, such as Return of the Jedi: Death Star Battle (1983), where the player controlled the Millennium Falcon in a mission to destroy the second Death Star, and Jedi Arena (1983), the first game to attempt to simulate a lightsaber battle (in this case, clearly inspired by the Star Wars scene, where Luke Skywalker trains with a seeker). In 1983, the Star Wars arcade game was released by Atari based on the 1977 film. In this game (featuring color vector graphics and the first ever digitized speech from a film) the player enters the seat of Luke's Red Five X-Wing fighter, battles waves of TIE fighters led by Darth Vader, weaves through towers across the surface of the Death Star, and plummets through the battle station's trench in an attempt to destroy it. The sequel for the game, The Empire Strikes Back, used the same technology to re-create scenes from the second film, including battles with AT-AT walkers and an asteroid field.
+
+Due to the video game crash of 1983, which temporarily killed the home console market, no further games based on the franchise were released until 1987 when UK software publisher Domark released several 8-bit versions of the Star Wars vector arcade game, followed by similar conversions in 1988 of The Empire Strikes Back machine. In 1987, Namco developed a Star Wars game for the Nintendo Family Computer (Famicom) for the Japanese market exclusively, based on the 1977 film, but with several liberties taken with its storyline.
+
+In 1991, the platformer Star Wars was released for the Nintendo Entertainment System (the Famicom's Western counterpart), Sega Master System, Game Boy and Game Gear, and one year later, Star Wars: The Empire Strikes Back covered the plotline of the fifth episode of the saga. Also in 1992, Super Star Wars was released for the SNES, followed by the remaining games in the trilogy: Super Star Wars: The Empire Strikes Back (1993) and Super Star Wars: Return of the Jedi (1994), the latter also receiving conversions for the Game Boy and Game Gear in 1995.
+
+The following is a list of Star Wars games that are based on the feature films, developed during this development era:
+
+In the early 1980s George Lucas decided to invest in videogames. So through Lucasfilm, Lucas started his own video game company, which he named LucasArts. However, since Lucas had already licensed the rights to develop Star Wars games, the company instead developed original adventure games and World War II flight combat games. LucasArts regained the rights to develop Star Wars games in 1993, at that point the videogame company put their previous experience in flight simulators to use, and released a Star Wars: X-Wing, the first self-published Star Wars video game and the first space flight simulation based on the franchise.[8]
+
+As The Phantom Menace release approached, dozens of licensed Episode I tie-in titles appeared, even educational titles, the market was flooded with several games, most of them of questionable quality. However at the same time, titles based on the Expanded Universe flourished with critical acclaim, such as the expansion to Jedi Knight, Star Wars Jedi Knight: Mysteries of the Sith and the first game in the Rogue Squadron series.[citation needed]
+
+After the release of Episode I in theaters in 1999, games from the prequel trilogy were released for most major platforms. The first releases were video game adaptation (action-adventure) and Star Wars Episode I: Racer, based on the podracing sequence in movie. Others, including Battle for Naboo and Jedi Power Battles, were released, but with little success. The first strategic game in the Star Wars expanded universe was titled Star Wars: Rebellion and broke new ground in that it incorporated ships and planets not found in the original canon, such as the Rebel Assault Frigate and the Bulwark Cruiser. But for all its ground-breaking new looks, it was not as successful as would have been hoped. The second strategic title, Star Wars: Force Commander was also released, but failed to keep up with other RTS games, since it was more focused on battling (with no resource gathering) and used a primitive 3D engine. About a decade later, resource gathering lost popularity in favor of faster-paced combat-centric RTS games.
+
+In 2002, Attack of the Clones premiered in theaters, and another wave of Star Wars based games, including The Clone Wars, Star Wars Racer Revenge, and Bounty Hunter were released, this time focusing on events and characters from Attack of the Clones such as bounty hunter Jango Fett and the Clone Wars.
+
+Star Wars: Jedi Starfighter was released, allowing the player to be a Jedi Master flying a Jedi starfighter. A third RTS game with a much more conventional approach to the genre's norms and using the Age of Kings engine, Star Wars: Galactic Battlegrounds, offered a better alternative to those seeking strategy in the Star Wars universe.
+
+Adjoining the release of Revenge of the Sith, a video game adaptation (action) was also released close to the premiere, with various degrees of success. Star Wars: Republic Commando was also released in 2005.
+
+Formerly known as Star Wars Expanded Universe, this continuity was renamed into Legends in 2014 and all media based on them, including video games, ceased to be canon. The X-Wing series marked the start of the Star Wars games moving away from remaking the official films and began to focus more on the Expanded Universe. Other titles were published or licensed by LucasArts, such as The Software Toolworks's Star Wars Chess  who also used the first "multimedia explosion" to release Rebel Assault (1993), which used FMV and photos extensively.
+
+The 1996 Nintendo 64 title Star Wars: Shadows of the Empire was part of a LucasArts attempt to create a story between The Empire Strikes Back and Return of Jedi, putting the player in control of mercenary Dash Rendar. Shadows of the Empire featured fan-favorite parts from the Super Star Wars line, such as another reenactment of the Battle of Hoth, piloting a snowspeeder and tying a cable around AT-ATs legs. After the original trilogy was re-released as the "Special Editions" in 1997, LucasArts published other titles, including Star Wars: Yoda Stories and Star Wars Monopoly, as well as a Star Wars-themed fighting game, Star Wars: Masters of Teräs Käsi.
+
+Compilation: X-Wing (Collector's CD-ROM) (1994)
+
+Compilation: TIE Fighter (Collector's CD-ROM) (1995)
+
+Star Wars: X-Wing was one of the best-selling games of 1993, and established the beginning of the X-Wing computer game series, which garnered numerous awards and recognition. Star Wars: X-Wing was followed by several sequels and expansions, such as Star Wars: TIE Fighter, Star Wars: X-Wing vs. TIE Fighter, and Star Wars: X-Wing Alliance.[8]
+
+The first step towards modern games was done with 1995's Dark Forces, the first Star Wars first-person shooter video game.[11] A hybrid adventure game incorporating puzzles and strategy,[12] it featured new gameplay features and graphical elements not then common in other games, made possible by LucasArts' custom-designed game engine, called the Jedi.[11][12][13][14][15][16] The game was well received and well reviewed,[17][18][19] the game put the player in the role of Kyle Katarn, who would later appear in multiple games, novels, and comics.[20] After the Special Edition original trilogy re-release in 1997, LucasArts published Star Wars Jedi Knight: Dark Forces II, then Star Wars Jedi Knight: Mysteries of the Sith released in 1999. In 2002, its sequel Jedi Outcast was released and gave players the first chance to experience advanced lightsaber duels, and it also detached itself from the usual idea of movie tie-ins. One year later, the last game in the Jedi Knight series, Jedi Academy was released. Katarn is a former Imperial stormtrooper who joins the Rebellion and ultimately becomes a Jedi,[11][21][22] a plot arc similar to that of Finn in the 2015 film The Force Awakens.[23]
+
+In 2003, Knights of the Old Republic, a BioWare RPG that debuted on the Microsoft Xbox and PC. Knights (also known as KotOR among fans) was critically acclaimed, even winning "Game of the Year" at the Game Developers Choice Awards, (along with many other critics) in 2003. Knights of the Old Republic II: The Sith Lords was developed by Obsidian Entertainment and released in 2004. The Sith Lords was praised for its cerebral writing and moral ambiguity, similar to The Empire Strikes Back, but criticized for being derivative of the first game and being released in an incomplete state. Another MMORPG titled Star Wars: The Old Republic was developed by BioWare, which released globally on December 20, 2011. Pre-orders went up for sale in July 2011 and open beta weekends were confirmed for September 2011.
+
+Pandemic Studios' Battlefront consisted of two games, Star Wars: Battlefront (2004) and Star Wars: Battlefront II in 2005, both games sharing three common console platforms: the Xbox and PlayStation 2.
+
+A third Star Wars: Battlefront title was planned for 2006 but was cancelled. Two spin-offs were released, Star Wars Battlefront: Renegade Squadron, released in 2007 for the PlayStation Portable and Star Wars Battlefront: Elite Squadron on November 3, 2009 for the Nintendo DS and the PlayStation Portable. Elite Squadron is the first Battlefront game to offer a transition from space to ground battles at the players choice. After Disney's acquisition of Lucasfilm and the restructuring of the Star Wars canon, the Battlefront series was rebooted by EA DICE.
+
+Compilation: Star Wars: Empire at War: Gold Pack (game and expansion package) (2007) Windows
+
+Star Wars: The Force Unleashed, released for the PlayStation 3, Xbox 360 and Wii, uses a new, detailed graphics engine. The Wii version utilizes the motion sensing and accelerometer capabilities of the Wii Remote (simulating the ability to swing a lightsaber) and its Nunchuk attachment (used to perform Force powers). Its sequel, Star Wars: The Force Unleashed II, was released in the United States on October 26, 2010.
+
+The following is a list of Star Wars titles that are handheld and mobile games. Additional handheld and mobile games are listed above. Unless otherwise mentioned, these games are also released for mobile phones.
+
+The following games are more of Star Wars themed, rather than actually influencing the franchise's fictional plot, they are classified together because of sharing the same genre, rather than officially being part of the same series. Excluded are the games listed above.
+
+Developed by Lucas Learning:
+
+Other educational:
+
+Compilations: Star Wars Galaxies: Starter Kit (2005), Star Wars Galaxies: The Total Experience (2005), and Star Wars Galaxies: The Complete Online Adventures (2006)
+
+The first MMORPG, titled Star Wars Galaxies: An Empire Divided, was also released in 2003 and was subsequently followed in 2004 by its first expansion Jump to Lightspeed. Two more games, Star Wars Galaxies: Episode III Rage of the Wookiees (its second expansion, which ties in with the concurrently-released Revenge of the Sith), and after the films, more Star Wars titles continued to be developed and released. Empire at War (an RTS), was released in early 2006. While released and being active for years, Star Wars Galaxies' servers shut down on December 15, 2011. Notwithstanding the game's closure, there are several private emulator projects in various stages of development that intend to allow users to experience Star Wars Galaxies in different incarnations of the game's existence. However, since the game can no longer be played the way it was originally meant, the game is considered to be cancelled.[42]
+
+At E3 2012, EA with LucasArts announced Star Wars 1313, which focuses more on the life of a bounty hunter as he descends to the level 1313 on Coruscant to unravel a criminal plot. The game focuses more on gunplay and bounty hunter gameplay rather than the Force users and lightsabers combat. It was set to release in Fall 2013 for Xbox 360, PlayStation 3 and Windows. 1313 has subsequently been cancelled by LucasArts following its purchase by Disney. The following are the stand-alone Star Wars videogames that were canceled, the canceled titles that were part of a series are listed along its respective series.
+
+With the 2012 acquisition of Lucasfilm by The Walt Disney Company, it was announced that LucasArts' development arm would stop making video games indefinitely. In addition to this, various online browser games have shut down their servers, and can no longer be played.
+
+After LucasArts was shut down, on May 6, 2013, Disney and Lucasfilm revealed a partnership with Electronic Arts that granted EA exclusive rights to produce Star Wars games for consoles and PC, with Disney retaining the freedom to handle the games for mobile platforms, such as smartphones, tablets and browsers. This deal was set to expire in 2023.
+
+On April 25, 2014, most of the previous licensed Star Wars video games, novels, comics produced since the originating 1977 film Star Wars were rebranded as Star Wars Legends and declared non-canon to the franchise.[45][46][47]
+
+Among the EA subsidiaries responsible for creating the Star Wars games within the deal, were the developers DICE, BioWare, Visceral Games and Respawn Entertainment. After the canon restructuring, EA announced their new games would fall under the restructured canon. As of the release of Jedi: Fallen Order, all EA-produced Star Wars games are considered canonical, although only the ones with an actual "story mode" narrative.
+
+After the restructuring of the Star Wars canon, the Battlefront series formerly developed by Pandemic was rebooted by EA DICE. The first game was released in 2015, rushed into the market to tie-in with to the release of The Force Awakens. As a result of the shorter development time, developer EA DICE decided to take a significant departure from all previous installments of the franchise and focus the game entirely on online multiplayer, completely axing the inclusion of a single player campaign or any sort of narrative; the move was heavily criticized by fans, including Finn actor John Boyega.[48] Only original trilogy characters (Luke Skywalker, Princess Leia, Han Solo, Boba Fett, Darth Vader and Emperor Palpatine) and planets (Tatooine, Hoth and Endor) were playable on launch. Downloadable content later added the planets Jakku (from The Force Awakens), Bespin (from The Empire Strikes Back), Scarif (from Rogue One), in addition to the Death Star battle station (from A New Hope), and heroes Nien Numb, Greedo (Outer Rim), Lando Calrissian, Dengar (Bespin), Chewbacca, Bossk (Death Star), and Jyn Erso and Director Krennic (Rogue One: Scarif). The first Battlefront also received a PlayStation VR add-on mission, the Rogue One X-Wing VR Mission.
+
+The second Battlefront is the first in the series to be considered part of the Star Wars canon. It addresses a major criticism of the previous game by including a singleplayer campaign with a story-mode set between the ending of Return of the Jedi and the beginning of The Force Awakens, in which the player controls an Imperial special forces commander named Iden Versio; additionally, characters from the films, including Luke Skywalker, Leia Organa, Han Solo, Lando Calrissian and Kylo Ren are playable. The multiplayer mode features characters from the original, prequel, and sequel trilogies, as well as anthology films. Future content was originally going to be distributed in a "season" system, though this was changed to monthly updates.[49]
+
+Star Wars Jedi: Fallen Order is a singleplayer game developed by Respawn Entertainment. It was released on November 15, 2019 for Microsoft Windows, PlayStation 4 and Xbox One.[50][51] The story revolves around a survivor of Order 66, Cal Kestis, who is on the run from the Empire and its Inquisitors. Jedi: Fallen Order takes place between Revenge of the Sith and A New Hope.
+
+Star Wars: Squadrons is an action video game developed by Motive Studios. It was revealed on June 15, 2020,[52][53][54] and was released on October 2, 2020, for Microsoft Windows, PlayStation 4 and Xbox One, with a singleplayer campaign and multiplayer modes,[55] alongside cross-platform play between all three platforms and virtual reality support for the PS4 and PC versions.[56]
+
+Prior to its closure in 2017, Visceral Games was working on an untitled game set in the time between Return of the Jedi and The Force Awakens. Amy Hennig, former Naughty Dog writer and director who oversaw the Uncharted series, joined Visceral as creative lead on the project codenamed Ragtag.[57] On October 17, 2017, EA announced the closure of Visceral Games.[58] EA reassigned the game to its EA Worldwide Studios, led by EA Vancouver, and said they will revamp the gameplay, which had been described as a linear, story-heavy title, into "a broader experience that allows for more variety and player agency".[59] On 15 January 2019, Kotaku's Jason Schreier reported that the game codenamed "Project Ragtag" had been canceled according to three people familiar with goings-on at EA.[60] Rogue One writer Gary Whitta openly criticized Electronic Arts for the cancelation, adding that he hoped Disney would hand the Star Wars licence to other companies.[61]
+
+Following the massive player reception of Star Wars Battlefront II and the success of Star Wars: Jedi Fallen Order, EA CEO Andrew Wilson said that they're doubling down on the Star Wars games, meaning that a possible revival for the Battlefront series or more video games that has yet to be reported in development.[62]
+
+In January 2021, it is announced that Electronic Arts will no longer hold the exclusive rights to make Star Wars games. Though the license will be shipped off to other developers and publishers, Electronic Arts has some games in development for the near-future.
+
+The lower than expected sales and mixed fan reception towards Electronic Arts' handling of the Battlefront sub-franchise has led to rumors of Lucasfilm considering to change the terms of the license, originally set to expire in 2024. Lucasfilm was rumored to be courting either Ubisoft or Activision to either replace EA, or sharing rights to develop Star Wars games with them.[63]
+
+In January 2021, Lucasfilm revived the Lucasfilm Games label as the licensing brand for all IP from the Lucasfilm production. This included a new Indiana Jones game to be produced by MachineGames, as well as a new open world Star Wars game to be produced by Ubisoft and Massive Entertainment, the first major non-EA Star Wars game. Lucasfilm did not speak to the state of EA's prior exclusive license to develop Star Wars games but affirmed EA would still be making such games, but stated that they "feel like there's room for others".[70]
+
+In February 2021, a free-to-play competitive arena combat game developed by Zynga called Star Wars: Hunters was announced. The game will be released for the Nintendo Switch and on the Apple and Google Play appstores.[71]
+
+On September 9, 2021 as part of the PlayStation Showcase, a remake of Knights Of The Old Republic is announced as a timed console exclusive for PlayStation 5 in development at Aspyr. Several voice actors and developers who have worked on the original are returning including Jennifer Hale as Bastila Shan.
+
+On December 9, 2021, during the Game Awards event, a new Star Wars game called Star Wars Eclipse was announced, set in the High Republic Era, and is being developed by Quantic Dream , the team most famously known for Detroit: Become Human. The release date is to be announced.
+
+In some cases Lucasfilm has allowed other videogames franchises to do their own Star Wars games, resulting in crossover hybrid franchises, that are developed by other studios.
+
+Zen Studios developed nineteen virtual pinball tables based on the Star Wars franchise, with none of them being imitations of previously released Star Wars physical pinball tables.  All of them are released as downloadable content add-ons for the sequels to Pinball FX and Zen Pinball.  A compilation of all 19 tables, titled Star Wars Pinball, is also available on iOS, Android and Nintendo Switch.  The mobile versions of Star Wars Pinball, are paid apps whose price unlocks one particular table and all other tables are unlocked via in-app purchases, while the Switch version, released in 2019 as both a retail and digital title, includes immediate access to all tables, plus additional features.  An Amazon Luna port of Star Wars Pinball has also been announced as a launch title.
+
+Star Wars Pinball (2013) Windows, Mac, Wii U, Xbox 360, 3DS, PSVita, PlayStation 3, PlayStation 4, Kindle Fire, Android, iOS
+
+Star Wars Pinball: Balance of the Force (2013) Xbox 360, PSVita, PlayStation 3, PlayStation 4, Android, iOS
+
+Star Wars Pinball: Heroes Within (2014) Xbox 360, PSVita, PS3, PS4, Android, iOS
+
+Star Wars Pinball: Star Wars Rebels (2015)
+
+Star Wars Pinball: The Force Awakens (2016)
+
+Star Wars Pinball: Rogue One (2017)
+
+Star Wars Pinball: The Last Jedi (2018)
+
+Star Wars Pinball: Solo Pack (2018)
+
+A twentieth pinball table, based on the first season of The Mandalorian, was announced to be in development in late October 2020 and due for a spring 2021 release, along with a 21st table based on toy Star Wars action figures, titled Star Wars: Classic Collection.  Plans to include the two tables in Pinball FX 3 were scrapped in favor of adding them to a new Star Wars Pinball VR game released on April 29, 2021, running on Unreal Engine 5 after Zen Studios announced a partnership with Epic Games to use such engine for new pinball titles, including their upcoming Pinball FX reboot later in that year.
+
+Lego has licensed videogames based on their Lego Star Wars toys, as part of their Lego video games franchise. Due to the technical limitations of handhelds, the handheld versions always result in an entirely different game telling the same story as the console version, however the PlayStation handheld versions tend to imitate more closely the console versions albeit with some reduced areas and features.
+
+Compilation(s): Lego Star Wars: The Complete Saga (2007), consisting of Lego Star Wars: The Video Game, and Lego Star Wars II: The Original Trilogy. Windows, PlayStation 3, Xbox 360, Wii, Mac
+
+Angry Birds made two Star Wars games.
+
+The third installment of the Disney Infinity series included Star Wars characters for the first time as playable characters, alongside characters from other franchises owned by Disney, including characters from the Marvel and Pixar films.
+
+This category refers to videogames from other franchises where the inclusion of Star Wars characters is very minor and restricted only to small easter eggs or an unlockable character cameo.
+
+On January 25, 2016, Frontwire Studios began an attempt to produce an unofficial Battlefront installment called Galaxy in Turmoil. The fan made game was in production using Unreal Engine 4 and was based on the cancelled Star Wars: Battlefront III by Free Radical Design.[92][93] Although early versions of the game contained assets from Free Radical Design, they soon became "place holders" as the full game planned to be released using assets and music made from the ground up. On June 4, 2016, Galaxy in Turmoil gained a distribution deal through Valve and was planned to be released for free on Steam which generated a fair amount of attention.[94]
+
+On June 22, 2016 Lucasfilm requested the production of Galaxy in Turmoil be halted.[95]  On July 31, 2016, Frontwire Studios announced the cancellation of the game was due to the "possibility of Galaxy in Turmoil taking away attention from Electronic Arts' Battlefront franchise".[95] Proposals of Galaxy in Turmoil falling under the paywall of Electronic Arts, and ideas of Lucasfilm giving Frontwire Studios a Star Wars IP licence were both rejected due to an agreement between Electronic Arts and Lucasfilm.[95] Although Frontwire Studios may have fallen within Fair Use laws, legal conflict was avoided and the fan made Star Wars inspired project was canceled. There is a playable alpha that contains assets from Free Radical Design that was released to the public then removed early on within Galaxy in Turmoil's lifetime. Galaxy in Turmoil is now planned to be released as a brand new "cyber-punk" themed[96] IP without any Star Wars references, but still with Battlefront III-inspired mechanics including space-to-ground battles.[95]

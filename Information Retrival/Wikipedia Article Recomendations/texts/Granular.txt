@@ -1,0 +1,36 @@
+Granularity (also called graininess), the condition of existing in granules or grains, refers to the extent to which a material or system is composed of distinguishable pieces. It can either refer to the extent to which a larger entity is subdivided, or the extent to which groups of smaller indistinguishable entities have joined together to become larger distinguishable entities.
+
+Coarse-grained materials or systems have fewer, larger discrete components than fine-grained materials or systems.
+
+The concepts granularity, coarseness, and fineness are relative; and are used when comparing systems or descriptions of systems. An example of increasingly fine granularity: a list of nations in the United Nations, a list of all states/provinces in those nations, a list of all cities in those states, etc.
+
+Note that, although the modifying terms, fine and coarse are used consistently across all fields, the term granularity is not.
+
+A fine-grained description of a system is a detailed, exhaustive, low-level model of it. A coarse-grained description is a model where some of this fine detail has been smoothed over or averaged out. The replacement of a fine-grained description with a lower-resolution coarse-grained model is called coarse-graining. (See for example the second law of thermodynamics)
+
+In molecular dynamics, coarse graining consists of replacing an atomistic
+description of a biological molecule with a lower-resolution coarse-grained model that averages or smooths away fine details.
+
+Coarse-grained models have been developed for investigating the longer time- and length-scale dynamics that are critical to many biological processes, such as lipid membranes and proteins.[1] These concepts not only apply to biological molecules but also inorganic molecules.
+
+Coarse graining may remove certain degrees of freedom, such as the vibrational modes between two atoms, or represent the two atoms as a single particle. The ends to which systems may be coarse-grained is simply bound by the accuracy in the dynamics and structural properties one wishes to replicate. This modern area of research is in its infancy, and although it is commonly used in biological modeling, the analytic theory behind it is poorly understood.
+
+In parallel computing, granularity means the amount of computation in relation to communication, i.e., the ratio of computation to the amount of communication.[2]
+
+Fine-grained parallelism means individual tasks are relatively small in terms of code size and execution time. The data is transferred among processors frequently in amounts of one or a few memory words. Coarse-grained is the opposite: data is communicated infrequently, after larger amounts of computation.
+
+The finer the granularity, the greater the potential for parallelism and hence speed-up, but the greater the overheads of synchronization and communication.[3]
+
+In order to attain the best parallel performance, the best balance between load and communication overhead needs to be found. If the granularity is too fine, the performance can suffer from the increased communication overhead. On the other side, if the granularity is too coarse, the performance can suffer from load imbalance.
+
+In reconfigurable computing and in supercomputing these terms refer to the data path width. The use of about one-bit wide processing elements like the configurable logic blocks (CLBs) in an FPGA is called fine-grained computing or fine-grained reconfigurability, whereas using wide data paths, such as, for instance, 32 bits wide resources, like microprocessor CPUs or data-stream-driven data path units (DPUs) like in a reconfigurable datapath array (rDPA) is called coarse-grained computing or coarse-grained reconfigurability.
+
+The granularity of data refers to the size in which data fields are sub-divided. For example, a postal address can be recorded, with coarse granularity, as a single field:
+
+or with fine granularity, as multiple fields:
+
+or even finer granularity:
+
+Finer granularity has overheads for data input and storage. This manifests itself in a higher number of objects and methods in the object-oriented programming paradigm or more subroutine calls for procedural programming and parallel computing environments. It does however offer benefits in flexibility of data processing in treating each data field in isolation if required. A performance problem caused by excessive granularity may not reveal itself until scalability becomes an issue.
+
+In photography, granularity is a measure of film grain. It is measured using a particular standard procedure but in general a larger number means the grains of silver are larger and there are fewer grains in a given area.

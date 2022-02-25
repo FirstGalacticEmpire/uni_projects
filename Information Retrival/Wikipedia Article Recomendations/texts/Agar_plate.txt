@@ -1,0 +1,31 @@
+
+An agar plate is a Petri dish that contains a growth medium solidified with agar, used to culture microorganisms. Sometimes selective compounds are added to influence growth, such as antibiotics.[1]
+Individual microorganisms placed on the plate will grow into individual colonies, each a clone genetically identical to the individual ancestor organism (except for the low, unavoidable rate of mutation). Thus, the plate can be used either to estimate the concentration of organisms in a liquid culture or a suitable dilution of that culture using a colony counter, or to generate genetically pure cultures from a mixed culture of genetically different organisms.
+
+Several methods are available to plate out cells. One technique is known as "streaking". In this technique, a drop of the culture on the end of a thin, sterile loop of wire, sometimes known as an inoculator, is streaked across the surface of the agar leaving organisms behind, a higher number at the beginning of the streak and a lower number at the end. At some point during a successful "streak", the number of organisms deposited will be such that distinct individual colonies will grow in that area which may be removed for further culturing, using another sterile loop. 
+
+Another way of plating organisms, next to streaking, on agar plates is the spot analysis. This type of analysis is often used to check the viability of cells and performed with pinners (often also called froggers). A third used technique is the use of sterile glass beads to plate out cells. In this technique cells are grown in a liquid culture of which a small volume is pipetted on the agar plate and then spread out with the beads. Replica plating is another technique in order to plate out cells on agar plates. These four techniques are the most common, but others are also possible. It is crucial to work in a sterile manner in order to prevent contamination on the agar plates.[1] Plating is thus often done in a laminar flow cabinet or on the working bench next to a bunsen burner.[2]
+
+In 1881, Fanny Hesse, who was working as a technician for her husband Walther Hesse in the laboratory of Robert Koch, suggested agar as an effective setting agent, since it had been commonplace in jam making for some time.[3]
+
+Like other growth media, the formulations of agar used in plates may be classified as either "defined" or "undefined"; a defined medium is synthesized from individual chemicals required by the organism so the exact molecular composition is known, whereas an undefined medium is made from natural products such as yeast extract, where the precise composition is unknown.[4]
+
+Agar plates may be formulated as either permissive, with the intent of allowing the growth of whatever organisms are present, or restrictive or selective, with the intent of only allowing growth a particular subset of those organisms.[5] This may take the form of a nutritional requirement, for instance providing a particular compound such as lactose as the only source of carbon and thereby selecting only organisms which can metabolize that compound, or by including a particular antibiotic or other substance to select only organisms which are resistant to that substance. This correlates to some degree with defined and undefined media; undefined media, made from natural products and containing an unknown combination of very many organic molecules, is typically more permissive in terms of supplying the needs of a wider variety of organisms, while defined media can be precisely tailored to select organisms with specific properties.
+
+Agar plates may also be indicator plates, in which the organisms are not selected on the basis of growth, but are instead distinguished by a color change in some colonies, typically caused by the action of an enzyme on some compound added to the medium.[6]
+
+The plates are incubated for 12 hours up to several days depending on the test that is performed.
+
+Some commonly used agar plate types are:
+
+Blood agar plates (BAPs) contain mammalian blood (usually sheep or horse), typically at a concentration of 5–10%. BAPs are enriched, differential media used to isolate fastidious organisms and detect hemolytic activity. β-Hemolytic activity will show lysis and complete digestion of red blood cell contents surrounding a colony. Examples include Streptococcus haemolyticus. α-Hemolysis will only cause partial lysis of the red blood cells (the cell membrane is left intact) and will appear green or brown, due to the conversion of hemoglobin to methemoglobin. An example of this would be Streptococcus viridans. γ-Hemolysis (or nonhemolytic) is the term referring to a lack of hemolytic activity.[7] BAPs also contain meat extract, tryptone, sodium chloride, and agar.
+
+Chocolate agar  a type of blood agar plate in which the blood cells have been lysed by heating the cells to 80 °C. It is used for growing fastidious respiratory bacteria, such as Haemophilus influenzae. No chocolate is actually contained in the plate; it is named for the coloration only.
+
+Horse blood agar  is a type of blood-enriched microbiological culture media. As it is enriched, it allows the growth of certain fastidious bacteria, and allows indication of haemolytic activity in these bacterial cultures.
+
+Thayer-Martin agar  is a chocolate agar designed to isolate Neisseria gonorrhoeae.
+
+Thiosulfate-citrate-bile salts-sucrose agar  enhances growth of Vibrio spp., including Vibrio cholerae.[8]
+
+Different specific types of agar:

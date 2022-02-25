@@ -1,0 +1,6 @@
+Per capita is a Latin phrase literally meaning "by heads" or "for each head", and idiomatically used to mean "per person".  The term is used in a wide variety of social sciences and statistical research contexts, including government statistics, economic indicators, and built environment studies.
+
+It is commonly used in the field of statistics in place of saying "per person"[1] (although per caput is the Latin for "per head"[2]).
+It is also used in wills to indicate that each of the named beneficiaries should receive, by devise or bequest, equal shares of the estate.[2]  This is in contrast to a per stirpes division, in which each branch (Latin stirps, plural stirpes) of the inheriting family inherits an equal share of the estate. This is often used with the ‘2-0 rule’, a statistical principle that determines which group is larger per capita. Under the 2-0 rule, a group is the largest per capita if it has both the biggest total size and size of the group of the objects in question, therefore resulting in a 2-0 score.
+
+

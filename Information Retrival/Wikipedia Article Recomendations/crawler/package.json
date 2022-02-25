@@ -1,0 +1,24 @@
+{
+    "name": "nodelessons",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.24.0",
+        "cheerio": "^1.0.0-rc.10",
+        "express": "^4.17.1",
+        "graph-data-structure": "^2.0.0",
+        "lodash": "^4.17.21",
+        "node-worker-threads-pool": "^1.5.1",
+        "p-queue": "^7.1.0",
+        "request": "^2.88.2",
+        "requests": "^0.3.0",
+        "socket.io": "^4.4.0"
+    }
+}

@@ -1,0 +1,117 @@
+Beach nourishment (also referred to as beach renourishment,[2] beach replenishment, or sand replenishment) describes a process by which sediment, usually sand, lost through longshore drift or erosion is replaced from other sources. A wider beach can reduce storm damage to coastal structures by dissipating energy across the surf zone, protecting upland structures and infrastructure from storm surges, tsunamis and unusually high tides.[citation needed] Beach nourishment is typically part of a larger integrated coastal zone management aimed at coastal defense. Nourishment is typically a repetitive process since it does not remove the physical forces that cause erosion but simply mitigates their effects.
+
+The first nourishment project in the United States was at Coney Island, New York in 1922 and 1923. It is now a common shore protection measure used by public and private entities.[3][4]
+
+The first nourishment project in the U.S. was constructed at Coney Island, New York in 1922–1923.[5][6]
+
+Before the 1970s, nourishment involved directly placing sand on the beach and dunes. Since then more shoreface nourishments have been carried out, which rely on the forces of the wind, waves and tides to further distribute the sand along the shore and onto the beaches and dunes.[7][8]
+
+The number and size of nourishment projects has increased significantly due to population growth and projected relative sea-level rise.[8]
+
+Beach erosion is a specific subset of coastal erosion, which in turn is a type of bioerosion which alters coastal geography through beach morphodynamics. There are numerous incidences of modern recession of beaches, mainly due to longshore drift and coastal development hazards. 
+
+Beaches can erode naturally or due to human impact (beach theft/sand mining).[9]
+
+Erosion is a natural response to storm activity. During storms, sand from the visible beach submerges to form sand bars that protect the beach. Submersion is only part of the cycle. During calm weather smaller waves return sand from bars to the visible beach surface in a process called accretion.
+
+Some beaches do not have enough sand available to coastal processes to respond naturally to storms. When not enough sand is available, the beach cannot recover following storms.
+
+Many areas of high erosion are due to human activities. Reasons can include: seawalls locking up sand dunes, coastal structures like ports and harbors that prevent longshore transport, dams and other river management structures. Continuous, long-term renourishment efforts, especially in cuspate-cape coastlines, can play a role in longshore transport inhibition and downdrift erosion.[10] These activities interfere with the natural sediment flows either through dam construction (thereby reducing riverine sediment sources) or construction of littoral barriers such as jetties, or by deepening of inlets; thus preventing longshore transport of sediment.[11]
+
+The coastal engineering for the shoreline protection involves:
+
+Nourishment is typically a repetitive process, since nourishment mitigates the effects of erosion, but does not remove the causes. A benign environment increases the interval between nourishment projects, reducing costs. Conversely, high erosion rates may render nourishment financially impractical.[14][15]
+
+In many coastal areas, the economic impacts of a wide beach can be substantial. Since 1923, the U.S. has spent $9 billion to rebuild beaches.[16] One of the most notable example is the 10 miles (16 km)–long shoreline fronting Miami Beach, Florida, which was replenished over the period 1976–1981. The project cost approximately $64,000,000 and revitalized the area's economy. Prior to nourishment, in many places the beach was too narrow to walk along, especially during high tide.[citation needed]
+
+A wide beach is a good energy absorber, which is significant in low-lying areas where severe storms can impact upland structures. The effectiveness of wide beaches in reducing structural damage has been proven by field studies conducted after storms and through the application of accepted coastal engineering principles.[12]
+
+Beach nourishment has significant impacts on local ecosystems. Nourishment may cause direct mortality to sessile organisms in the target area by burying them under the new sand. Seafloor habitat in both source and target areas are disrupted, e.g. when sand is deposited on coral reefs or when deposited sand hardens. Imported sand may differ in character (chemical makeup, grain size, non-native species) from that of the target environment. Light availability may be reduced, affecting nearby reefs and submerged aquatic vegetation. Imported sand may contain material toxic to local species. Removing material from near-shore environments may destabilize the shoreline, in part by steepening its submerged slope. Related attempts to reduce future erosion may provide a false sense of security that increases development pressure.[17]
+
+Newly deposited sand can harden and complicate nest-digging for turtles. However, nourishment can provide more/better habitat for them, as well as for sea birds and beach flora. Florida addressed the concern that dredge pipes would suck turtles into the pumps by adding a special grill to the dredge pipes.[18]
+
+The selection of suitable material for a particular project depends upon the design needs, environmental factors and transport costs, considering both short and long-term implications.[19]
+
+The most important material characteristic is the sediment grain size, which must closely match the native material. Excess silt and clay fraction (mud) versus the natural turbidity in the nourishment area disqualifies some materials. Projects with unmatched grain sizes performed relatively poorly. Nourishment sand that is only slightly smaller than native sand can result in significantly narrower equilibrated dry beach widths compared to sand the same size as (or larger than) native sand. Evaluating material fit requires a sand survey that usually includes geophysical profiles and surface and core samples.[19]
+
+Some beaches were nourished using a finer sand than the original. Thermoluminescence monitoring reveals that storms can erode such beaches far more quickly. This was observed at a Waikiki nourishment project in Hawaii.[20]
+
+Beach Profile Nourishment describes programs that nourish the full beach profile. In this instance, "profile" means the slope of the uneroded beach from above the water out to sea. The Gold Coast profile nourishment program placed 75% of its total sand volume below low water level. Some coastal authorities overnourish the below water beach (aka "nearshore nourishment") so that over time the natural beach increases in size. These approaches do not permanently protect beaches eroded by human activity, which requires that activity to be mitigated.[citation needed]
+
+Nourishment projects usually involve physical, environmental and economic objectives.
+
+Typical physical measures include dry beach width/height, post-storm sand volume, post-storm damage avoidance assessments and aqueous sand volume.
+
+Environmental measures include marine life distribution, habitat and population counts.
+
+Economic impacts include recreation, tourism, flood and "disaster" prevention.
+
+Many nourishment projects are advocated via economic impact studies that rely on additional tourist expenditure. This approach is however unsatisfactory. First, nothing proves that these expenditures are incremental (they could shift expenditures from other nearby areas). Second, economic impact does not account for costs and benefits for all economic agents, as cost benefit analysis does.[21] Techniques for incorporating nourishment projects into flood insurance costs and disaster assistance remain controversial.[22]
+
+The performance of a beach nourishment project is most predictable for a long, straight shoreline without the complications of inlets or engineered structures.  In addition, predictability is better for overall performance, e.g., average shoreline change, rather than shoreline change at a specific location.[citation needed]
+
+Nourishment can affect eligibility in the U.S. National Flood Insurance Program and federal disaster assistance.[citation needed]
+
+Nourishment may have the unintended consequence of promoting coastal development, which increases risk of other coastal hazards.[17]
+
+Nourishment is not the only technique used to address eroding beaches. Others can be used singly or in combination with nourishment, driven by economic, environmental and political considerations.
+
+Human activities such as dam construction can interfere with natural sediment flows (thereby reducing riverine sediment sources.) Construction of littoral barriers such as jetties and deepening of inlets can prevent longshore sediment transport.
+
+The structural approach attempts to prevent erosion. Armoring involves building  revetments, seawalls, detached breakwaters, groins, etc. Structures that run parallel to the shore (seawalls or revetments) prevent erosion. While this protects structures, it doesn't protect the beach that is outside the wall. The beach generally disappears over a period that ranges from months to decades.[citation needed]
+
+Groynes and breakwaters that run perpendicular to the shore protect it from erosion. Filling a breakwater with imported sand can stop the breakwater from trapping sand from the littoral stream (the ocean running along the shore.)  Otherwise the breakwater may deprive downstream beaches of sand and accelerate erosion there.[citation needed]
+
+Armoring may restrict beach/ocean access, enhance erosion of adjacent shorelines, and requires long-term maintenance.[citation needed]
+
+Managed retreat moves structures and other infrastructure inland as the shoreline erodes. Retreat is more often chosen in areas of rapid erosion and in the presence of little or obsolete development.
+
+
+
+All beaches grow and shrink depending on tides, precipitation, wind, waves and current. Wet beaches tend to lose sand. Waves infiltrate dry beaches easily and deposit sandy sediment. Generally a beach is wet during falling tide, because the sea sinks faster than the beach drains. As a result, most erosion happens during falling tide. Beach drainage (beach dewatering) using Pressure Equalizing Modules (PEMs) allow the beach to drain more effectively during falling tide. Fewer hours of wet beach translate to less erosion. Permeable PEM tubes inserted vertically into the foreshore connect the different layers of groundwater. The groundwater enters the PEM tube allowing gravity to conduct it to a coarser sand layer, where it can drain more quickly.[23] The PEM modules are placed in a row from the dune to the mean low waterline. Distance between rows is typically 300 feet (91 m) but this is project-specific. PEM systems come in different sizes. Modules connect layers with varying hydraulic conductivity. Air/water can enter and equalize pressure.[citation needed]
+
+PEMs are minimally invasive, typically covering approximately 0.00005% of the beach.[citation needed] The tubes are below the beach surface, with no visible presence. PEM installations have been installed on beaches in Denmark, Sweden, Malaysia and Florida.[23] The effectiveness of beach dewatering has not been proven convincingly on life-sized beaches, in particular for the sand beach case.[24] Dewatering systems have been shown to lower very significantly the watertable but other morphodynamical effects generally overpower any stabilizing effect of dewatering for fine sediments,[25][26][27][28] although some mixed results on upper beach accretion associated to erosion in middle and lower have been reported.[29] This is in line with the current knowledge of swash-groundwater sediment dynamics which states that the effects of in/exfiltration flows through sand beds in the swash zone associated to modification of swash boundary layer and relative weight of the sediment and overall volume loss of the swash tongue are generally lower than other drivers, at least for fine sediments such as sand  [30][31]
+
+Appropriately constructed and sited fences can capture blowing sand, building/restoring sand dunes, and progressively protecting the beach from the wind, and the shore from blowing sand.[citation needed]
+
+The setting of a beach nourishment project is key to design and potential performance. Possible settings include a long straight beach, an inlet that may be either natural or modified and a pocket beach. Rocky or seawalled shorelines, that otherwise have no sediment, present unique problems.[citation needed]
+
+Hurricane Wilma hit the beaches of Cancun and the Riviera Maya in 2005. The initial nourishment project was unsuccessful at a cost of $19 million, leading to a second round that began in September 2009 and was scheduled to complete in early 2010 with a cost of $70 million.[32] The project designers and the government committed to invest in beach maintenance to address future erosion. Project designers considered factors such as the time of year and sand characteristics such as density. Restoration in Cancun was expected to deliver 1.3 billion US gallons (4,900,000 m3) of sand to replenish 450 meters (1,480 ft) of coastline.
+
+Gold Coast beaches in Queensland, Australia have experienced periods of severe erosion. In 1967 a series of 11 cyclones removed most of the sand from Gold Coast beaches. The Government of Queensland engaged engineers from Delft University in the Netherlands to advise them. The 1971 Delft Report outlined a series of works for Gold Coast Beaches, including beach nourishment and an artificial reef. By 2005 most of the recommendations had been implemented.
+
+The Northern Gold Coast Beach Protection Strategy (NGCBPS) was an A$10 million investment. NGCBPS was implemented between 1992 and 1999 and the works were completed between 1999 and 2003. The project included dredging 3,500,000 cubic metres (4,600,000 cu yd) of compatible sand from the Gold Coast Broadwater and delivering it through a pipeline to nourish 5 kilometers (3.1 mi) of beach between Surfers Paradise and Main Beach. The new sand was stabilized by an artificial reef constructed at Narrowneck out of huge geotextile sand bags. The new reef was designed to improve wave conditions for surfing. A key monitoring program for the NGCBPS is the ARGUS coastal camera system.
+
+More than one-quarter of the Netherlands is below sea level[33] and about 81% of the coast consists of sand dune or beach. The shoreline is closely monitored by yearly recording of the cross section at points 250 meters (820 ft) apart, to ensure adequate protection. Where long-term erosion is identified, beach nourishment using high-capacity suction dredgers is deployed. In 1990 the Dutch government has decided to compensate in principal all coastal erosion by nourishment. This policy is still ongoing and successful. All costs are covered by the National Budget.[34][35][36]
+
+A novel beach nourishment strategy was implemented in South Holland, where a new beach form was created using vast quantities of sand with the expectation that the sand would be distributed by natural processes to nourish the beach over many years (see Sand engine).
+
+Hawaii planned to replenish Waikiki beach in 2010. Budgeted at $2.5 million, the project covered 1,700 feet (520 m) in an attempt to return the beach to its 1985 width. Prior opponents supported this project, because the sand was to come from nearby shoals, reopening a blocked channel and leaving the overall local sand volume unchanged, while closely matching the "new" sand to existing materials. The project planned to apply up to 24,000 cubic yards (18,000 m3) of sand from deposits located 1,500 to 3,000 feet (460 to 910 m) offshore at a depth of 10 to 20 feet (3.0 to 6.1 m). The project was larger than the prior recycling effort in 2006-07, which moved 10,000 cubic yards (7,600 m3).[37]
+
+Maui, Hawaii illustrated the complexities of even small-scale nourishment projects. A project at Sugar Cove transported upland sand to the beach. The sand allegedly was finer than the original sand and contained excess silt that enveloped coral, smothering it and killing the small animals that lived in and around it. As in other projects, on-shore sand availability was limited, forcing consideration of more expensive offshore sources.[38]
+
+A second project, along Stable Road, that attempted to slow rather than halt erosion, was stopped halfway toward its goal of adding 10,000 cubic yards (7,600 m3) of sand. The beaches had been retreating at a "comparatively fast rate" for half a century. The restoration was complicated by the presence of old seawalls, groins, piles of rocks and other structures.[38]
+
+This project used sand-filled geotextile tube groins that were originally to remain in place for up to 3 years. A pipe was to transport sand from deeper water to the beach. The pipe was anchored by concrete blocks attached by fibre straps. A video showed the blocks bouncing off the coral in the current, killing whatever they touched. In places the straps broke, allowing the pipe to move across the reef, "planing it down". Bad weather exacerbated the damaging movement and killed the project.[39] The smooth, cylindrical geotextile tubes could be difficult to climb over before they were covered by sand.[38]
+
+Supporters claimed that 2010's seasonal summer erosion was less than in prior years, although the beach was narrower after the restoration ended than in 2008. Authorities were studying whether to require the project to remove the groins immediately. Potential alternatives to geotextile tubes for moving sand included floating dredges and/or trucking in sand dredged offshore.[38]
+
+A final consideration was sea level rise and that Maui was sinking under its own weight. Both Maui and Hawaii Island surround massive mountains (Haleakala, Mauna Loa, and Mauna Kea) and were expanding a giant dimple in the ocean floor, some 30,000 feet (9,100 m) below the mountain summits.[38]
+
+The Outer Banks consists of a number of towns. 5 of the 6 town have undergone beach nourishment since 2011.[40] The projects were as follows:
+
+Duck, NC - the beach nourishment took place in 2017 and cost an estimated $14,057,929.[41]
+
+Southern Shores - the estimated costs for the Southern Shores project was approximately $950,000[42] and was completed in 2017. There is a proposed additional project to widen the beaches in 2022 with an estimated cost of between $9 million and $13.5 million.[43]
+
+Kitty Hawk - the beach nourishment project in Kitty Hawk was completed in 2017 and included 3.58 miles of beaches running from the Southern Shores to Kitty Hawk and cost $18.2 million.[44]
+
+Kill Devil Hills - the beach nourishment project was completed in 2017.
+
+Nags Head - The town's first beach nourishment project took place in 2011 and cost between $36 million and $37 million.[45] The renourishment project in 2019 cost an estimated $25,546,711.[46]
+
+Upcoming Projects - the towns of Duck, Southern Shores, Kitty Hawk and Kill Devil Hills have secured a contract with Coastal Protection Engineering for tentative re-nourishment projects scheduled for 2022.[47]
+
+90 PEMs were Installed in February 2008 at Hillsboro Beach. After 18 months the beach had expanded significantly. Most of the PEMs were removed in 2011. Beach volume expanded by 38,500 cubic yards over 3 years compared to an average annual loss of 21,000.[48]
+
+The beach in Gold Coast was built as an artificial beach  in the 1990s with HK$60m. Sands are supplied periodically, especially after typhoons, to keep the beach viable.[49]

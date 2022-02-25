@@ -1,0 +1,27 @@
+In computational learning theory, Occam learning is a model of algorithmic learning where the objective of the learner is to output a succinct representation of received training data. This is closely related to probably approximately correct (PAC) learning, where the learner is evaluated on its predictive power of a test set.
+
+Occam learnability implies PAC learning, and for a wide variety of concept classes, the converse is also true: PAC learnability implies Occam learnability.
+
+Occam Learning is named after Occam's razor, which is a principle stating that, given all other things being equal, a shorter explanation for observed data should be favored over a lengthier explanation. The theory of Occam learning is a formal and mathematical justification for this principle. It was first shown by Blumer, et al.[1] that Occam learning implies PAC learning, which is the standard model of learning in computational learning theory. In other words, parsimony (of the output hypothesis) implies predictive power.
+
+The succinctness of a concept  in concept class  can be expressed by the length  of the shortest bit string that can represent  in . Occam learning connects the succinctness of a learning algorithm's output to its predictive power on unseen data.
+
+Let  and  be concept classes containing target concepts and hypotheses respectively. Then, for constants  and , a learning algorithm  is an -Occam algorithm for  using  iff, given a set  of  samples labeled according to a concept ,  outputs a hypothesis  such that
+
+where  is the maximum length of any sample . An Occam algorithm is called efficient if it runs in time polynomial in , , and  We say a concept class  is Occam learnable with respect to a hypothesis class  if there exists an efficient Occam algorithm for   using 
+
+Occam learnability implies PAC learnability, as the following theorem of Blumer, et al.[2] shows:
+
+Here,  is with respect to the concept  and distribution . This implies that the algorithm  is also a PAC learner for the concept class  using hypothesis class .  A slightly more general formulation is as follows:
+
+While the above theorems show that Occam learning is sufficient for PAC learning, it doesn't say anything about necessity. Board and Pitt show that, for a wide variety of concept classes, Occam learning is in fact necessary for PAC learning.[3] They proved that for any concept class that is polynomially closed under exception lists, PAC learnability implies the existence of an Occam algorithm for that concept class. Concept classes that are polynomially closed under exception lists include Boolean formulas, circuits, deterministic finite automata, decision-lists, decision-trees, and other geometrically-defined concept classes.
+
+A concept class  is polynomially closed under exception lists if there exists a polynomial-time algorithm  such that, when given the representation of a concept  and a finite list  of exceptions, outputs a representation of a concept  such that the concepts  and  agree except on the set .
+
+We first prove the Cardinality version. Call a hypothesis  bad if , where again  is with respect to the true concept  and the underlying distribution . The probability that a set of samples  is consistent with  is at most , by the independence of the samples. By the union bound, the probability that there exists a bad hypothesis in  is at most , which is less than  if . This concludes the proof of the second theorem above.
+
+Using the second theorem, we can prove the first theorem. Since we have a -Occam algorithm, this means that any hypothesis output by  can be represented by at most  bits, and thus . This is less than  if we set  for some constant . Thus, by the Cardinality version Theorem,  will output a consistent hypothesis  with probability at least . This concludes the proof of the first theorem above.
+
+Though Occam and PAC learnability are equivalent, the Occam framework can be used to produce tighter bounds on the sample complexity of classical problems including conjunctions,[2] conjunctions with few relevant variables,[4] and decision lists.[5]
+
+Occam algorithms have also been shown to be successful for PAC learning in the presence of errors,[6][7] probabilistic concepts,[8] function learning[9] and Markovian non-independent examples.[10]

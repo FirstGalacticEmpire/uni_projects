@@ -1,0 +1,9 @@
+Ribozyviria is a realm of satellite nucleic acids.[1] Established in ICTV TaxoProp 2020.012D, the realm is named after the presence of genomic and antigenomic ribozymes of the Deltavirus type. Additional common features include a rod-like structure, a RNA-binding "delta antigen" encoded in the genome, and animal hosts.[2] Most lineages of this realm are poorly understood, the notable exception being members of the genus Deltavirus, the causal agents of Hepatitis D in humans.
+
+The first taxa of this realm to receive acceptance by the ICTV is the species Hepatitis delta virus and its genus Deltavirus, in 1993. Deltavirus remained unassigned to any higher taxa until 2018, when the ICTV mistakenly classified Deltavirus within the then newly established realm, Riboviria. In 2019, this error was rectified and Deltavirus returned to its original position. In 2020, Hepatitis delta virus was abolished and replaced with eight new species, and the taxonomy developed to reach its current form, detailed below.[3]
+
+Ribozyviria contains a single family, Kolmioviridae, with no intermediate taxa between realm and family. This family contains eight genera.
+
+The names of all genera in this realm allude to the letter "D" in various languages. The family name comes from Finnish kolmio "triangle"; another reference to the Greek letter "Δ" (delta).[2]
+
+This taxonomy is shown hereafter:[1]

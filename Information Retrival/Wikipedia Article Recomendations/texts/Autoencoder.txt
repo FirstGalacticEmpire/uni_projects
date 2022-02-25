@@ -1,0 +1,103 @@
+
+
+An autoencoder is a type of artificial neural network used to learn efficient codings of unlabeled data (unsupervised learning).[1] The encoding is validated and refined by attempting to regenerate the input from the encoding. The autoencoder learns a representation (encoding) for a set of data, typically for dimensionality reduction, by training the network to ignore insignificant data (“noise”). 
+
+Variants exist, aiming to force the learned representations to assume useful properties.[2] Examples are regularized autoencoders (Sparse, Denoising and Contractive), which are effective in learning representations for subsequent classification tasks,[3] and Variational autoencoders, with applications as generative models.[4] Autoencoders are applied to many problems, from facial recognition,[5] feature detection,[6] anomaly detection to acquiring the meaning of words.[7][8] Autoencoders are also generative models: they can randomly generate new data that is similar to the input data (training data).[6]
+
+An autoencoder has two main parts: an encoder that maps the input into the code, and a decoder that maps the code to a reconstruction of the input.
+
+The simplest way to perform the copying task perfectly would be to duplicate the signal. Instead, autoencoders are typically forced to reconstruct the input approximately, preserving only the most relevant aspects of the data in the copy.
+
+
+The idea of autoencoders has been popular for decades. The first applications date to the 1980s.[2][9][10] Their most traditional application was dimensionality reduction or feature learning, but the concept became widely used for learning generative models of data.[11][12] Some of the most powerful AIs in the 2010s involved autoencoders stacked inside deep neural networks.[13]
+The simplest form of an autoencoder is a feedforward, non-recurrent neural network similar to single layer perceptrons that participate in multilayer perceptrons (MLP) – employing an input layer and an output layer connected by one or more hidden layers. The output layer has the same number of nodes (neurons) as the input layer. Its purpose is to reconstruct its inputs (minimizing the difference between the input and the output) instead of predicting a target value  given inputs . Therefore, autoencoders learn unsupervised.
+
+An autoencoder consists of two parts, the encoder and the decoder, which can be defined as transitions  and  such that:
+
+In the simplest case, given one hidden layer, the encoder stage of an autoencoder takes the input  and maps it to :
+
+This image  is usually referred to as code, latent variables, or a latent representation.  is an element-wise activation function such as a sigmoid function or a rectified linear unit.   is a weight matrix and  is a bias vector. Weights and biases are usually initialized randomly, and then updated iteratively during training through backpropagation. After that, the decoder stage of the autoencoder maps  to the reconstruction  of the same shape as :
+
+where  for the decoder may be unrelated to the corresponding  for the encoder.
+
+Autoencoders are trained to minimise reconstruction errors (such as squared errors), often referred to as the "loss":
+
+where  is usually averaged over the training set.
+
+As mentioned before, autoencoder training is performed through backpropagation of the error, just like other feedforward neural networks.
+
+Should the feature space  have lower dimensionality than the input space , the feature vector  can be regarded as a compressed representation of the input . This is the case of undercomplete autoencoders. If the hidden layers are larger than (overcomplete), or equal to, the input layer, or the hidden units are given enough capacity, an autoencoder can potentially learn the identity function and become useless. However, experimental results found that overcomplete autoencoders might still learn useful features.[14] In the ideal setting, the code dimension and the model capacity could be set on the basis of the complexity of the data distribution to be modeled. One way to do so is to exploit the model variants known as Regularized Autoencoders.[2]
+
+Various techniques exist to prevent autoencoders from learning the identity function and to improve their ability to capture important information and learn richer representations.
+
+Learning representations  in a way that encourages sparsity improves performance on classification tasks.[15] Sparse autoencoders may include more (rather than fewer) hidden units than inputs, but only a small number of the hidden units are allowed to be active at the same time (thus, sparse).[13] This constraint forces the model to respond to the unique statistical features of the training data.
+
+Specifically, a sparse autoencoder is an autoencoder whose training criterion involves a sparsity penalty  on the code layer .
+
+Recalling that , the penalty encourages the model to activate (i.e. output value close to 1) specific areas of the network on the basis of the input data, while inactivating all other neurons (i.e. to have an output value close to 0).[16]
+
+This sparsity can be achieved by formulating the penalty terms in different ways.
+
+Denoising autoencoders (DAE) try to achieve a good representation by changing the reconstruction criterion.[2]
+
+Indeed, DAEs take a partially corrupted input and are trained to recover the original undistorted input.  In practice, the objective of denoising autoencoders is that of cleaning the corrupted input, or denoising. Two assumptions are inherent to this approach:
+
+In other words, denoising is advocated as a training criterion for learning to extract useful features that will constitute better higher level representations of the input.[3]
+
+The training process of a DAE works as follows:
+
+The model's parameters  and  are trained to minimize the average reconstruction error over the training data, specifically, minimizing the difference between  and the original uncorrupted input  .[3] Note that each time a random example  is presented to the model, a new corrupted version is generated stochastically on the basis of .
+
+The above-mentioned training process could be applied with any kind of corruption process. Some examples might be additive isotropic Gaussian noise, masking noise (a fraction of the input chosen at random for each example is forced to 0) or salt-and-pepper noise (a fraction of the input chosen at random for each example is set to its minimum or maximum value with uniform probability).[3]
+
+The corruption of the input is performed only during training. After training, no corruption is added.
+
+A contractive autoencoder adds an explicit regularizer in its objective function that forces the model to learn an encoding robust to slight variations of input values. This regularizer corresponds to the Frobenius norm of the Jacobian matrix of the encoder activations with respect to the input. Since the penalty is applied to training examples only, this term forces the model to learn useful information about the training distribution. The final objective function has the following form:
+
+The autoencoder is termed contractive because it is encouraged to map a neighborhood of input points to a smaller neighborhood of output points.[2]
+
+DAE is connected to CAE: in the limit of small Gaussian input noise, DAEs make the reconstruction function resist small but finite-sized input perturbations, while CAEs make the extracted features resist infinitesimal input perturbations.
+
+The concrete autoencoder is designed for discrete feature selection.[21] A concrete autoencoder forces the latent space to consist only of a user-specified number of features. The concrete autoencoder uses a continuous relaxation of the categorical distribution to allow gradients to pass through the feature selector layer, which makes it possible to use standard backpropagation to learn an optimal subset of input features that minimize reconstruction loss.
+
+Variational autoencoders (VAEs) belong to the families of variational Bayesian methods. Despite the architectural similarities with basic autoencoders, VAEs are architecture with different goals and with a completely different mathematical formulation. The latent space is in this case composed by a mixture of distributions instead of a fixed vector.
+
+Given an input dataset  characterized by an unknown probability function  and a multivariate latent encoding vector , the objective is to model the data as a distribution , with  defined as the set of the network parameters so that .
+
+Autoencoders are often trained with a single layer encoder and a single layer decoder, but using many-layered (deep) encoders and decoders offers many advantages.[2]
+
+Geoffrey Hinton developed the deep belief network technique for training many-layered deep autoencoders. His method involves treating each neighbouring set of two layers as a restricted Boltzmann machine so that pretraining approximates a good solution, then using backpropagation to fine-tune the results.[22]
+
+Researchers have debated whether joint training (i.e. training the whole architecture together with a single global reconstruction objective to optimize) would be better for deep auto-encoders.[23] A 2015 study showed that joint training learns better data models along with more representative features for classification as compared to the layerwise method.[23] However, their experiments showed that the success of joint training depends heavily on the regularization strategies adopted.[23][24]
+
+The two main applications of autoencoders are dimensionality reduction and information retrieval,[2] but modern variations have been applied to other tasks.
+
+Dimensionality reduction was one of the first deep learning applications.[2]
+
+For Hinton's 2006 study,[22] he pretrained a multi-layer autoencoder with a stack of RBMs and then used their weights to initialize a deep autoencoder with gradually smaller hidden layers until hitting a bottleneck of 30 neurons. The resulting 30 dimensions of the code yielded a smaller reconstruction error compared to the first 30 components of a principal component analysis (PCA), and learned a representation that was qualitatively easier to interpret, clearly separating data clusters.[2][22]
+
+Representing dimensions can improve performance on tasks such as classification.[2] Indeed, the hallmark of dimensionality reduction is to place semantically related examples near each other.[26]
+
+If linear activations are used, or only a single sigmoid hidden layer, then the optimal solution to an autoencoder is strongly related to principal component analysis (PCA).[27][28] The weights of an autoencoder with a single hidden layer of size  (where  is less than the size of the input) span the same vector subspace as the one spanned by the first  principal components, and the output of the autoencoder is an orthogonal projection onto this subspace. The autoencoder weights are not equal to the principal components, and are generally not orthogonal, yet the principal components may be recovered from them using the singular value decomposition.[29]
+
+However, the potential of autoencoders resides in their non-linearity, allowing the model to learn more powerful generalizations compared to PCA, and to reconstruct the input with significantly lower information loss.[22]
+
+Information retrieval benefits particularly from dimensionality reduction in that search can become more efficient in certain kinds of low dimensional spaces. Autoencoders were indeed applied to semantic hashing, proposed by Salakhutdinov and Hinton in 2007.[26] By training the algorithm to produce a low-dimensional binary code, all database entries could be stored in a hash table mapping binary code vectors to entries. This table would then support information retrieval by returning all entries with the same binary code as the query, or slightly less similar entries by flipping some bits from the query encoding.
+
+Another application for autoencoders is anomaly detection.[30] [31][32][33][34] By learning to replicate the most salient features in the training data under some of the constraints described previously, the model is encouraged to learn to precisely reproduce the most frequently observed characteristics. When facing anomalies, the model should worsen its reconstruction performance. In most cases, only data with normal instances are used to train the autoencoder; in others, the frequency of anomalies is small compared to the observation set so that its contribution to the learned representation could be ignored. After training, the autoencoder will accurately reconstruct "normal" data, while failing to do so with unfamiliar anomalous data.[32] Reconstruction error (the error between the original data and its low dimensional reconstruction) is used as an anomaly score to detect anomalies.[32]
+
+Recent literature has however shown that certain autoencoding models can, counterintuitively, be very good at reconstructing anomalous examples and consequently not able to reliably perform anomaly detection.[35][36]
+
+The characteristics of autoencoders are useful in image processing.
+
+One example can be found in lossy image compression, where autoencoders outperformed other approaches and proved competitive against JPEG 2000.[37][38]
+
+Another useful application of autoencoders in image preprocessing is image denoising.[39][40][41]
+
+Autoencoders found use in more demanding contexts such as medical imaging where they have been used for image denoising[42] as well as super-resolution.[43][44] In image-assisted diagnosis, experiments have applied autoencoders for breast cancer detection[45] and for modelling the relation between the cognitive decline of Alzheimer's disease and the latent features of an autoencoder trained with MRI.[46]
+
+In 2019 molecules generated with variational autoencoders were validated experimentally in mice.[47][48]
+
+Recently, a stacked autoencoder framework produced promising results in predicting popularity of social media posts,[49] which is helpful for online advertising strategies.
+
+Autoencoders have been applied to machine translation, which is usually referred to as neural machine translation (NMT).[50][51] Unlike traditional autoencoders, the output does not match the input - it is in another language. In NMT, texts are treated as sequences to be encoded into the learning procedure, while on the decoder side sequences in the target language(s) are generated. Language-specific autoencoders incorporate further linguistic features into the learning procedure, such as Chinese decomposition features.[52]

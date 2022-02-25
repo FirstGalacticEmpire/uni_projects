@@ -1,0 +1,25 @@
+
+
+The figures presented here do not take into account differences in the cost of living in different countries, and the results vary greatly from one year to another based on fluctuations in the exchange rates of the country's currency. Such fluctuations change a country's ranking from one year to the next, even though they often make little or no difference to the standard of living of its population.
+
+Therefore, these figures should be used with caution. GDP per capita is often considered an indicator of a country's standard of living;[1][2] however, this is problematic because GDP per capita is not a measure of personal income.
+
+Comparisons of national income are also frequently made on the basis of purchasing power parity (PPP), to adjust for differences in the cost of living in different countries. (See List of countries by GDP (PPP) per capita.) PPP largely removes the exchange rate problem but not others; it does not reflect the value of economic output in international trade, and it also requires more estimation than GDP per capita. On the whole, PPP per capita figures are more narrowly spread than nominal GDP per capita figures.
+
+Non-sovereign entities (the world, continents, and some dependent territories) and states with limited international recognition (such as Kosovo, Palestine, and Taiwan) are included in the list in cases in which they appear in the sources. These economies are not ranked in the charts here, but are listed in sequence by GDP for comparison. In addition, non-sovereign entities are marked in italics.
+
+Note that several leading GDP-per-capita (nominal) jurisdictions may be considered tax havens, and their GDP data subject to material distortion by tax planning activities. Examples include Bermuda, the Cayman Islands, and Luxembourg.[3]
+
+All data are in current United States dollars. Historical data can be found here.
+
+The table is initially ranked by the primary source (IMF) for each country or territory, followed by the secondary and tertiary sources, and can be reranked by either of the sources.
+
+* indicates "Income in COUNTRY or TERRITORY" or "Economy of COUNTRY or TERRITORY" links.
+
+Note: Data unavailable for the Falkland Islands, the Faroe Islands, Gibraltar, the Holy See (Vatican City), Niue, the Pitcairn Islands, Saint Helena, Ascension and Tristan da Cunha, Tokelau, the United States Virgin Islands, and Western Sahara.
+
+Many of the leading GDP-per-capita (nominal) jurisdictions are tax havens whose economic data is artificially inflated by tax-driven corporate accounting entries.
+
+For instance, the Irish GDP data above is subject to material distortion by the tax planning activities of foreign multinationals in Ireland. To address this, in 2017 the Central Bank of Ireland created "modified GNI" (or GNI*) as a more appropriate statistic, and the OECD and IMF have adopted it for Ireland. 2015 Irish GDP is 143% of 2015 Irish GNI*.
+
+Further discussion on this topic can be found in the List of countries by GDP (PPP) per capita article.

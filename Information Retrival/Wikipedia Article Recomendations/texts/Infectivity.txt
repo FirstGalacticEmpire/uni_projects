@@ -1,0 +1,7 @@
+In epidemiology, infectivity is the ability of a pathogen to establish an infection.  More specifically, infectivity is a pathogen's capacity for horizontal transmission that is, how frequently it spreads among  hosts that are not in a parent–child relationship. The measure of infectivity in a population is called incidence.[citation needed]
+
+Infectivity has been shown to positively correlate with virulence, in plants. This means that as a pathogen's ability to infect a greater number of hosts increases, so does the level of harm it brings to the host.[1]
+
+A pathogen's infectivity is subtly but importantly different from its transmissibility, which refers to a pathogen's capacity to pass from one organism to another.[citation needed]
+
+

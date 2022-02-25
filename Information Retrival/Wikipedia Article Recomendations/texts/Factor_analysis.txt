@@ -1,0 +1,187 @@
+Factor analysis is a statistical method used to describe variability among observed, correlated variables in terms of a potentially lower number of unobserved variables called factors. For example, it is possible that variations in six observed variables mainly reflect the variations in two unobserved (underlying) variables. Factor analysis searches for such joint variations in response to unobserved latent variables. The observed variables are modelled as linear combinations of the potential factors, plus "error" terms.
+
+Simply put, the factor loading of a variable quantifies the extent to which the variable is related with a given factor.[1]
+
+A common rationale behind factor analytic methods is that the information gained about the interdependencies between observed variables can be used later to reduce the set of variables in a dataset. Factor analysis is commonly used in psychometrics, personality theories, biology, marketing, product management, operations research, finance, and machine learning. It may help to deal with data sets where there are large numbers of observed variables that are thought to reflect a smaller number of underlying/latent variables.  It is one of the most commonly used inter-dependency techniques and is used when the relevant set of variables shows a systematic inter-dependence and the objective is to find out the latent factors that create a commonality.
+
+The model attempts to explain a set of  observations in each of  individuals with a set of  common factors () where there are fewer factors per unit than observations per unit (). Each individual has  of their own common factors, and these are related to the observations via factor loading matrix (), for a single observation, according to
+
+whereby
+
+
+In matrix notation 
+
+where observation matrix , factor matrix , error term matrix  and mean matrix  whereby the th element is simply .
+
+Also we will impose the following assumptions on :
+
+Suppose . Then
+
+and therefore, from the conditions imposed on  above,
+
+or, setting ,
+
+Note that for any orthogonal matrix , if we set  and , the criteria for being factors and factor loadings still hold. Hence a set of factors and factor loadings is unique only up to an orthogonal transformation.
+
+Suppose a psychologist has the hypothesis that there are two kinds of intelligence, "verbal intelligence" and "mathematical intelligence", neither of which is directly observed. Evidence for the hypothesis is sought in the examination scores from each of 10 different academic fields of 1000 students. If each student is chosen randomly from a large population, then each student's 10 scores are random variables. The psychologist's hypothesis may say that for each of the 10 academic fields, the score averaged over the group of all students who share some common pair of values for verbal and mathematical "intelligences" is some constant times their level of verbal intelligence plus another constant times their level of mathematical intelligence, i.e., it is a linear combination of those two "factors". The numbers for a particular subject, by which the two kinds of intelligence are multiplied to obtain the expected score, are posited by the hypothesis to be the same for all intelligence level pairs, and are called "factor loading" for this subject.[clarification needed]  For example, the hypothesis may hold that the predicted average student's aptitude in the field of astronomy is
+
+The numbers 10 and 6 are the factor loadings associated with astronomy. Other academic subjects may have different factor loadings.
+
+Two students assumed to have identical degrees of verbal and mathematical intelligence may have different measured aptitudes in astronomy because individual aptitudes differ from average aptitudes (predicted above) and because of measurement error itself. Such differences make up what is collectively called the "error" — a statistical term that means the amount by which an individual, as measured, differs from what is average for or predicted by his or her levels of intelligence (see errors and residuals in statistics).
+
+The observable data that go into factor analysis would be 10 scores of each of the 1000 students, a total of 10,000 numbers. The factor loadings and levels of the two kinds of intelligence of each student must be inferred from the data.
+
+In the following, matrices will be indicated by indexed variables. "Subject" indices will be indicated using letters , and , with values running from  to  which is equal to  in the above example.  "Factor" indices will be indicated using letters ,  and , with values running from  to  which is equal to  in the above example. "Instance" or "sample" indices will be indicated using letters , and , with values running from  to . In the example above, if a sample of  students participated in the  exams, the th student's score for the th exam is given by . The purpose of factor analysis is to characterize the correlations between the variables  of which the  are a particular instance, or set of observations. In order for the variables to be on equal footing, they are normalized into standard scores :
+
+where the sample mean is:
+
+and the sample variance is given by:
+
+The factor analysis model for this particular sample is then:
+
+or, more succinctly:
+
+where
+
+In matrix notation, we have
+
+Observe that by doubling the scale on which "verbal intelligence"—the first component in each column of —is measured, and simultaneously halving the factor loadings for verbal intelligence makes no difference to the model. Thus, no generality is lost by assuming that the standard deviation of the factors for verbal intelligence is . Likewise for mathematical intelligence. Moreover, for similar reasons, no generality is lost by assuming the two factors are uncorrelated with each other. In other words:
+
+where  is the Kronecker delta ( when  and  when ).The errors are assumed to be independent of the factors:
+
+Note that, since any rotation of a solution is also a solution, this makes interpreting the factors difficult. See disadvantages below. In this particular example, if we do not know beforehand that the two types of intelligence are uncorrelated, then we cannot interpret the two factors as the two different types of intelligence. Even if they are uncorrelated, we cannot tell which factor corresponds to verbal intelligence and which corresponds to mathematical intelligence without an outside argument.
+
+The values of the loadings , the averages , and the variances of the "errors"  must be estimated given the observed data  and  (the assumption about the levels of the factors is fixed for a given ). 
+The "fundamental theorem" may be derived from the above conditions:
+
+The term on the left is the -term of the correlation matrix (a  matrix derived as the product of the  matrix of standardized observations with its transpose) of the observed data, and its  diagonal elements will be s. The second term on the right will be a diagonal matrix with terms less than unity. The first term on the right is the "reduced correlation matrix" and will be equal to the correlation matrix except for its diagonal values which will be less than unity. These diagonal elements of the reduced correlation matrix are called "communalities" (which represent the fraction of the variance in the observed variable that is accounted for by the factors):
+
+The sample data  will not exactly obey the fundamental equation given above due to sampling errors, inadequacy of the model, etc. The goal of any analysis of the above model is to find the factors  and loadings  which give a "best fit" to the data. In factor analysis, the best fit is defined as the minimum of the mean square error in the off-diagonal residuals of the correlation matrix:[2]
+
+This is equivalent to minimizing the off-diagonal components of the error covariance which, in the model equations have expected values of zero. This is to be contrasted with principal component analysis which seeks to minimize the mean square error of all residuals.[2] Before the advent of high-speed computers, considerable effort was devoted to finding approximate solutions to the problem, particularly in estimating the communalities by other means, which then simplifies the problem considerably by yielding a known reduced correlation matrix. This was then used to estimate the factors and the loadings. With the advent of high-speed computers, the minimization problem can be solved iteratively with adequate speed, and the communalities are calculated in the process, rather than being needed beforehand. The MinRes algorithm is particularly suited to this problem, but is hardly the only iterative means of finding a solution.
+
+If the solution factors are allowed to be correlated (as in 'oblimin' rotation, for example), then the corresponding mathematical model uses skew coordinates rather than orthogonal coordinates.
+
+The parameters and variables of factor analysis can be given a geometrical interpretation. The data (), the factors () and the errors () can be viewed as vectors in an -dimensional Euclidean space (sample space), represented as ,  and  respectively. Since the data are standardized, the data vectors are of unit length (). The factor vectors define an -dimensional linear subspace (i.e. a hyperplane) in this space, upon which the data vectors are projected orthogonally. This follows from the model equation 
+
+and the independence of the factors and the errors: . In the above example, the hyperplane is just a 2-dimensional plane defined by the two factor vectors. The projection of the data vectors onto the hyperplane is given by 
+
+and the errors are vectors from that projected point to the data point and are perpendicular to the hyperplane. The goal of factor analysis is to find a hyperplane which is a "best fit" to the data in some sense, so it doesn't matter how the factor vectors which define this hyperplane are chosen, as long as they are independent and lie in the hyperplane. We are free to specify them as both orthogonal and normal () with no loss of generality. After a suitable set of factors are found, they may also be arbitrarily rotated within the hyperplane, so that any rotation of the factor vectors will define the same hyperplane, and also be a solution. As a result, in the above example, in which the fitting hyperplane is two dimensional, if we do not know beforehand that the two types of intelligence are uncorrelated, then we cannot interpret the two factors as the two different types of intelligence. Even if they are uncorrelated, we cannot tell which factor corresponds to verbal intelligence and which corresponds to mathematical intelligence, or whether the factors are linear combinations of both, without an outside argument.
+
+The data vectors  have unit length. The entries of the correlation matrix for the data are given by . The correlation matrix can be geometrically interpreted as the cosine of the angle between the two data vectors  and . The diagonal elements will clearly be s and the off diagonal elements will have absolute values less than or equal to unity. The "reduced correlation matrix" is defined as 
+
+The goal of factor analysis is to choose the fitting hyperplane such that the reduced correlation matrix reproduces the correlation matrix as nearly as possible, except for the diagonal elements of the correlation matrix which are known to have unit value.  In other words, the goal is to reproduce as accurately as possible the cross-correlations in the data. Specifically, for the fitting hyperplane, the mean square error in the off-diagonal components 
+
+is to be minimized, and this is accomplished by minimizing it with respect to a set of orthonormal factor vectors. It can be seen that 
+
+The term on the right is just the covariance of the errors. In the model, the error covariance is stated to be a diagonal matrix and so the above minimization problem will in fact yield a "best fit" to the model: It will yield a sample estimate of the error covariance which has its off-diagonal components minimized in the mean square sense. It can be seen that since the  are orthogonal projections of the data vectors, their length will be less than or equal to the length of the projected data vector, which is unity. The square of these lengths are just the diagonal elements of the reduced correlation matrix. These diagonal elements of the reduced correlation matrix are known as "communalities":
+
+Large values of the communalities will indicate that the fitting hyperplane is rather accurately reproducing the correlation matrix. The mean values of the factors must also be constrained to be zero, from which it follows that the mean values of the errors will also be zero.
+
+Exploratory factor analysis (EFA) is used to identify complex interrelationships among items and group items that are part of unified concepts.[3]  The researcher makes no a priori assumptions about relationships among factors.[3]
+
+Confirmatory factor analysis (CFA) is a more complex approach that tests the hypothesis that the items are associated with specific factors.[3] CFA uses structural equation modeling to test a measurement model whereby loading on the factors allows for evaluation of relationships between observed variables and unobserved variables.[3]  Structural equation modeling approaches can accommodate measurement error, and are less restrictive than least-squares estimation.[3]  Hypothesized models are tested against actual data, and the analysis would demonstrate loadings of observed variables on the latent variables (factors), as well as the correlation between the latent variables.[3]
+
+Principal component analysis (PCA) is a widely used method for factor extraction, which is the first phase of EFA.[3] Factor weights are computed to extract the maximum possible variance, with successive factoring continuing until there is no further meaningful variance left.[3] The factor model must then be rotated for analysis.[3]
+
+Canonical factor analysis, also called Rao's canonical factoring, is a different method of computing the same model as PCA, which uses the principal axis method. Canonical factor analysis seeks factors which have the highest canonical correlation with the observed variables. Canonical factor analysis is unaffected by arbitrary rescaling of the data.
+
+Common factor analysis, also called principal factor analysis (PFA) or principal axis factoring (PAF), seeks the fewest factors which can account for the common variance (correlation) of a set of variables.
+
+Image factoring is based on the correlation matrix of predicted variables rather than actual variables, where each variable is predicted from the others using multiple regression.
+
+Alpha factoring is based on maximizing the reliability of factors, assuming variables are randomly sampled from a universe of variables. All other methods assume cases to be sampled and variables fixed.
+
+Factor regression model is a combinatorial model of factor model and regression model; or alternatively, it can be viewed as the hybrid factor model,[4] whose factors are partially known.
+
+Factor loadings: Communality is the square of the standardized outer loading of an item. Analogous to Pearson's r-squared, the squared factor loading is the percent of variance in that indicator variable explained by the factor. To get the percent of variance in all the variables accounted for by each factor, add the sum of the squared factor loadings for that factor (column) and divide by the number of variables. (Note the number of variables equals the sum of their variances as the variance of a standardized variable is 1.) This is the same as dividing the factor's eigenvalue by the number of variables.
+
+Interpreting factor loadings: By one rule of thumb in confirmatory factor analysis, loadings should be .7 or higher to confirm that independent variables identified a priori are represented by a particular factor, on the rationale that the .7 level corresponds to about half of the variance in the indicator being explained by the factor. However, the .7 standard is a high one and real-life data may well not meet this criterion, which is why some researchers, particularly for exploratory purposes, will use a lower level such as .4 for the central factor and .25 for other factors. In any event, factor loadings must be interpreted in the light of theory, not by arbitrary cutoff levels.
+
+In oblique rotation, one may examine both a pattern matrix and a structure matrix. The structure matrix is simply the factor loading matrix as in orthogonal rotation, representing the variance in a measured variable explained by a factor on both a unique and common contributions basis. The pattern matrix, in contrast, contains coefficients which just represent unique contributions. The more factors, the lower the pattern coefficients as a rule since there will be more common contributions to variance explained. For oblique rotation, the researcher looks at both the structure and pattern coefficients when attributing a label to a factor. Principles of oblique rotation can be derived from both cross entropy and its dual entropy.[5]
+
+Communality: The sum of the squared factor loadings for all factors for a given variable (row) is the variance in that variable accounted for by all the factors. The communality measures the percent of variance in a given variable explained by all the factors jointly and may be interpreted as the reliability of the indicator in the context of the factors being posited.
+
+Spurious solutions: If the communality exceeds 1.0, there is a spurious solution, which may reflect too small a sample or the choice to extract too many or too few factors.
+
+Uniqueness of a variable: The variability of a variable minus its communality.
+
+Eigenvalues/characteristic roots: Eigenvalues measure the amount of variation in the total sample accounted for by each factor. The ratio of eigenvalues is the ratio of explanatory importance of the factors with respect to the variables. If a factor has a low eigenvalue, then it is contributing little to the explanation of variances in the variables and may be ignored as less important than the factors with higher eigenvalues.
+
+Extraction sums of squared loadings: Initial eigenvalues and eigenvalues after extraction (listed by SPSS as "Extraction Sums of Squared Loadings") are the same for PCA extraction, but for other extraction methods, eigenvalues after extraction will be lower than their initial counterparts. SPSS also prints "Rotation Sums of Squared Loadings" and even for PCA, these eigenvalues will differ from initial and extraction eigenvalues, though their total will be the same.
+
+Factor scores (also called component scores in PCA): are the scores of each case (row) on each factor (column). To compute the factor score for a given case for a given factor, one takes the case's standardized score on each variable, multiplies by the corresponding loadings of the variable for the given factor, and sums these products. Computing factor scores allows one to look for factor outliers. Also, factor scores may be used as variables in subsequent modeling. (Explained from PCA not from Factor Analysis perspective).
+
+Researchers wish to avoid such subjective or arbitrary criteria for factor retention as "it made sense to me". A number of objective methods have been developed to solve this problem, allowing users to determine an appropriate range of solutions to investigate.[6] Methods may not agree. For instance, the parallel analysis may suggest 5 factors while Velicer's MAP suggests 6, so the researcher may request both 5 and 6-factor solutions and discuss each in terms of their relation to external data and theory.
+
+Horn's parallel analysis (PA):[7] A Monte-Carlo based simulation method that compares the observed eigenvalues with those obtained from uncorrelated normal variables. A factor or component is retained if the associated eigenvalue is bigger than the 95th percentile of the distribution of eigenvalues derived from the random data. PA is among the more commonly recommended rules for determining the number of components to retain,[6][8] but many programs fail to include this option (a notable exception being R).[9] However, Formann provided both theoretical and empirical evidence that its application might not be appropriate in many cases since its performance is considerably influenced by sample size, item discrimination, and type of correlation coefficient.[10]
+
+Velicer's (1976) MAP test[11] as described by Courtney (2013)[12] “involves a complete principal components analysis followed by the examination of a series of matrices of partial correlations” (p. 397 (though note that this quote does not occur in Velicer (1976) and the cited page number is outside the pages of the citation). The squared correlation for Step “0” (see Figure 4) is the average squared off-diagonal correlation for the unpartialed correlation matrix. On Step 1, the first principal component and its associated items are partialed out. Thereafter, the average squared off-diagonal correlation for the subsequent correlation matrix is then computed for Step 1. On Step 2, the first two principal components are partialed out and the resultant average squared off-diagonal correlation is again computed. The computations are carried out for k minus one step (k representing the total number of variables in the matrix). Thereafter, all of the average squared correlations for each step are lined up and the step number in the analyses that resulted in the lowest average squared partial correlation determines the number of components or factors to retain.[11] By this method, components are maintained as long as the variance in the correlation matrix represents systematic variance, as opposed to residual or error variance. Although methodologically akin to principal components analysis, the MAP technique has been shown to perform quite well in determining the number of factors to retain in multiple simulation studies.[6][13][14][15] This procedure is made available through SPSS's user interface,[12] as well as the psych package for the R programming language.[16][17]
+
+Kaiser criterion: The Kaiser rule is to drop all components with eigenvalues under 1.0 – this being the eigenvalue equal to the information accounted for by an average single item.[18] The Kaiser criterion is the default in SPSS and most statistical software but is not recommended when used as the sole cut-off criterion for estimating the number of factors as it tends to over-extract factors.[19] A variation of this method has been created where a researcher calculates confidence intervals for each eigenvalue and retains only factors which have the entire confidence interval greater than 1.0.[13][20]
+
+Scree plot:[21]
+The Cattell scree test plots the components as the X-axis and the corresponding eigenvalues as the Y-axis.  As one moves to the right, toward later components, the eigenvalues drop. When the drop ceases and the curve makes an elbow toward less steep decline, Cattell's scree test says to drop all further components after the one starting at the elbow. This rule is sometimes criticised for being amenable to researcher-controlled "fudging".  That is, as picking the "elbow" can be subjective because the curve has multiple elbows or is a smooth curve, the researcher may be tempted to set the cut-off at the number of factors desired by their research agenda.[citation needed]
+
+Variance explained criteria: Some researchers simply use the rule of keeping enough factors to account for 90% (sometimes 80%) of the variation.  Where the researcher's goal emphasizes parsimony (explaining variance with as few factors as possible), the criterion could be as low as 50%.
+
+A Bayesian approach based on the Indian buffet process returns a probability distribution over the plausible number of latent factors.[22]
+
+The unrotated output maximizes variance accounted for by the first and subsequent factors, and forces the factors to be orthogonal. This data-compression comes at the cost of having most items load on the early factors, and usually, of having many items load substantially on more than one factor. Rotation serves to make the output more understandable, by seeking so-called "Simple Structure": A pattern of loadings where each item loads strongly on only one of the factors, and much more weakly on the other factors. Rotations can be orthogonal or oblique (allowing the factors to correlate).
+
+Varimax rotation is an orthogonal rotation of the factor axes to maximize the variance of the squared loadings of a factor (column) on all the variables (rows) in a factor matrix, which has the effect of differentiating the original variables by extracted factor. Each factor will tend to have either large or small loadings of any particular variable. A varimax solution yields results which make it as easy as possible to identify each variable with a single factor. This is the most common rotation option. However, the orthogonality (i.e., independence) of factors is often an unrealistic assumption. Oblique rotations are inclusive of orthogonal rotation, and for that reason, oblique rotations are a preferred method.  Allowing for factors that are correlated with one another is especially applicable in psychometric research, since attitudes, opinions, and intellectual abilities tend to be correlated, and since it would be unrealistic in many situations to assume otherwise.[23]
+
+Quartimax rotation is an orthogonal alternative which minimizes the number of factors needed to explain each variable. This type of rotation often generates a general factor on which most variables are loaded to a high or medium degree. Such a factor structure is usually not helpful to the research purpose.
+
+Equimax rotation is a compromise between varimax and quartimax criteria.
+
+Direct oblimin rotation is the standard method when one wishes a non-orthogonal (oblique) solution – that is, one in which the factors are allowed to be correlated. This will result in higher eigenvalues but diminished interpretability of the factors. See below.[clarification needed]
+
+Promax rotation is an alternative non-orthogonal (oblique) rotation method which is computationally faster than the direct oblimin method and therefore is sometimes used for very large datasets.
+
+Higher-order factor analysis is a statistical method consisting of repeating steps factor analysis – oblique rotation – factor analysis of rotated factors.  Its merit is to enable the researcher to see the hierarchical structure of studied phenomena. To interpret the results, one proceeds either by post-multiplying the primary factor pattern matrix by the higher-order factor pattern matrices (Gorsuch, 1983) and perhaps applying a Varimax rotation to the result (Thompson, 1990) or by using a Schmid-Leiman solution (SLS, Schmid & Leiman, 1957, also known as Schmid-Leiman transformation) which attributes the variation from the primary factors to the second-order factors.
+
+Charles Spearman was the first psychologist to discuss common factor analysis[24] and did so in his 1904 paper.[25] It provided few details about his methods and was concerned with single-factor models.[26] He discovered that school children's scores on a wide variety of seemingly unrelated subjects were positively correlated, which led him to postulate that a single general mental ability, or g, underlies and shapes human cognitive performance.
+
+The initial development of common factor analysis with multiple factors was given by Louis Thurstone in two papers in the early 1930s,[27][28] summarized in his 1935 book, The Vector of Mind.[29] Thurstone introduced several important factor analysis concepts, including communality, uniqueness, and rotation.[30] He advocated for "simple structure", and developed methods of rotation that could be used as a way to achieve such structure.[24]
+
+In Q methodology, Stephenson, a student of Spearman, distinguish between R factor analysis, oriented toward the study of inter-individual differences, and Q factor analysis oriented toward subjective intra-individual differences.[31][32]
+
+Raymond Cattell was a strong advocate of factor analysis and psychometrics and used Thurstone's multi-factor theory to explain intelligence. Cattell also developed the "scree" test and similarity coefficients.
+
+Factor analysis is used to identify "factors" that explain a variety of results on different tests. For example, intelligence research found that people who get a high score on a test of verbal ability are also good on other tests that require verbal abilities. Researchers explained this by using factor analysis to isolate one factor, often called verbal intelligence, which represents the degree to which someone is able to solve problems involving verbal skills.[citation needed]
+
+Factor analysis in psychology is most often associated with intelligence research. However, it also has been used to find factors in a broad range of domains such as personality, attitudes, beliefs, etc. It is linked to psychometrics, as it can assess the validity of an instrument by finding if the instrument indeed measures the postulated factors.[citation needed]
+
+Factor analysis is a frequently used technique in cross-cultural research. It serves the purpose of extracting cultural dimensions. The best known cultural dimensions models are those elaborated by Geert Hofstede, Ronald Inglehart, Christian Welzel, Shalom Schwartz and Michael Minkov.
+
+Factor analysis is related to principal component analysis (PCA), but the two are not identical.[35] There has been significant controversy in the field over differences between the two techniques. PCA can be considered as a more basic version of exploratory factor analysis (EFA) that was developed in the early days prior to the advent of high-speed computers. Both PCA and factor analysis aim to reduce the dimensionality of a set of data, but the approaches taken to do so are different for the two techniques. Factor analysis is clearly designed with the objective to identify certain unobservable factors from the observed variables, whereas PCA does not directly address this objective; at best, PCA provides an approximation to the required factors.[36] From the point of view of exploratory analysis, the eigenvalues of PCA are inflated component loadings, i.e., contaminated with error variance.[37][38][39][40][41][42]
+
+Whilst EFA and PCA are treated as synonymous techniques in some fields of statistics, this has been criticised.[43][44] Factor analysis "deals with the assumption of an underlying causal structure: [it] assumes that the covariation in the observed variables is due to the presence of one or more latent variables (factors) that exert causal influence on these observed variables".[45] In contrast, PCA neither assumes nor depends on such an underlying causal relationship. Researchers have argued that the distinctions between the two techniques may mean that there are objective benefits for preferring one over the other based on the analytic goal. If the factor model is incorrectly formulated or the assumptions are not met, then factor analysis will give erroneous results. Factor analysis has been used successfully where adequate understanding of the system permits good initial model formulations. PCA employs a mathematical transformation to the original data with no assumptions about the form of the covariance matrix. The objective of PCA is to determine linear combinations of the original variables and select a few that can be used to summarize the data set without losing much information.[46]
+
+Fabrigar et al. (1999)[43] address a number of reasons used to suggest that PCA is not equivalent to factor analysis:
+
+Factor analysis takes into account the random error that is inherent in measurement, whereas PCA fails to do so. This point is exemplified by Brown (2009),[47] who indicated that, in respect to the correlation matrices involved in the calculations:
+
+For this reason, Brown (2009) recommends using factor analysis when theoretical ideas about relationships between variables exist, whereas PCA should be used if the goal of the researcher is to explore patterns in their data.
+
+The differences between PCA and factor analysis (FA) are further illustrated by Suhr (2009):[44]
+
+
+
+The basic steps are:
+
+The data collection stage is usually done by marketing research professionals. Survey questions ask the respondent to rate a product sample or descriptions of product concepts on a range of attributes. Anywhere from five to twenty attributes are chosen. They could include things like: ease of use, weight, accuracy, durability, colourfulness, price, or size. The attributes chosen will vary depending on the product being studied. The same question is asked about all the products in the study. The data for multiple products is coded and input into a statistical program such as R, SPSS, SAS, Stata, STATISTICA, JMP, and SYSTAT.
+
+The analysis will isolate the underlying factors that explain the data using a matrix of associations.[48] Factor analysis is an interdependence technique. The complete set of interdependent relationships is examined. There is no specification of dependent variables, independent variables, or causality. Factor analysis assumes that all the rating data on different attributes can be reduced down to a few important dimensions. This reduction is possible because some attributes may be related to each other. The rating given to any one attribute is partially the result of the influence of other attributes. The statistical algorithm deconstructs the rating (called a raw score) into its various components, and reconstructs the partial scores into underlying factor scores. The degree of correlation between the initial raw score and the final factor score is called a factor loading.
+
+Factor analysis has also been widely used in physical sciences such as geochemistry,  hydrochemistry,[49] astrophysics and cosmology, as well as biological sciences, such as ecology, molecular biology, neuroscience and biochemistry.
+
+In groundwater quality management, it is important to relate the spatial distribution of different chemical
+parameters to different possible sources, which have different chemical signatures. For example, a sulfide mine is likely to be associated with high levels of acidity, dissolved sulfates and transition metals. These signatures can be identified as factors through R-mode factor analysis, and the location of possible sources can be suggested by contouring the factor scores.[50]
+
+In geochemistry, different factors can correspond to different mineral associations, and thus to mineralisation.[51]
+
+Factor analysis can be used for summarizing high-density oligonucleotide DNA microarrays data at probe level for Affymetrix GeneChips. In this case, the latent variable corresponds to the RNA concentration in a sample.[52]
+
+Factor analysis has been implemented in several statistical analysis programs since the 1980s:

@@ -1,0 +1,91 @@
+
+
+Polyphenols (/ˌpɒliˈfiːnoʊl, -nɒl/) are a large family of naturally occurring organic compounds characterized by multiples of phenol units.[1] They are abundant in plants and structurally diverse.[1][2][3] Polyphenols include flavonoids, tannic acid, and ellagitannin, some of which have been used historically as dyes and for tanning garments.
+
+The name derives from the Ancient Greek word πολύς (polus, meaning "many, much") and the word phenol which refers to a chemical structure formed by attaching to an aromatic benzenoid (phenyl) ring to a hydroxyl (-OH) group as is found in alcohols (hence the -ol suffix). The term polyphenol has been in use at least since 1894.[4]
+
+The term polyphenol is not well defined, but it is generally agreed that they are natural products "having a polyphenol structure (i.e., several hydroxyl groups on aromatic rings)" including four principal classes: "phenolic acids, flavonoids, stilbenes, and lignans".[5]
+
+"WBSSH" definition
+
+The White–Bate-Smith–Swain–Haslam (WBSSH) definition[6] characterized structural characteristics common to plant phenolics used in tanning (i.e., the tannins).[7]
+
+In terms of properties, the WBSSH describes the polyphenols thusly:
+
+In terms of structures, the WBSSH recognizes two structural family that have these properties:
+
+Quideau definition
+
+According to Stéphane Quideau, the term "polyphenol" refers to compounds derived from the shikimate/phenylpropanoid and/or the polyketide pathway, featuring more than one phenolic unit and deprived of nitrogen-based functions.[citation needed]
+
+Ellagic acid, a molecule at the core of naturally occurring phenolic compounds of varying sizes, is itself not a polyphenol by the WBSSH definition, but is by the Quideau definition. The raspberry ellagitannin,[8] on the other hand, with its 14 gallic acid moieties (most in ellagic acid-type components), and more than 40 phenolic hydroxyl groups, meets the criteria of both definitions of a polyphenol. Other examples of compounds that fall under both the WBSSH and Quideau definitions include the black tea theaflavin-3-gallate shown below, and the hydrolyzable tannin, tannic acid.[citation needed]
+
+Polyphenols are reactive species toward oxidation, hence their description as antioxidants in vitro.[9]
+
+Polyphenols are often larger molecules (macromolecules). Their upper molecular weight limit is about 800 daltons, which allows for the possibility to rapidly diffuse across cell membranes so that they can reach intracellular sites of action or remain as pigments once the cell senesces. Hence, many larger polyphenols are biosynthesized in-situ from smaller polyphenols to non-hydrolyzable tannins and remain undiscovered in the plant matrix. Most polyphenols contain repeating phenolic moieties of pyrocatechol, resorcinol, pyrogallol, and phloroglucinol connected by esters (hydrolyzable tannins) or more stable C-C bonds (nonhydrolyzable condensed tannins). Proanthocyanidins are mostly polymeric units of catechin and epicatechin. 
+
+Polyphenols often have functional groups beyond hydroxyl groups. Ether ester linkages are common, as are carboxylic acids. 
+
+The analysis techniques are those of phytochemistry: extraction, isolation, structural elucidation,[10] then quantification.[citation needed]
+
+Extraction of polyphenols[11] can be performed using a solvent like water, hot water, methanol, methanol/formic acid, methanol/water/acetic or formic acid. Liquid–liquid extraction can be also performed or countercurrent chromatography. Solid phase extraction can also be made on C18 sorbent cartridges. Other techniques are ultrasonic extraction, heat reflux extraction, microwave-assisted extraction,[12] critical carbon dioxide,[13][14] pressurized liquid extraction[15] or use of ethanol in an immersion extractor.[16] The extraction conditions (temperature, extraction time, ratio of solvent to raw material, solvent and concentrations) have to be optimized.
+
+Mainly found in the fruit skins and seeds, high levels of polyphenols may reflect only the measured extractable polyphenol (EPP) content of a fruit which may also contain non-extractable polyphenols. Black tea contains high amounts of polyphenol and makes up for 20% of its weight.[17]
+
+Concentration can be made by ultrafiltration.[18] Purification can be achieved by preparative chromatography.
+
+Phosphomolybdic acid is used as a reagent for staining phenolics in thin layer chromatography. Polyphenols can be studied by spectroscopy, especially in the ultraviolet domain, by fractionation or paper chromatography. They can also be analysed by chemical characterisation.
+
+Instrumental chemistry analyses include separation by high performance liquid chromatography (HPLC), and especially by reversed-phase liquid chromatography (RPLC), can be coupled to mass spectrometry.[13] Purified compounds can be identified by the means of nuclear magnetic resonance.[citation needed]
+
+The DMACA reagent is an histological dye specific to polyphenols used in microscopy analyses. The autofluorescence of polyphenols can also be used, especially for localisation of lignin and suberin.  Where fluorescence of the molecules themselves is insufficient for visualization by light microscopy, DPBA (diphenylboric acid 2-aminoethyl ester, also referred to as Naturstoff reagent A) has traditionally been used, at least in plant science, to enhance the fluorescence signal.[19]
+
+Polyphenolic content can be quantified separation/isolation by volumetric titration. An oxidizing agent, permanganate, is used to oxidize known concentrations of a standard tannin solution, producing a standard curve. The tannin content of the unknown is then expressed as equivalents of the appropriate hydrolyzable or condensed tannin.[20]
+
+Some methods for quantification of total polyphenol content are based on colorimetric measurements. Some tests are relatively specific to polyphenols (for instance the Porter's assay). Total phenols (or antioxidant effect) can be measured using the Folin-Ciocalteu reaction.[13] Results are typically expressed as gallic acid equivalents. Polyphenols are seldom evaluated by antibody technologies.[21]
+
+Other tests measure the antioxidant capacity of a fraction. Some make use of the ABTS radical cation which is reactive towards most antioxidants including phenolics, thiols and vitamin C.[22] During this reaction, the blue ABTS radical cation is converted back to its colorless neutral form. The reaction may be monitored spectrophotometrically. This assay is often referred to as the Trolox equivalent antioxidant capacity (TEAC) assay. The reactivity of the various antioxidants tested are compared to that of Trolox, which is a vitamin E analog.
+
+Other antioxidant capacity assays which use Trolox as a standard include the diphenylpicrylhydrazyl (DPPH), oxygen radical absorbance capacity (ORAC),[23] ferric reducing ability of plasma (FRAP)[24] assays or inhibition of copper-catalyzed in vitro human low-density lipoprotein oxidation.[25]
+
+New methods including the use of biosensors can help monitor the content of polyphenols in food.[26]
+
+Quantitation results produced by the mean of diode array detector–coupled HPLC are generally given as relative rather than absolute values as there is a lack of commercially available standards for all polyphenolic molecules.[citation needed]
+
+Some polyphenols are traditionally used as dyes. For instance, in the Indian subcontinent, the pomegranate peel, high in tannins and other polyphenols, or its juice, is employed in the dyeing of non-synthetic fabrics.[27]
+
+Polyphenols, especially tannins, were used traditionally for tanning leather and today also as precursors in green chemistry[28] notably to produce plastics or resins by polymerisation with[29] or without the use of formaldehyde[30] or adhesives for particleboards.[31] The aims are generally to make use of plant residues from grape, olive (called pomaces) or pecan shells left after processing.[13]
+
+Pyrogallol and pyrocatechin are among the oldest photographic developers.[32]
+
+Polyphenols are thought to play diverse roles in the ecology of plants. These functions include:[33]
+
+The most abundant polyphenols are the condensed tannins, found in virtually all families of plants. Larger polyphenols are often concentrated in leaf tissue, the epidermis, bark layers, flowers and fruits but also play important roles in the decomposition of forest litter, and nutrient cycles in forest ecology. Absolute concentrations of total phenols in plant tissues differ widely depending on the literature source, type of polyphenols and assay; they are in the range of 1–25% total natural phenols and polyphenols, calculated with reference to the dry green leaf mass.[35]
+
+High levels of polyphenols in some woods can explain their natural preservation against rot.[36]
+
+Flax and Myriophyllum spicatum (a submerged aquatic plant) secrete polyphenols that are involved in allelopathic interactions.[37][38]
+
+Polyphenols are also found in animals. In arthropods such as insects[39] and crustaceans[40] polyphenols play a role in epicuticle hardening (sclerotization). The hardening of the cuticle is due to the presence of a polyphenol oxidase.[41] In crustaceans, there is a second oxidase activity leading to cuticle pigmentation.[42] There is apparently no polyphenol tanning occurring in arachnids cuticle.[43]
+
+Polyphenols incorporate smaller parts and building blocks from simpler natural phenols, which originate from the phenylpropanoid pathway for the phenolic acids or the shikimic acid pathway for gallotannins and analogs. Flavonoids and caffeic acid derivatives are biosynthesized from phenylalanine and malonyl-CoA. Complex gallotannins develop through the in-vitro oxidation of 1,2,3,4,6-pentagalloylglucose or dimerization processes resulting in hydrolyzable tannins. For anthocyanidins, precursors of the condensed tannin biosynthesis, dihydroflavonol reductase and leucoanthocyanidin reductase (LAR) are crucial enzymes with subsequent addition of catechin and epicatechin moieties for larger, non-hydrolyzable tannins.[44]
+
+The glycosylated form develops from glucosyltransferase activity and increases the solubility of polyphenols.[45]
+
+Polyphenol oxidase (PPO) is an enzyme that catalyses the oxidation of o-diphenols to produce o-quinones. It is the rapid polymerisation of o-quinones to produce black, brown or red polyphenolic pigments that causes fruit browning. In insects, PPO is involved in cuticle hardening.[46]
+
+Polyphenols comprise up to 0.2–0.3% fresh weight for many fruits, grapes, and berries. Consuming common servings of wine, chocolate, legumes or tea may also contribute to about one gram of intake per day.[2][47] According to a 2005 review on polyphenols:
+
+Some polyphenols are considered antinutrients – compounds that interfere with the absorption of essential nutrients – especially iron and other metal ions, which may bind to digestive enzymes and other proteins, particularly in ruminants.[49]
+
+In a comparison of cooking methods, phenolic and carotenoid levels in vegetables were retained better by steaming compared to frying.[50] Polyphenols in wine, beer and various nonalcoholic juice beverages can be removed using finings, substances that are usually added at or near the completion of the processing of brewing.[citation needed]
+
+With respect to food and beverages, the cause of astringency is not fully understood, but it is measured chemically as the ability of a substance to precipitate proteins.[51]
+
+A review published in 2005 found that astringency increases and bitterness decreases with the mean degree of polymerization. For water-soluble polyphenols, molecular weights between 500 and 3000 were reported to be required for protein precipitation. However, smaller molecules might still have astringent qualities likely due to the formation of unprecipitated complexes with proteins or cross-linking of proteins with simple phenols that have 1,2-dihydroxy or 1,2,3-trihydroxy groups.[52] Flavonoid configurations can also cause significant differences in sensory properties, e.g. epicatechin is more bitter and astringent than its chiral isomer catechin. In contrast, hydroxycinnamic acids do not have astringent qualities, but are bitter.[53]
+
+Although health effects may be attributed to polyphenols in food,[54] the extensive metabolism of polyphenols in the intestine and liver, and their undefined fate as metabolites which are rapidly excreted in urine, prevents definition of their biological effects.[2] Because the metabolism of polyphenols cannot be assessed in vivo, there are no Dietary Reference Intake (DRI) levels established or recommended.[2]
+
+In the US, the Food and Drug Administration (FDA) issued labeling guidance to manufacturers that polyphenols cannot be mentioned as antioxidant nutrients unless physiological evidence exists to verify such a qualification and a DRI value has been established.[55][56] Furthermore, since purported health claims for specific polyphenol-enriched foods remain unproven,[57] health statements about polyphenols on product labels are prohibited by the FDA[56] and the EFSA.[58] However, during the 21st century, the EFSA recognized certain health claims of specific polyphenol products, such as cocoa[59] and olive oil.[60]
+
+Compared with the effects of polyphenols in vitro, the possible functions in vivo remain unknown due to 1) the absence of validated in vivo biomarkers;[2] 2) long-term studies failing to demonstrate effects with a mechanism of action, sensitivity and specificity or efficacy;[2] and 3) invalid applications of high, unphysiological test concentrations in the in vitro studies, which are subsequently irrelevant for the design of in vivo experiments.[48]

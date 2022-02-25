@@ -1,0 +1,80 @@
+
+
+A generative adversarial network (GAN) is a class of machine learning frameworks designed by Ian Goodfellow and his colleagues in June 2014.[1] Two neural networks contest with each other in a game (in the form of a zero-sum game, where one agent's gain is another agent's loss).
+
+Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proved useful for semi-supervised learning,[2] fully supervised learning,[3] and reinforcement learning.[4]
+
+The core idea of a GAN is based on the "indirect" training through the discriminator,[clarification needed] which itself is also being updated dynamically.[5] This basically means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner.
+
+The generative network generates candidates while the discriminative network evaluates them.[1] The contest operates in terms of data distributions. Typically, the generative network learns to map from a latent space to a data distribution of interest, while the discriminative network distinguishes candidates produced by the generator from the true data distribution. The generative network's training objective is to increase the error rate of the discriminative network (i.e., "fool" the discriminator network by producing novel candidates that the discriminator thinks are not synthesized (are part of the true data distribution)).[1][6]
+
+A known dataset serves as the initial training data for the discriminator. Training it involves presenting it with samples from the training dataset, until it achieves acceptable accuracy. The generator trains based on whether it succeeds in fooling the discriminator. Typically the generator is seeded with randomized input that is sampled from a predefined latent space (e.g. a multivariate normal distribution). Thereafter, candidates synthesized by the generator are evaluated by the discriminator. Independent backpropagation procedures are applied to both networks so that the generator produces better samples, while the discriminator becomes more skilled at flagging synthetic samples.[7] When used for image generation, the generator is typically a deconvolutional neural network, and the discriminator is a convolutional neural network.
+
+GANs often suffer from a "mode collapse" where they fail to generalize properly, missing entire modes from the input data. For example, a GAN trained on the MNIST dataset containing many samples of each digit, might nevertheless timidly omit a subset of the digits from its output. Some researchers perceive the root problem to be a weak discriminative network that fails to notice the pattern of omission, while others assign blame to a bad choice of objective function. Many solutions have been proposed.[8]
+Convergence of GANs is an open problem.[9]
+
+GANs are implicit generative models,[10] which means that they do not explicitly model the likelihood function nor provide means for finding the latent variable corresponding to a given sample, unlike alternatives such as Flow-based generative model.
+
+GAN applications have increased rapidly.[11]
+
+GANs can be used to generate art; The Verge wrote in March 2019 that "The images created by GANs have become the defining look of contemporary AI art."[12] GANs can also be used to inpaint photographs[13] or create photos of imaginary fashion models, with no need to hire a model, photographer or makeup artist, or pay for a studio and transportation.[14]
+
+GANs can improve astronomical images[15] and simulate gravitational lensing for dark matter research.[16][17][18] They were used in 2019 to successfully model the distribution of dark matter in a particular direction in space and to predict the gravitational lensing that will occur.[19][20]
+
+GANs have been proposed as a fast and accurate way of modeling high energy jet formation[21] and modeling showers through calorimeters of high-energy physics experiments.[22][23][24][25] GANs have also been trained to accurately approximate bottlenecks in computationally expensive simulations of particle physics experiments. Applications in the context of present and proposed CERN experiments have demonstrated the potential of these methods for accelerating simulation and/or improving simulation fidelity.[26][27]
+
+In 2018, GANs reached the video game modding community, as a method of up-scaling low-resolution 2D textures in old video games by recreating them in 4k or higher resolutions via image training, and then down-sampling them to fit the game's native resolution (with results resembling the supersampling method of anti-aliasing).[28] With proper training, GANs provide a clearer and sharper 2D texture image magnitudes higher in quality than the original, while fully retaining the original's level of details, colors, etc. Known examples of extensive GAN usage include Final Fantasy VIII, Final Fantasy IX, Resident Evil REmake HD Remaster, and Max Payne.[citation needed]
+
+Concerns have been raised about the potential use of GAN-based human image synthesis for sinister purposes, e.g., to produce fake, possibly incriminating, photographs and videos.[29]
+GANs can be used to generate unique, realistic profile photos of people who do not exist, in order to automate creation of fake social media profiles.[30]
+
+In 2019 the state of California considered[31] and passed on October 3, 2019, the bill AB-602, which bans the use of human image synthesis technologies to make fake pornography without the consent of the people depicted, and bill AB-730, which prohibits distribution of manipulated videos of a political candidate within 60 days of an election. Both bills were authored by Assembly member Marc Berman and signed by Governor Gavin Newsom. The laws went into effect in 2020.[32]
+
+DARPA's Media Forensics program studies ways to counteract fake media, including fake media produced using GANs.[33]
+
+State-of-art transfer learning research use GANs to enforce the alignment of the latent feature space, such as in deep reinforcement learning.[34] This works by feeding the embeddings of the source and target task to the discriminator which tries to guess the context. The resulting loss is then (inversely) backpropagated through the encoder.
+
+GAN can be used to detect glaucomatous images helping the early diagnosis which is essential to avoid partial or total loss
+of vision.[35]
+
+GANs that produce photorealistic images can be used to visualize interior design, industrial design, shoes,[36] bags, and clothing items or items for computer games' scenes.[citation needed] Such networks were reported to be used by Facebook.[37]
+
+GANs can reconstruct 3D models of objects from images,[38] generate novel objects as 3D point clouds,[39] and model patterns of motion in video.[40]
+
+GANs can be used to age face photographs to show how an individual's appearance might change with age.[41]
+
+GANs can denoise welding images by removing the random light reflection on the dynamic weld pool surface.[42]
+
+GANs can also be used to transfer map styles in cartography[43] or augment street view imagery.[44]
+
+Relevance feedback on GANs can be used to generate images and replace image search systems.[45]
+
+A variation of the GANs is used in training a network to generate optimal control inputs to nonlinear dynamical systems. Where the discriminatory network is known as a critic that checks the optimality of the solution and the generative network is known as an Adaptive network that generates the optimal control. The critic and adaptive network train each other to approximate a nonlinear optimal control.[46]
+
+GANs have been used to visualize the effect that climate change will have on specific houses.[47]
+
+A GAN model called Speech2Face can reconstruct an image of a person's face after listening to their voice.[48]
+
+In 2016 GANs were used to generate new molecules for a variety of protein targets implicated in cancer, inflammation, and fibrosis. In 2019 GAN-generated molecules were validated experimentally all the way into mice.[49][50]
+
+Whereas the majority of GAN applications are in image processing, the work has also been done with time-series data. For example, recurrent GANs (R-GANs) have been used to generate energy data for machine learning.[51]
+
+The most direct inspiration for GANs was noise-contrastive estimation,[52] which uses the same loss function as GANs and which Goodfellow studied during his PhD in 2010–2014.
+
+Other people had similar ideas but did not develop them similarly. An idea involving adversarial networks was published in a 2010 blog post by Olli Niemitalo.[53] This idea was never implemented and did not involve stochasticity in the generator and thus was not a generative model. It is now known as a conditional GAN or cGAN.[54] An idea similar to GANs was used to model animal behavior by Li, Gauci and Gross in 2013.[55]
+
+Adversarial machine learning has other uses besides generative modeling and can be applied to models other than neural networks. In control theory, adversarial learning based on neural networks was used in 2006 to train robust controllers in a game theoretic sense, by alternating the iterations between a minimizer policy, the controller, and a maximizer policy, the disturbance.[56][57]
+
+In 2017, a GAN was used for image enhancement focusing on realistic textures rather than pixel-accuracy, producing a higher image quality at high magnification.[58] In 2017, the first faces were generated.[59] These were exhibited in February 2018 at the Grand Palais.[60][61] Faces generated by StyleGAN[62] in 2019 drew comparisons with deepfakes.[63][64][65]
+
+Beginning in 2017, GAN technology began to make its presence felt in the fine arts arena with the appearance of a newly developed implementation which was said to have crossed the threshold of being able to generate unique and appealing abstract paintings, and thus dubbed a "CAN", for "creative adversarial network".[66] A GAN system was used to create the 2018 painting Edmond de Belamy, which sold for US$432,500.[67] An early 2019 article by members of the original CAN team discussed further progress with that system, and gave consideration as well to the overall prospects for an AI-enabled art.[68]
+
+In May 2019, researchers at Samsung demonstrated a GAN-based system that produces videos of a person speaking, given only a single photo of that person.[69]
+
+In August 2019, a large dataset consisting of 12,197 MIDI songs each with paired lyrics and melody alignment was created for neural melody generation from lyrics using conditional GAN-LSTM (refer to sources at GitHub AI Melody Generation from Lyrics).[70]
+
+In May 2020, Nvidia researchers taught an AI system (termed "GameGAN") to recreate the game of Pac-Man simply by watching it being played.[71][72]
+
+While the standard GAN model learns a mapping from a latent space to the data distribution, inverse models such as Bidirectional GAN (BiGAN)[73]
+and Adversarial Autoencoders[74]
+also learn a mapping from data to the latent space. This inverse mapping allows real or generated data examples to be projected back into the latent space, similar to the encoder of a variational autoencoder. Applications of bidirectional models include semi-supervised learning,[75] interpretable machine learning,[76] and neural machine translation.[77]

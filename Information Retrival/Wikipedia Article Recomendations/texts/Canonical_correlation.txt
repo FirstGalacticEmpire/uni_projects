@@ -1,0 +1,50 @@
+In statistics, canonical-correlation analysis (CCA), also called canonical variates analysis, is a way of inferring information from cross-covariance matrices. If we have two vectors X = (X1, ..., Xn) and Y = (Y1, ..., Ym)  of random variables, and there are correlations among the variables, then canonical-correlation analysis will find linear combinations of X and Y which have maximum correlation with each other.[1] T. R. Knapp notes that "virtually all of the commonly encountered parametric tests of significance can be treated as special cases of canonical-correlation analysis, which is the general procedure for investigating the relationships between two sets of variables."[2] The method was first introduced by Harold Hotelling in 1936,[3] although in the context of angles between flats the mathematical concept was published by Jordan in 1875.[4]
+
+Given two column vectors  and  of random variables with finite second moments, one may define the cross-covariance  to be the  matrix whose  entry is the covariance . In practice, we would estimate the covariance matrix based on sampled data from  and  (i.e. from a pair of data matrices).
+
+Canonical-correlation analysis seeks vectors   () and  () such that the random variables  and  maximize the correlation . The random variables  and  are the first pair of canonical variables. Then one seeks vectors maximizing the same correlation subject to the constraint that they are to be uncorrelated with the first pair of canonical variables; this gives the second pair of canonical variables. This procedure may be continued up to  times.
+
+Let  be the cross-covariance matrix for any random variables  and . The target function to maximize is
+
+The first step is to define a change of basis and define
+
+And thus we have
+
+By the Cauchy–Schwarz inequality, we have
+
+There is equality if the vectors  and  are collinear. In addition, the maximum of correlation is attained if  is the eigenvector with the maximum eigenvalue for the matrix  (see Rayleigh quotient). The subsequent pairs are found by using eigenvalues of decreasing magnitudes. Orthogonality is guaranteed by the symmetry of the correlation matrices.
+
+Another way of viewing this computation is that  and  are the left and right singular vectors of the correlation matrix of X and Y corresponding to the highest singular value.
+
+The solution is therefore:
+
+Reciprocally, there is also:
+
+Reversing the change of coordinates, we have that
+
+The canonical variables are defined by:
+
+CCA can be computed using singular value decomposition on a correlation matrix.[5] It is available as a function in[6]
+
+CCA computation using singular value decomposition on a correlation matrix is related to the cosine of the angles between flats. The cosine function is ill-conditioned for small angles, leading to very inaccurate computation of highly correlated principal vectors in finite precision computer arithmetic. To  fix this trouble, alternative algorithms[7] are available in
+
+Each row can be tested for significance with the following method. Since the correlations are sorted, saying that row  is zero implies all further correlations are also zero.  If we have  independent observations in a sample and  is the estimated correlation for . For the th row, the test statistic is:
+
+which is asymptotically distributed as a chi-squared with  degrees of freedom for large .[8]  Since all the correlations from  to  are logically zero (and estimated that way also) the product for the terms after this point is irrelevant.
+
+Note that in the small sample size limit with  then we are guaranteed that the top  correlations will be identically 1 and hence the test is meaningless.[9]
+
+A typical use for canonical correlation in the experimental context is to take two sets of variables and see what is common among the two sets.[10] For example, in psychological testing, one could take two well established multidimensional personality tests such as the Minnesota Multiphasic Personality Inventory (MMPI-2) and the NEO. By seeing how the MMPI-2 factors relate to the NEO factors, one could gain insight into what dimensions were common between the tests and how much variance was shared. For example, one might find that an extraversion or neuroticism dimension accounted for a substantial amount of shared variance between the two tests.
+
+One can also use canonical-correlation analysis to produce a model equation which relates two sets of variables, for example a set of performance measures and a set of explanatory variables, or a set of outputs and set of inputs. Constraint restrictions can be imposed on such a model to ensure it reflects theoretical requirements or intuitively obvious conditions. This type of model is known as a maximum correlation model.[11]
+
+Visualization of the results of canonical correlation is usually through bar plots of the coefficients of the two sets of variables for the pairs of canonical variates showing significant correlation. Some authors suggest that they are best visualized by plotting them as heliographs, a circular format with ray like bars, with each half representing the two sets of variables.[12]
+
+Let  with zero expected value, i.e., . If , i.e.,  and  are perfectly correlated, then, e.g.,  and , so that the first (and only in this example) pair of canonical variables is  and . If , i.e.,  and  are perfectly anticorrelated, then, e.g.,  and , so that the first (and only in this example) pair of canonical variables is  and . We notice that in both cases , which illustrates that the canonical-correlation analysis treats correlated and anticorrelated variables similarly.
+
+Assuming that  and  have zero expected values, i.e., , their covariance  matrices  and  can be viewed as Gram matrices in an inner product for the entries of   and , correspondingly. In this interpretation, the random variables, entries  of   and  of  are treated as elements of a vector space with an inner product given by the covariance ; see Covariance#Relationship to inner products.
+
+The definition of the canonical variables  and  is then equivalent to the definition of principal vectors for the pair of subspaces spanned by the entries of   and  with respect to this  inner product. The canonical correlations  is equal to the cosine of principal angles.
+
+CCA can also be viewed as a special whitening transformation where the random vectors  and  are simultaneously transformed in such a way that the cross-correlation between the whitened vectors  and  is diagonal.[13]
+The canonical correlations are then interpreted as regression coefficients linking  and  and may also be negative.  The regression view of CCA also provides a way to construct a latent variable probabilistic generative model for CCA, with uncorrelated hidden variables representing shared and non-shared variability.

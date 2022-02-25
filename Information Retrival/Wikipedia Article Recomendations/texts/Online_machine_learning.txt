@@ -1,0 +1,119 @@
+In computer science, online machine learning is a method of machine learning in which data becomes available in a sequential order and is used to update the best predictor for future data at each step, as opposed to batch learning techniques which generate the best predictor by learning on the entire training data set at once. Online learning is a common technique used in areas of machine learning where it is computationally infeasible to train over the entire dataset, requiring the need of out-of-core algorithms. It is also used in situations where it is necessary for the algorithm to dynamically adapt to new patterns in the data, or when the data itself is generated as a function of time, e.g., stock price prediction.
+Online learning algorithms may be prone to catastrophic interference, a problem that can be addressed by incremental learning approaches.
+
+In the setting of supervised learning, a function of  is to be learned, where  is thought of as a space of inputs and  as a space of outputs, that predicts well on instances that are drawn from a joint probability distribution  on . In reality, the learner never knows the true distribution  over instances. Instead, the learner usually has access to a training set of examples . In this setting, the loss function is given as , such that  measures the difference between the predicted value  and the true value . The ideal goal is to select a function , where  is a space of functions called a hypothesis space, so that some notion of total loss is minimised. Depending on the type of model (statistical or adversarial), one can devise different notions of loss, which lead to different learning algorithms.
+
+In statistical learning models, the training sample  are assumed to have been drawn from the true distribution  and the objective is to minimize the expected "risk"
+
+A common paradigm in this situation is to estimate a function  through empirical risk minimization or regularized empirical risk minimization (usually Tikhonov regularization). The choice of loss function here gives rise to several well-known learning algorithms such as regularized least squares and support vector machines.
+A purely online model in this category would learn based on just the new input , the current best predictor  and some extra stored information (which is usually expected to have storage requirements independent of training data size). For many formulations, for example nonlinear kernel methods, true online learning is not possible, though a form of hybrid online learning with recursive algorithms can be used where  is permitted to depend on  and all previous data points . In this case, the space requirements are no longer guaranteed to be constant since it requires storing all previous data points, but the solution may take less time to compute with the addition of a new data point, as compared to batch learning techniques.
+
+A common strategy to overcome the above issues is to learn using mini-batches, which process a small batch of  data points at a time, this can be considered as pseudo-online learning for  much smaller than the total number of training points. Mini-batch techniques are used with repeated passing over the training data to obtain optimized out-of-core[clarification needed] versions of machine learning algorithms, for example, stochastic gradient descent. When combined with backpropagation, this is currently the de facto training method for training artificial neural networks.
+
+The simple example of linear least squares is used to explain a variety of ideas in online learning. The ideas are general enough to be applied to other settings, for example, with other convex loss functions.
+
+Consider the setting of supervised learning with  being a linear function to be learned:
+
+where  is a vector of inputs (data points) and  is a linear filter vector.
+The goal is to compute the filter vector .
+To this end, a square loss function 
+
+is used to compute the vector  that minimizes the empirical loss
+
+where
+
+Let   be the  data matrix and  is the column vector of target values after the arrival of the first  data points.
+Assuming that the covariance matrix  is invertible (otherwise it is preferential to proceed in a similar fashion with Tikhonov regularization), the best solution  to the linear least squares problem is given by
+
+Now, calculating the covariance matrix  takes time , inverting the  matrix takes time , while the rest of the multiplication takes time , giving a total time of . When there are  total points in the dataset, to recompute the solution after the arrival of every datapoint , the naive approach will have a total complexity . Note that when storing the matrix , then updating it at each step needs only adding , which takes  time, reducing the total time to , but with an additional storage space of  to store .[1]
+
+The recursive least squares (RLS) algorithm considers an online approach to the least squares problem. It can be shown that by initialising  and , the solution of the linear least squares problem given in the previous section can be computed by the following iteration:
+
+The above iteration algorithm can be proved using induction on .[2] The proof also shows that . 
+One can look at RLS also in the context of adaptive filters (see RLS).
+
+The complexity for  steps of this algorithm is , which is an order of magnitude faster than the corresponding batch learning complexity. The storage requirements at every step  here are to store the matrix , which is constant at . For the case when  is not invertible, consider the regularised version of the problem 
+loss function . Then, it's easy to show that the same algorithm works with , and the iterations proceed to give .[1]
+
+When this  
+
+is replaced by
+
+or  by , this becomes the stochastic gradient descent algorithm. In this case, the complexity for  steps of this algorithm reduces to . The storage requirements at every step  are constant at .
+
+However, the stepsize  needs to be chosen carefully to solve the expected risk minimization problem, as detailed above. By choosing a decaying step size  one can prove the convergence of the average iterate . This setting is a special case of stochastic optimization, a well known problem in optimization.[1]
+
+In practice, one can perform multiple stochastic gradient passes (also called cycles or epochs) over the data. The algorithm thus obtained is
+called incremental gradient method and corresponds to an iteration
+
+The main difference with the stochastic gradient method is that here a sequence  is chosen to decide which training point is visited in the -th step. Such a sequence can be stochastic or deterministic. The number of iterations is then decoupled to the number of points (each point can be considered more than once). The incremental gradient method can be shown to provide a minimizer to the empirical risk.[3] Incremental techniques can be advantageous when considering objective functions made up of a sum of many terms e.g. an empirical error corresponding to a very large dataset.[1]
+
+Kernels can be used to extend the above algorithms to non-parametric models (or models where the parameters form an infinite dimensional space). The corresponding procedure will no longer be truly online and instead involve storing all the data points, but is still faster than the brute force method.
+This discussion is restricted to the case of the square loss, though it can be extended to any convex loss. It can be shown by an easy induction [1] that if  is the data matrix and  is the output after  steps of the SGD algorithm, then,
+
+where  and the sequence  satisfies the recursion:
+
+Notice that here  is just the standard Kernel on , and the predictor is of the form 
+
+Now, if  a general kernel  is introduced instead and let the predictor be 
+
+then the same proof will also show that predictor minimising the least squares loss is obtained by changing the above recursion to
+
+The above expression requires storing all the data for updating . The total time complexity for the recursion when evaluating for the -th datapoint is , where  is the cost of evaluating the kernel on a single pair of points.[1]
+Thus, the use of the kernel has allowed the movement from a finite dimensional parameter space  to a possibly infinite dimensional feature represented by a kernel  by instead performing the recursion on the space of parameters , whose dimension is the same as the size of the training dataset. In general, this is a consequence of the representer theorem.[1]
+
+Online convex optimization (OCO) [4] is a general framework for decision making which leverages convex optimization to allow for efficient algorithms. The framework is that of repeated game playing as follows:
+
+For 
+
+The goal is to minimize regret, or the difference between cumulative loss and the loss of the best fixed point   in hindsight.
+As an example, consider the case of online least squares linear regression. Here, the weight vectors come from the convex set , and nature sends back the convex loss function . Note here that  is implicitly sent with .
+
+Some online prediction problems however cannot fit in the framework of OCO. For example, in online classification, the prediction domain and the loss functions are not convex. In such scenarios, two simple techniques for convexification are used: randomisation and surrogate loss functions[citation needed].
+
+Some simple online convex optimisation algorithms are:
+
+The simplest learning rule to try is to select (at the current step) the hypothesis that has the least loss over all past rounds. This algorithm is called Follow the leader, and is simply given round  by:
+
+This method can thus be looked as a greedy algorithm. For the case of online quadratic optimization (where the loss function is ), one can show a regret bound that grows as . However, similar bounds cannot be obtained for the FTL algorithm for other important families of models like online linear optimization. To do so, one modifies FTL by adding regularisation.
+
+This is a natural modification of FTL that is used to stabilise the FTL solutions and obtain better regret bounds. A regularisation function   is chosen and learning performed in round t as follows:
+
+As a special example, consider the case of online linear optimisation i.e. where nature sends back loss functions of the form . Also, let . Suppose the regularisation function  is chosen for some positive number . Then, one can show that the regret minimising iteration becomes 
+
+Note that this can be rewritten as , which looks exactly like online gradient descent.
+
+If S is instead some convex subspace of , S would need to be projected onto, leading to the modified update rule
+
+This algorithm is known as lazy projection, as the vector  accumulates the gradients. It is also known as Nesterov's dual averaging algorithm. In this scenario of linear loss functions and quadratic regularisation, the regret is bounded by , and thus the average regret goes to 0 as desired.
+
+The above proved a regret bound for linear loss functions . To generalise the algorithm to any convex loss function, the subgradient  of  is used as a linear approximation to  near , leading to the online subgradient descent algorithm:
+
+Initialise parameter 
+
+For 
+
+One can use the OSD algorithm to derive  regret bounds for the online version of SVM's for classification, which use the hinge loss
+
+Quadratically regularised FTRL algorithms lead to lazily projected gradient algorithms as described above. To use the above for arbitrary convex functions and regularisers, one uses online mirror descent.  The optimal regularization in hindsight can be derived for linear loss functions, this leads to the AdaGrad algorithm.
+For the Euclidean regularisation, one can show a regret bound of , which can be improved further to a  for strongly convex and exp-concave loss functions.
+
+Continual learning means constantly improving the learned model by  processing continuous
+streams of information.[5]
+Continual learning capabilities are essential for software systems and autonomous agents interacting in an ever changing real world.
+However, continual learning is a challenge for machine learning and neural network models since the continual acquisition of incrementally available information from non-stationary data distributions
+generally leads to catastrophic forgetting. 
+
+The paradigm of online learning has different interpretations depending on the choice of the learning model, each of which has distinct implications about the predictive quality of the sequence of functions . The prototypical stochastic gradient descent algorithm is used for this discussion. As noted above, its recursion is given by
+
+The first interpretation consider the stochastic gradient descent method as applied to the problem of minimizing the expected risk  defined above.[6] Indeed, in the case of an infinite stream of data, since the examples  are assumed to be drawn i.i.d. from the distribution , the sequence of gradients of  in the above iteration are an i.i.d. sample of stochastic estimates of the gradient of the expected risk  and therefore one can apply complexity results for the stochastic gradient descent method to bound the deviation , where  is the minimizer of .[7] This interpretation is also valid in the case of a finite training set; although with multiple passes through the data the gradients are no longer independent, still complexity results can be obtained in special cases.
+
+The second interpretation applies to the case of a finite training set and considers the SGD algorithm as an instance of incremental gradient descent method.[3] In this case, one instead looks at the empirical risk:
+
+Since the gradients of  in the incremental gradient descent iterations are also stochastic estimates of the gradient of , this interpretation is also related to the stochastic gradient descent method, but applied to minimize the empirical risk as opposed to the expected risk. Since this interpretation concerns the empirical risk and not the expected risk, multiple passes through the data are readily allowed and actually lead to tighter bounds on the deviations , where  is the minimizer of .
+
+Learning paradigms
+
+General algorithms
+
+Learning models

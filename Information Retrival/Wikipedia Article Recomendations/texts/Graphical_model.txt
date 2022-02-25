@@ -1,0 +1,24 @@
+A graphical model or probabilistic graphical model (PGM) or structured probabilistic model is a probabilistic model for which a graph expresses the conditional dependence structure between random variables. They are commonly used in probability theory, statistics—particularly Bayesian statistics—and machine learning.
+
+Generally, probabilistic graphical models use a graph-based representation as the foundation for encoding a  distribution over a multi-dimensional space and a graph that is a compact or factorized representation of a set of independences that hold in the specific distribution. Two branches of graphical representations of distributions are commonly used, namely, Bayesian networks and Markov random fields. Both families encompass the properties of factorization and independences, but they differ in the set of independences they can encode and the factorization of the distribution that they induce.[1]
+
+The undirected graph shown may have one of several interpretations; the common feature is that the presence of an edge implies some sort of dependence between the corresponding random variables.  From this graph we might deduce that  are all mutually independent, once  is known, or (equivalently in this case) that 
+
+for some non-negative functions  .
+
+
+If the network structure of the model is a directed acyclic graph, the model represents a factorization of the joint probability of all random variables.  More precisely, if the events are  then the joint probability satisfies
+
+where  is the set of parents of node  (nodes with edges directed towards ).  In other words, the joint distribution factors into a product of conditional distributions. For example, the directed acyclic graph shown in the Figure this factorization would be
+
+Any two nodes are conditionally independent given the values of their parents.  In general, any two sets of nodes are conditionally independent given a third set if a criterion called d-separation holds in the graph.  Local independences and global independences are equivalent in Bayesian networks.
+
+This type of graphical model is known as a directed graphical model, Bayesian network, or belief network. Classic machine learning models like hidden Markov models, neural networks and newer models such as variable-order Markov models can be considered special cases of Bayesian networks.
+
+The next figure depicts a graphical model with a cycle.  This may be interpreted in terms of each variable 'depending' on the values of its parents in some manner.  
+The particular graph shown suggests a joint probability density that factors as
+
+but other interpretations are possible.
+[2]
+
+The framework of the models, which provides algorithms for discovering and analyzing structure in complex distributions  to describe them succinctly and extract the unstructured information, allows them to be constructed and utilized effectively.[1] Applications of graphical models include causal inference, information extraction, speech recognition, computer vision, decoding of low-density parity-check codes, modeling of gene regulatory networks, gene finding and diagnosis of diseases, and graphical models for protein structure.

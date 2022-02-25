@@ -1,0 +1,58 @@
+
+
+β-Carotene is an organic, strongly coloured red-orange pigment abundant in fungi,[5] plants, and fruits. It is a member of the carotenes, which are terpenoids (isoprenoids), synthesized biochemically from eight isoprene units and thus having 40 carbons. Among the carotenes, β-carotene is distinguished by having beta-rings at both ends of the molecule. β-Carotene is biosynthesized from geranylgeranyl pyrophosphate.[6]
+
+In some Mucoralean fungi, β-Carotene is a precursor to the synthesis of trisporic acid.[5]
+
+β-Carotene is the most common form of carotene in plants. When used as a food coloring, it has the E number E160a.[7]: 119  The structure was deduced by Karrer et al. in 1930.[8] In nature, β-carotene is a precursor (inactive form) to vitamin A via the action of beta-carotene 15,15'-monooxygenase.[6]
+
+Isolation of β-carotene from fruits abundant in carotenoids is commonly done using column chromatography. It can also be extracted from the beta-carotene rich algae, Dunaliella salina.[9] The separation of β-carotene from the mixture of other carotenoids is based on the polarity of a compound. β-Carotene is a non-polar compound, so it is separated with a non-polar solvent such as hexane.[10] Being highly conjugated, it is deeply colored, and as a hydrocarbon lacking functional groups, it is very lipophilic.
+
+Plant carotenoids are the primary dietary source of provitamin A worldwide, with β-carotene as the best-known provitamin A carotenoid. Others include α-carotene and β-cryptoxanthin. Carotenoid absorption is restricted to the duodenum of the small intestine and dependent on class B scavenger receptor (SR-B1) membrane protein, which is also responsible for the absorption of vitamin E (α-tocopherol).[11] One molecule of β-carotene can be cleaved by the intestinal enzyme β,β-carotene 15,15'-monooxygenase into two molecules of vitamin A.[12]
+
+Absorption efficiency is estimated to be between 9 and 22%. The absorption and conversion of carotenoids may depend on the form of β-carotene (e.g., cooked vs. raw vegetables, or in a supplement), the intake of fats and oils at the same time, and the current stores of vitamin A and β-carotene in the body. Researchers list these factors that determine the provitamin A activity of carotenoids:[13]
+
+In the molecular chain between the two cyclohexyl rings, β-carotene cleaves either symmetrically or asymmetrically. Symmetric cleavage with the enzyme β,β-carotene-15,15'-dioxygenase requires an antioxidant such as α-tocopherol.[14] This symmetric cleavage gives two equivalent retinal molecules and each retinal molecule further reacts to give retinol (vitamin A) and retinoic acid. β-Carotene is also cleaved into two asymmetric products; the product is β-apocarotenal (8',10',12'). Asymmetric cleavage reduces the level of retinoic acid significantly.[15]
+
+Since 2001, the US Institute of Medicine uses retinol activity equivalents (RAE) for their Dietary Reference Intakes, defined as follows:[16]
+
+1 µg RE = 1 µg retinol
+
+1 µg RAE = 2 µg all-trans-β-carotene from supplements
+
+1 µg RAE = 12 µg of all-trans-β-carotene from food
+
+1 µg RAE = 24 µg α-carotene or β-cryptoxanthin from food
+
+RAE takes into account carotenoids' variable absorption and conversion to vitamin A by humans better than and replaces the older retinol equivalent (RE) (1 µg RE = 1 µg retinol, 6 µg β-carotene, or 12 µg α-carotene or β-cryptoxanthin).[16] RE was developed 1967 by the United Nations/World Health Organization Food and Agriculture Organization (FAO/WHO).[17]
+
+Another older unit of vitamin A activity is the international unit (IU). Like retinol equivalent, the international unit does not take into account carotenoids' variable absorption and conversion to vitamin A by humans, as well as the more modern retinol activity equivalent. Unfortunately, food and supplement labels still generally use IU, but IU can be converted to the more useful retinol activity equivalent as follows:[16]
+
+Beta-carotene is found in many foods and is sold as a dietary supplement. β-Carotene contributes to the orange color of many different fruits and vegetables. Vietnamese gac (Momordica cochinchinensis Spreng.) and crude palm oil are particularly rich sources, as are yellow and orange fruits, such as cantaloupe, mangoes, pumpkin, and papayas, and orange root vegetables such as carrots and sweet potatoes. The color of β-carotene is masked by chlorophyll in green leaf vegetables such as spinach, kale, sweet potato leaves, and sweet gourd leaves.[18] Vietnamese gac and crude palm oil have the highest content of β-carotene of any known plant sources, 10 times higher than carrots, for example. However, gac is quite rare and unknown outside its native region of Southeast Asia, and crude palm oil is typically processed to remove the carotenoids before sale to improve the color and clarity.[19]
+
+The average daily intake of β-carotene is in the range 2–7 mg, as estimated from a pooled analysis of 500,000 women living in the US, Canada, and some European countries.[20]
+
+The U.S. Department of Agriculture lists these 10 foods to have the highest β-carotene content per serving.[21]
+
+
+
+Excess β-carotene is predominantly stored in the fat tissues of the body. The most common side effect of excessive β-carotene consumption is carotenodermia, a physically harmless condition that presents as a conspicuous orange skin tint arising from deposition of the carotenoid in the outermost layer of the epidermis.[22] Adults' fat stores are often yellow from accumulated carotenoids, including β-carotene, while infants' fat stores are white. Carotenodermia is quickly reversible upon cessation of excessive intakes.[23]
+
+The proportion of carotenoids absorbed decreases as dietary intake increases. Within the intestinal wall (mucosa), β-carotene is partially converted into vitamin A (retinol) by an enzyme, dioxygenase. This mechanism is regulated by the individual's vitamin A status. If the body has enough vitamin A, the conversion of β-carotene decreases. Therefore, β-carotene is considered a safe source of vitamin A and high intakes will not lead to hypervitaminosis A.[citation needed]
+
+β-Carotene can interact with medication used for lowering cholesterol. Taking them together can lower the effectiveness of these medications and is considered only a moderate interaction.[24] β-Carotene should not be taken with orlistat, a weight-loss medication, as orlistat can reduce the absorption of β-carotene by as much as 30%.[25] Bile acid sequestrants and proton-pump inhibitors can also decrease absorption of β-carotene.[26] Consuming alcohol with β-carotene can decrease its ability to convert to retinol and could possibly result in hepatotoxicity.[27]
+
+Chronic high doses of β-carotene supplementation increases the probability of lung cancer in smokers.[28] The effect is specific to supplementation dose as no lung damage has been detected in those who are exposed to cigarette smoke and who ingest a physiologic dose of β-carotene (6 mg), in contrast to high pharmacologic dose (30 mg). Therefore, the oncology from β-carotene is based on both cigarette smoke and high daily doses of β-carotene.[29]
+
+Increases in lung cancer may be due to the tendency of β-carotene to oxidize,[30] and may hasten oxidation more than other food colors such as annatto. A β-carotene breakdown product suspected of causing cancer at high dose is trans-β-apo-8'-carotenal (common apocarotenal), which has been found in one study to be mutagenic and genotoxic in cell cultures which do not respond to β-carotene itself.[31]
+
+Additionally, supplemental β-carotene may increase the risk of prostate cancer, intracerebral hemorrhage, and cardiovascular and total mortality in people who smoke cigarettes or have a history of high-level exposure to asbestos.[32]
+
+Medical authorities generally recommend obtaining beta-carotene from food rather than dietary supplements.[33]
+Research is insufficient to determine whether a minimum level of beta-carotene consumption is necessary for human health and to identify what problems might arise from insufficient beta-carotene intake,[34] although strict vegetarians rely on pro-vitamin A carotenoids to meet their vitamin A requirements. Use of beta-carotene to treat or prevent some diseases has been studied.[citation needed]
+
+A 2010 systemic meta review concluded that supplementation with β-carotene does not appear to decrease the risk of cancer overall, nor specific cancers including: pancreatic, colorectal, prostate, breast, melanoma, or skin cancer generally.[35] High levels of β-carotene may increase the risk of lung cancer in current and former smokers.[36] This is likely because beta-carotene is unstable in cigarette smoke-exposed lungs where it forms oxidized metabolites that can induce carcinogen-bioactivating enzymes.[37] Results are not clear for thyroid cancer.[38] In a single, small clinical study published in 1989, natural beta-carotene appeared to reduce premalignant gastric lesions.[34]: 177 
+
+A Cochrane review looked at supplementation of β-carotene, vitamin C, and vitamin E, independently and combined, on people to examine differences in risk of cataract, cataract extraction, progression of cataract, and slowing the loss of visual acuity. These studies found no evidence of any protective effects afforded by β-carotene supplementation on preventing and slowing age-related cataract.[39] A second meta-analysis compiled data from studies that measured diet-derived serum beta-carotene and reported a not statistically significant 10% decrease in cataract risk.[40]
+
+Dispersed β-carotene molecules can be encapsulated into carbon nanotubes enhancing their optical properties.[41] Efficient energy transfer occurs between the encapsulated dye and nanotube — light is absorbed by the dye and without significant loss is transferred to the nanotube. Encapsulation increases chemical and thermal stability of β-carotene molecules; it also allows their isolation and individual characterization.[42]

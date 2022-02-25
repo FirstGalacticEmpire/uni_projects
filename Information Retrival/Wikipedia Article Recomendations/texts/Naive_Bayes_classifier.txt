@@ -1,0 +1,136 @@
+In statistics, naive Bayes classifiers are a family of simple "probabilistic classifiers" based on applying Bayes' theorem with strong (naïve) independence assumptions between the features (see Bayes classifier). They are among the simplest Bayesian network models,[1] but coupled with kernel density estimation, they can achieve higher accuracy levels.[2][3]
+
+Naïve Bayes classifiers are highly scalable, requiring a number of parameters linear in the number of variables (features/predictors) in a learning problem. Maximum-likelihood training can be done by evaluating a closed-form expression,[4]: 718  which takes linear time, rather than by expensive iterative approximation as used for many other types of classifiers.
+
+In the statistics and computer science literature, naive Bayes models are known under a variety of names, including simple Bayes and independence Bayes.[5] All these names reference the use of Bayes' theorem in the classifier's decision rule, but naïve Bayes is not (necessarily) a Bayesian method.[4][5]
+
+Naive Bayes is a simple technique for constructing classifiers: models that assign class labels to problem instances, represented as vectors of feature values, where the class labels are drawn from some finite set. There is not a single algorithm for training such classifiers, but a family of algorithms based on a common principle: all naive Bayes classifiers assume that the value of a particular feature is independent of the value of any other feature, given the class variable. For example, a fruit may be considered to be an apple if it is red, round, and about 10 cm in diameter.  A naive Bayes classifier considers each of these features to contribute independently to the probability that this fruit is an apple, regardless of any possible correlations between the color, roundness, and diameter features.
+
+For some types of probability models, naive Bayes classifiers can be trained very efficiently in a supervised learning setting. In many practical applications, parameter estimation for naive Bayes models uses the method of maximum likelihood; in other words, one can work with the naive Bayes model without accepting Bayesian probability or using any Bayesian methods.
+
+Despite their naive design and apparently oversimplified assumptions, naive Bayes classifiers have worked quite well in many complex real-world situations. In 2004, an analysis of the Bayesian classification problem showed that there are sound theoretical reasons for the apparently implausible efficacy of naive Bayes classifiers.[6] Still, a comprehensive comparison with other classification algorithms in 2006 showed that Bayes classification is outperformed by other approaches, such as boosted trees or random forests.[7]
+
+An advantage of naive Bayes is that it only requires a small number of training data to estimate the parameters necessary for classification.[citation needed]
+
+Abstractly, naïve Bayes is a conditional probability model: given a problem instance to be classified, represented by a vector  representing some n features (independent variables), it assigns to this instance probabilities
+
+for each of K possible outcomes or classes .[8]
+
+The problem with the above formulation is that if the number of features n is large or if a feature can take on a large number of values, then basing such a model on probability tables is infeasible. The model must therefore be reformulated to make it more tractable. Using Bayes' theorem, the conditional probability can be decomposed as
+
+In plain English, using Bayesian probability terminology, the above equation can be written as
+
+In practice, there is interest only in the numerator of that fraction, because the denominator does not depend on  and the values of the features  are given, so that the denominator is effectively constant.
+The numerator is equivalent to the joint probability model
+
+which can be rewritten as follows, using the chain rule for repeated applications of the definition of conditional probability:
+
+Now the "naïve" conditional independence assumptions come into play: assume that all features in  are mutually independent, conditional on the category . Under this assumption,
+
+Thus, the joint model can be expressed as
+
+where  denotes proportionality.
+
+This means that under the above independence assumptions, the conditional distribution over the class variable  is:
+
+where the evidence  is a scaling factor dependent only on , that is, a constant if the values of the feature variables are known.
+
+The discussion so far has derived the independent feature model, that is, the naïve Bayes probability model. The naïve Bayes classifier combines this model with a decision rule. One common rule is to pick the hypothesis that is most probable; this is known as the maximum a posteriori or MAP decision rule. The corresponding classifier, a Bayes classifier, is the function that assigns a class label  for some k as follows:
+
+A class's prior may be calculated by assuming equiprobable classes (i.e., ), or by calculating an estimate for the class probability from the training set (i.e., <prior for a given class> = <number of samples in the class>/<total number of samples>). To estimate the parameters for a feature's distribution, one must assume a distribution or generate nonparametric models for the features from the training set.[9]
+
+The assumptions on distributions of features are called the "event model" of the naïve Bayes classifier. For discrete features like the ones encountered in document classification (include spam filtering), multinomial and Bernoulli distributions are popular. These assumptions lead to two distinct models, which are often confused.[10][11]
+
+When dealing with continuous data, a typical assumption is that the continuous values associated with each class are distributed according to a normal (or Gaussian) distribution. For example, suppose the training data contains a continuous attribute, . The data is first segmented by the class, and then the mean and variance of  is computed in each class. Let  be the mean of the values in  associated with class Ck, and let  be the Bessel corrected variance of the values in  associated with class Ck. Suppose one has collected some observation value . Then, the probability density of  given a class , , can be computed by plugging  into the equation for a normal distribution parameterized by  and . That is,
+
+Another common technique for handling continuous values is to use binning to discretize the feature values, to obtain a new set of Bernoulli-distributed features; some literature in fact suggests that this is necessary to apply naive Bayes, but it is not, and the discretization may throw away discriminative information.[5]
+
+Sometimes the distribution of class-conditional marginal densities is far from normal. In these cases, kernel density estimation can be used for a more realistic estimate of the marginal densities of each class. This method, which was introduced by John and Langley,[9] can boost the accuracy of the classifier considerably.[2][3]
+
+With a multinomial event model, samples (feature vectors) represent the frequencies with which certain events have been generated by a multinomial  where  is the probability that event i occurs (or K such multinomials in the multiclass case). A feature vector  is then a histogram, with  counting the number of times event i was observed in a particular instance. This is the event model typically used for document classification, with events representing the occurrence of a word in a single document (see bag of words assumption). The likelihood of observing a histogram x is given by
+
+The multinomial naïve Bayes classifier becomes a linear classifier when expressed in log-space:[12]
+
+where  and .
+
+If a given class and feature value never occur together in the training data, then the frequency-based probability estimate will be zero, because the probability estimate is directly proportional to the number of occurrences of a feature's value. This is problematic because it will wipe out all information in the other probabilities when they are multiplied. Therefore, it is often desirable to incorporate a small-sample correction, called pseudocount, in all probability estimates such that no probability is ever set to be exactly zero. This way of regularizing naive Bayes is called Laplace smoothing when the pseudocount is one, and Lidstone smoothing in the general case.
+
+Rennie et al. discuss problems with the multinomial assumption in the context of document classification and possible ways to alleviate those problems, including the use of tf–idf weights instead of raw term frequencies and document length normalization, to produce a naive Bayes classifier that is competitive with support vector machines.[12]
+
+In the multivariate Bernoulli event model, features are independent Booleans (binary variables) describing inputs. Like the multinomial model, this model is popular for document classification tasks,[10] where binary term occurrence features are used rather than term frequencies. If  is a boolean expressing the occurrence or absence of the i'th term from the vocabulary, then the likelihood of a document given a class  is given by[10]
+
+where  is the probability of class  generating the term . This event model is especially popular for classifying short texts. It has the benefit of explicitly modelling the absence of terms. Note that a naive Bayes classifier with a Bernoulli event model is not the same as a multinomial NB classifier with frequency counts truncated to one.
+
+Given a way to train a naïve Bayes classifier from labeled data, it's possible to construct a semi-supervised training algorithm that can learn from a combination of labeled and unlabeled data by running the supervised learning algorithm in a loop:[13]
+
+Convergence is determined based on improvement to the model likelihood , where  denotes the parameters of the naïve Bayes model.
+
+This training algorithm is an instance of the more general expectation–maximization algorithm (EM): the prediction step inside the loop is the E-step of EM, while the re-training of naïve Bayes is the M-step. The algorithm is formally justified by the assumption that the data are generated by a mixture model, and the components of this mixture model are exactly the classes of the classification problem.[13]
+
+Despite the fact that the far-reaching independence assumptions are often inaccurate, the naive Bayes classifier has several properties that make it surprisingly useful in practice. In particular, the decoupling of the class conditional feature distributions means that each distribution can be independently estimated as a one-dimensional distribution. This helps alleviate problems stemming from the curse of dimensionality, such as the need for data sets that scale exponentially with the number of features. While naive Bayes often fails to produce a good estimate for the correct class probabilities,[14] this may not be a requirement for many applications. For example, the naive Bayes classifier will make the correct MAP decision rule classification so long as the correct class is more probable than any other class. This is true regardless of whether the probability estimate is slightly, or even grossly inaccurate. In this manner, the overall classifier can be robust enough to ignore serious deficiencies in its underlying naive probability model.[15] Other reasons for the observed success of the naive Bayes classifier are discussed in the literature cited below.
+
+In the case of discrete inputs (indicator or frequency features for discrete events), naive Bayes classifiers form a generative-discriminative pair with (multinomial) logistic regression classifiers: each naive Bayes classifier can be considered a way of fitting a probability model that optimizes the joint likelihood , while logistic regression fits the same probability model to optimize the conditional .[16]
+
+The link between the two can be seen by observing that the decision function for naive Bayes (in the binary case) can be rewritten as "predict class  if the odds of  exceed those of ". Expressing this in log-space gives:
+
+The left-hand side of this equation is the log-odds, or logit, the quantity predicted by the linear model that underlies logistic regression. Since naive Bayes is also a linear model for the two "discrete" event models, it can be reparametrised as a linear function . Obtaining the probabilities is then a matter of applying the logistic function to , or in the multiclass case, the softmax function.
+
+Discriminative classifiers have lower asymptotic error than generative ones; however, research by Ng and Jordan has shown that in some practical cases naive Bayes can outperform logistic regression because it reaches its asymptotic error faster.[16]
+
+Problem: classify whether a given person is a male or a female based on the measured features.
+The features include height, weight, and foot size.
+
+Example training set below.
+
+The classifier created from the training set using a Gaussian distribution assumption would be (given variances are unbiased sample variances):
+
+The following example assumes equiprobable classes so that P(male)= P(female) = 0.5. This prior probability distribution might be based on prior knowledge of frequencies in the larger population or in the training set.
+
+Below is a sample to be classified as male or female.
+
+In order to classify the sample, one has to determine which posterior is greater, male or female. For the classification as male the posterior is given by
+
+For the classification as female the posterior is given by
+
+The evidence (also termed normalizing constant) may be calculated:
+
+However, given the sample, the evidence is a constant and thus scales both posteriors equally. It therefore does not affect classification and can be ignored.  The probability distribution for the sex of the sample can now be determined:
+
+where  and  are the parameters of normal distribution which have been previously determined from the training set. Note that a value greater than 1 is OK here – it is a probability density rather than a probability, because height is a continuous variable.
+
+Since posterior numerator is greater in the female case, the prediction is that the sample is female.
+
+Here is a worked example of naive Bayesian classification to the document classification problem.
+Consider the problem of classifying documents by their content, for example into spam and non-spam e-mails. Imagine that documents are drawn from a number of classes of documents which can be modeled as sets of words where the (independent) probability that the i-th word of a given document occurs in a document from class C can be written as
+
+(For this treatment, things are further simplified by assuming that words are randomly distributed in the document - that is, words are not dependent on the length of the document, position within the document with relation to other words, or other document-context.)
+
+Then the probability that a given document D contains all of the words , given a class C, is
+
+The question that has to be answered is: "what is the probability that a given document D belongs to a given class C?" In other words, what is ?
+
+Now by definition
+
+and
+
+Bayes' theorem manipulates these into a statement of probability in terms of likelihood.
+
+Assume for the moment that there are only two mutually exclusive classes, S and ¬S (e.g. spam and not spam), such that every element (email) is in either one or the other;
+
+and
+
+Using the Bayesian result above, one can write:
+
+Dividing one by the other gives:
+
+Which can be re-factored as:
+
+Thus, the probability ratio p(S | D) / p(¬S | D) can be expressed in terms of a series of likelihood ratios.
+The actual probability p(S | D) can be easily computed from log (p(S | D) / p(¬S | D)) based on the observation that p(S | D) + p(¬S | D) = 1.
+
+Taking the logarithm of all these ratios, one obtains:
+
+(This technique of "log-likelihood ratios" is a common technique in statistics.
+In the case of two mutually exclusive alternatives (such as this example), the conversion of a log-likelihood ratio to a probability takes the form of a sigmoid curve: see logit for details.)
+
+Finally, the document can be classified as follows.  It is spam if  (i. e., ), otherwise it is not spam.

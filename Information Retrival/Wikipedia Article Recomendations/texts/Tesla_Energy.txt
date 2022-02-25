@@ -1,0 +1,103 @@
+
+
+Tesla Energy is the clean energy subsidiary of Tesla, Inc., headquartered in Fremont, California, that develops,  manufactures, sells and installs photovoltaic solar energy generation systems, battery energy storage products, as well as other related products and services to residential, commercial and industrial customers. 
+
+The subsidiary was founded on April 30, 2015 when Tesla CEO Elon Musk announced that the company would apply the battery technology it developed for electric cars to a home energy storage system called the Powerwall. In November 2016, Tesla acquired SolarCity, in a US$2.6 billion deal, and added solar energy generation to Tesla Energy's business. The deal would prove controversial because at the time of the acquisition SolarCity was facing liquidity issues.
+
+The company's current power generation products include solar panels (manufactured by other companies for Tesla), the Tesla Solar Roof (a solar shingle system), and the Tesla Solar Inverter. In addition to the Powerwall, the company also makes large-scale energy storage systems called the Powerpack and Megapack. Tesla has developed a software ecosystem to support its hardware products. 
+
+In 2020, the company deployed solar power systems capable of generating 205 megawatts (MW) (ranked third in U.S. residential solar installations) and deployed 3 gigawatt-hours (GWh) of battery energy storage products.
+
+As Tesla, Inc. developed batteries for its electric car business, the company also started experimenting with using batteries for energy storage. Starting in 2012, Tesla installed prototype battery packs (to later be called the Powerpack) at the locations of a few industrial customers.[2] In November 2013, Tesla announced that it would build Giga Nevada, a factory to produce lithium-ion batteries.[3][4]
+
+The Tesla Energy brand was introduced on April 30, 2015 as CEO Elon Musk announced that the company would apply its battery technology to a home energy storage system called the Powerwall. Five hundred pilot units were built and installed during 2015, each being built at the Tesla Fremont Factory. The Giga Nevada factory started limited production of Powerwalls and Powerpacks in the first quarter of 2016[5][6] using battery cells produced elsewhere, and began mass production of cells in January 2017.[7]
+
+Brothers Peter and Lyndon Rive, the cousins of Tesla CEO Elon Musk, founded SolarCity in 2006 to sell and install solar energy generation systems as well as other related products and services to residential, commercial and industrial customers.[8][9] Musk is reported to have suggested the solar company idea to the Rive brothers and he later served as the chairman of SolarCity.[10]
+
+In June 2014, SolarCity committed to building a second factory, later called Giga New York, in Buffalo, New York, that would build photovoltaic cells and would be triple the size of the next largest photovoltaic manufacturing plant in the United States.[11]
+
+By 2016, SolarCity had installed solar energy systems for over 325,000 customers and was one of the largest solar installation companies in the United States.[12]
+
+On August 1, 2016, Tesla announced that it would be acquiring SolarCity in an all-stock $2.6 billion acquisition. Tesla's mission since its inception has been "to accelerate the world's transition to sustainable energy".[13] Musk said the purchase would advance Tesla's plan to help the world move from a mine-and-burn hydrocarbon economy towards a solar electric economy.[14] The announcement cited (as benefits of the acquisition) operational and cost synergies, as well as allowing for integrated sales of products from Tesla's existing battery energy storage products division. The announcement of the deal resulted in a more than 10% drop in Tesla's stock price.
+
+The proposal for acquisition was approved by antitrust regulators in August 2016.[15][16] More than 85% of unaffiliated shareholders of Tesla and SolarCity voted to approve the acquisition on November 17,[17][18] allowing the deal to close on November 21, 2016.
+
+Some investors criticized the deal, calling it "a misguided effort to rescue two companies that depend on investors and the government for operating cash."[19] At the time of the acquisition, SolarCity was facing liquidity issues; however, Tesla shareholders were not informed.[20] Consequently, multiple shareholder groups filed a lawsuit against Musk and Tesla's directors in 2018, claiming that the purchase of SolarCity was done solely to benefit Musk and came at the expense of Tesla and its shareholders.[21][22] The trial had been scheduled for 2020 but was put on hold by the court due to the coronavirus pandemic.[21][needs update]
+
+Shortly after the acquisition announcement, Tesla announced that it would be building a new version of its Powerwall battery energy storage device and introduced the Tesla Solar Roof, a solar shingle product.[23] Elon Musk presented the products using the homes on Colonial Street set on the Universal Studios backlot. The presentation was intended to gain investor support for the acquisition.[24] It would later be reported that these roof tiles were not "fully working."[25][26] Members of the anti-Tesla group TSLAQ have cited Musk's solar roof tile reveal as a major point of contention and an impetus for organizing.[27]
+
+The Solar Roof was to be made at the Giga New York factory, which opened in late August 2017 and would be operated as a joint venture with Panasonic.[28] The factory was not able to start producing the shingles in volume until March 2020[29] and Panasonic left the joint venture in early 2020, before it exited the solar business entirely in January 2021.[30][31]
+
+In mid-2017, several of the former SolarCity executives left the company. Chief policy officer John Wellinghoff departed in April 2017,[32] co-founder Lyndon Rive left in June 2017,[33] followed by his brother Peter shortly thereafter.[34]
+
+Tesla Energy shifted its business model compared to SolarCity, with Tesla saying that it was focusing on projects with higher margins, such as those that include a Powerwall.[35]
+
+SolarCity heavily focused on door-to-door sales of leased systems, where customers would pay no upfront costs, but agree to purchase the power generated by those panels from the company for 20 years.[36] Leases became the most popular solar business model in the US and made SolarCity the largest residential installer, but left the company over $1.5 billion in debt by 2016.[37] SolarCity’s leases were also criticized by consumer advocates and government regulators.[38][39]
+
+Tesla Energy's business model is based around making their systems "the lowest-cost solar in the United States." As of 2021[update], the company sells systems at $2 per watt for solar panels before federal tax credits.[40] Tesla says the business model was enabled by a decision to eliminate door-to-door sales, advertising, and some complex financing instruments (like leases).[41][42] The shift in business model has been blamed for diminished customer support. Customers said they waited weeks for replies to emails and experienced long delays for administrative steps to be completed.[43]
+
+As a result of the shift in business model, total solar installations declined after the Tesla acquisition.[44][45] In the second quarter of 2019, Tesla quarterly installations fell to a low of 29 megawatts, compared to SolarCity's installation of 253 megawatts in the fourth quarter of 2015 (before Tesla acquired it), and compared to 2,013 megawatts the residential leader Sunrun installed.[46] Analysts believe that SolarCity was "a big source of the cash-flow deficit" for Tesla in 2019.[27][47]
+
+The company deployed solar energy systems capable of generating 205 megawatts in 2020, an improvement over 2019, but still far short of the 870 megawatts that SolarCity installed in 2015.[48] In the first quarter of 2020, Tesla ranked third in residential solar installations with a 6.3% share (Sunrun was first with 11%, and Vivint Solar second with 7.6%).[49]
+
+In 2021, Tesla announced that it would only sell its popular Powerwall to customers who also purchased a Solar Roof or solar panels, and later that year announced that all Solar Roof or solar panel customers would be required to purchase at least one Powerwall.[50]
+
+Tesla Energy develops, builds, installs and sells solar energy generation systems, battery energy storage products, as well as other related products and services to residential, commercial and industrial customers.
+
+Tesla Energy sells and installs traditional solar panels on existing roofs, which the company calls "retrofit solar systems."[51] Unlike the company's other products, Tesla Energy does not build its own solar panels. As of 2021, the company uses panels built by Hanwha Q Cells.[52] Previously Tesla used panels from Panasonic as part of a larger partnership between the companies. Panasonic exited the solar business in January 2021.[31]
+
+The company focuses primarily on residential customers who purchase the system with cash or financing. Additionally, Tesla Energy also offers systems to commercial customers in California.
+
+Tesla Energy does not have a lease program like SolarCity, but between August 2019 and May 2021, it offered "subscription" systems to customers in Arizona, California, Connecticut, Massachusetts, New Jersey and New Mexico, in a plan to boost residential solar deployments.[53] Compared to a lease, customers do not need to sign a long-term agreement and may ask Tesla to deactivate the system at anytime with no penalty; however Tesla does charge a flat fee to remove the system.[54]
+
+As of 2021, Tesla Energy offers four standard solar sizes: a small system with 10 panels rated at 4.25 kW, a medium system with 20 panels rated at 8.5 kW, a large system with 30 panels rated at 12.75 kW and an extra large system with 40 panels rated at 17 kW. The company says that by offering standardized system sizes, it can lower prices by streamlining designs, permitting and logistics.[55] The standard system sizes also match up with the capabilities of the Tesla Solar Inverter.
+
+Tesla uses proprietary mounting hardware on rooftops that eliminates the need for mounting rails and utilizes skirts that hide the hardware and make the panels appear to be flush with the roof.[56][57] SolarCity acquired the mounting technology when it purchased Zep Solar in 2013. The "railless" system allows installers to install solar panels on the roof more quickly than other installation approaches. Traditionally, solar panel installation requires workers to first outfit roofs with mounting rails and then attach solar panels to those rails.[58]
+
+
+
+Tesla Energy manufacturers, installs and sells a solar shingle product it calls the Tesla Solar Roof. Solar shingles are small solar panel tiles that can make up an entire roof surface.[23] The company claims that a Solar Roof costs less than installing a new roof with solar panels.[59][60][61] The product was first unveiled in August 2016, but Tesla was not able to start producing the Solar Roof in volume until March 2020.[29]
+
+In January 2021, the company introduced its own solar inverter. The company says the Tesla Solar Inverter builds on the technology it developed for the Powerwall and electric car inverters. Like the Powerwall and Tesla's cars, the solar inverter is capable of receiving over-the-air updates from built-in cellular connectivity. The product has been noted for using older string inverter technology (many systems now use micro-inverters), but that it has the potential to drive the cost of Tesla's solar systems even lower.[62] EnergySage, a solar buyers guide website, gave the Tesla Solar Inverter a ranking of "very good," generally praising the device but noting that its 97.5% efficiency and 12.5 year warranty lags behind industry leaders.[62][63]
+
+The inverter comes in two sizes: 3.8 kW and 7.6 kW of AC power output. The 3.8 kW model is sized to meet the needs of Tesla's smallest solar panel system size and has two maximum power point trackers. The 7.6 kW model is sized to meet the needs of Tesla's medium solar panel system size and has four maximum power point trackers.[62] Installations using Tesla's large system size use a 3.8 kW and a 7.6 kW inverter, while Tesla's extra large systems use two 7.6 kW inverters.
+
+Tesla's Powerwall+, introduced in April 2021, includes an integrated Tesla Solar Inverter.[64]
+
+The Tesla Powerwall is a rechargeable lithium-ion battery energy storage device intended to be used for home energy storage. The current generation Powerwall 2 is capable of storing 13.5 kilowatt-hours for solar self-consumption, time of use load shifting, and backup power.[65]
+
+A Powerwall system can be composed of up to 10 Powerwalls, including a combination of Powerwall+ and traditional Powerwalls. In areas where building codes allow, up to three of these devices may be "stacked" front to back to take up less space. 
+
+The Powerwall+ combines the functions of a Powerwall 2, the Tesla Solar Inverter and a Backup Gateway (a system controller and transfer switch).[66][67] The combination simplifies installation and allows for even greater power delivery during periods of full sun. 
+
+Tesla no longer sells Powerwalls directly to consumers. They must be purchased alongside solar panel or Solar Roof systems from Tesla or from a certified installer.[68] Additionally, starting in late May 2021, Tesla Energy requires all new solar panel and Solar Roof customers to purchase at least one Powerwall with their system.
+
+The Tesla Powerpack and Tesla Megapack are large-scale rechargeable lithium-ion battery energy storage devices intended for use by a business or an electric utility company.
+
+The Powerpack is capable of storing 232 kilowatt-hours and is intended for use by businesses or for smaller utility company projects and can be used for peak shaving, load shifting, backup power, demand response, microgrids, renewable power integration, frequency regulation, and voltage control.
+
+The Megapack is capable of storing up to 3 megawatt-hours and is built as a containerized product intended for use by utility companies, typically as part of a battery storage power station, and can be used for renewable energy supply smoothing, voltage support, capacity support, microgrids, frequency regulation, and voltage control.
+
+Tesla has developed a software ecosystem to support its energy hardware products. Autobidder, Powerhub, Opticaster, Microgrid Controller and Virtual Machine Mode are the products that Tesla offers. [69]
+
+At the time of the 2016 acquisition deal, SolarCity was facing liquidity issues; however, Tesla shareholders were not informed.[20] Consequently, multiple shareholder groups filed a lawsuit against Musk and Tesla's directors, claiming that the purchase of SolarCity was done solely to benefit Musk and came at the expense of Tesla and its shareholders.[21][22] During a June 2019 court deposition, Musk acknowledged that the company reallocated every possible employee from the solar division to work on the Model 3, and, according to Musk, "as a result, solar suffered." This had not previously been disclosed to shareholders. Court documents unsealed in 2019 have confirmed that Musk was also aware of the company's liquidity issues.[20] Tesla directors settled the lawsuit in January 2020, leaving Musk the sole remaining defendant.[70][71]
+
+In July 2018, three former employees filed a lawsuit against SolarCity, alleging that the corporation had approved the creation of "fake sales accounts", which resulted in an "unreasonably high valuation of SolarCity" for investors.[72][73] After allegedly informing management, including CEO Elon Musk, of these incidents, the employees were fired, which they argue contravenes California's whistleblower protection laws. Tesla denied the allegations of contravening whistleblower protections[72] and, in June 2020, the case was dismissed with prejudice.[74]
+
+SolarCity installed and managed solar panels on the roofs of more than 240 Walmart stores. After fires on the roofs of seven of those stores, Walmart filed a lawsuit against Tesla on August 21, 2019 claiming that the fires were caused by negligent installation and maintenance that relied on "untrained and unsupervised personnel".[75]
+
+At around the start of the lawsuit, it was revealed that Tesla had initiated a secretive program, "Project Titan", to replace solar panel parts that could cause fires.[76] Former employees said that Project Titan involved replacing two parts believed to be causing the fires: the connectors between the panels made by Amphenol and the power optimizers built by SolarEdge.[77] Tesla said that it believed Project Titan was successful in addressing issues with the connectors and their higher rate of failure.[77]
+
+On November 9, 2019, it was announced that Walmart and Tesla had settled their lawsuit. A joint statement provided by Tesla stated the companies were "pleased to have resolved the issues raised by Walmart" concerning the installations, and looked forward to "a safe re-energization of our sustainable energy systems." The terms of the settlement were not disclosed.[78]
+
+In July 2021, a fire ignited within a Tesla Megapack in Victoria during testing at Australia's Big Battery site, one of the largest fixed batteries in the world.[79] The Australian County Fire Authority issued a statement to nearby suburban areas regarding possible toxic smoke.[80]
+
+Musk introduced the Tesla Solar Roof, a solar shingle product in an August 2016 presentation.[23] It was later revealed that the tiles presented were fake[26] and Tesla was not able to start producing the Solar Roof in volume until March 2020.[29] It would become a major point of contention from skeptics of Tesla.[27]
+
+In August 2017, limited production of tiles for the Solar Roof began at the company's Giga New York factory in Buffalo, New York.[81] After testing on employees' roofs, Tesla announced in January 2018 that it would begin installing the product "within the next few months,"[82] but by July 2019, the company had only completed about a dozen roofs.[83] In October 2019 it was reported that Tesla was "still tinkering with the product three years after announcing the concept, having done trial installations with two different iterations so far."[61] The second version had turned out to be too expensive for Tesla to manufacture in volume.[61][84]
+
+On April 11, 2021, Tesla sent out a message to many customers who had pre-ordered their roofs (including customers who had signed contracts well over a year prior) informing them of a cost increase of about 30% for all projects, including some that already had an agreed-upon start date.[85] Tesla said that it would "be prioritizing customers based on the order in which they accept their updated agreements," potentially adding time for customers who had waiting for months or a year for their new roof. The process of asking customers to pay a deposit, sign a contract for the estimated price, and later replacing the contract with an inflated price, violates roofing contract requirements in some states.[citation needed]
+
+On April 26, 2021, Elon Musk admitted that the company made "significant mistakes" in their solar roof tile project, including that they did not anticipate the trouble of "assessing the difficulty of certain roofs [as the] complexity of roofs varies".[86]
+
+Facing a class-action lawsuit filed by Solar Roof customers, Tesla revealed that it planned to let some customers who had signed contracts before the April 2021 price changes revert to their original price.[87]

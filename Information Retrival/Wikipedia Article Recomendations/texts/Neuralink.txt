@@ -1,0 +1,41 @@
+
+
+Coordinates: 37°45′44″N 122°24′53″W﻿ / ﻿37.7623°N 122.4148°W﻿ / 37.7623; -122.4148
+
+Neuralink Corporation is a neurotechnology company developing implantable brain–machine interfaces (BMIs) and founded by Elon Musk and others. The company's headquarters is in the Pioneer Building in San Francisco sharing offices with OpenAI.[6] Neuralink was launched in 2016 and was first publicly reported in March 2017.[1][2]
+
+Since its founding, the company has hired several high-profile neuroscientists from various universities.[7] By July 2019, it had received $158 million in funding (of which $100 million was from Musk) and was employing a staff of 90 employees.[8] At that time, Neuralink announced that it was working on a "sewing machine-like" device capable of implanting very thin (4 to 6 μm in width[9]) threads into the brain, and demonstrated a system that read information from a lab rat via 1,500 electrodes. They had anticipated starting experiments with humans in 2020;[8] but have since moved that projection to 2021.[10]
+
+Several neuroscientists and publications, including the MIT Technology Review, have criticized claims made by Musk in relation to the technology.[11][12]
+
+Neuralink was founded in 2016 by Elon Musk, Max Hodak, Ben Rapoport, Dongjin Seo, Paul Merolla, Philip Sabes, Tim Gardner, Tim Hanson and Vanessa Tolosa, a group of experts in areas such as neuroscience, biochemistry and robotics.[6] The trademark "Neuralink" was purchased from its previous owners in January 2017.[13]
+
+In April 2017, Neuralink announced that it was aiming to make devices to treat serious brain diseases in the short-term, with the eventual goal of human enhancement, sometimes called transhumanism.[14][6][15] Musk had said his interest in the idea partly stemmed from the science fiction concept of "neural lace" in the fictional universe in The Culture, a series of 10 novels by Iain M. Banks.[15][16]
+
+Musk defined the neural lace as a "digital layer above the cortex" that would not necessarily imply extensive surgical insertion but ideally an implant through a vein or artery.[17] Musk explained that the long-term goal is to achieve "symbiosis with artificial intelligence",[18] which he perceives as an existential threat to humanity if it goes unchecked.[18][19]
+
+As of 2020, Neuralink is headquartered in San Francisco's Mission District, sharing the Pioneer building with OpenAI, another company co-founded by Musk.[20][4] Jared Birchall, the head of Musk's family office, was listed as CEO, CFO and president of Neuralink in 2018.[21][20] As of September 2018, Musk was the majority owner of Neuralink but did not hold an executive position.[22]
+
+By August 2020, only three of the eight founding scientists remained at the company, according to an article by Stat News which reported that Neuralink had seen "years of internal conflict in which rushed timelines have clashed with the slow and incremental pace of science."[23]
+
+In April 2021, Neuralink demonstrated a monkey playing the game "Pong" using the Neuralink implant.[24] While similar technology has existed since 2002, when a research group first demonstrated a monkey moving a computer cursor with neural signals, scientists acknowledged the engineering progress in making the implant wireless and increasing the number of implanted electrodes.[25][26][27]
+
+In May 2021, co-founder and president Max Hodak announced that he no longer works with the company.[28]
+
+In 2018, Gizmodo reported that Neuralink "remained highly secretive about its work", although public records showed that it had sought to open an animal testing facility in San Francisco; it subsequently started to carry out research at the University of California, Davis.[20] In 2019, during a live presentation at the California Academy of Sciences, the Neuralink team revealed to the public the technology of the first prototype they had been working on. It is a system that involves ultra-thin probes that will be inserted into the brain, a neurosurgical robot that will perform the operations and a high-density electronic system capable of processing information from neurons.  It is based on technology developed at UCSF and UC Berkeley.[29]
+
+The probes, composed mostly of polyimide, a biocompatible material, with a thin gold or platinum conductor, are inserted into the brain through an automated process performed by a surgical robot. Each probe consists of an area of wires that contains electrodes capable of locating electrical signals in the brain, and a sensory area where the wire interacts with an electronic system that allows amplification and acquisition of the brain signal. Each probe contains 48 or 96 wires, each of which contains 32 independent electrodes, making a system of up to 3072 electrodes per formation.[9][30]
+
+Neuralink says they have developed a robot capable of rapidly inserting many flexible probes into the brain, which may avoid the problems of tissue damage and longevity associated with larger and more rigid probes.[31][32][33] This robot has an insertion head with a 40 μm diameter needle made of tungsten-rhenium designed to attach to the insertion loops, made to transport and insert individual probes, and to penetrate the meninges and tissue cerebral. The robot is capable of inserting up to six wires (192 electrodes) per minute.[31]
+
+Neuralink has developed an Application-Specific Integrated Circuit (ASIC) to create a 1,536-channel recording system. This system consists of 256 amplifiers capable of being individually programmed ("analog pixels"), analog-to-digital converters within the chip ("ADCs") and a peripheral circuit control to serialize the digitized information obtained.[31] It aims to convert information obtained from neurons into an understandable binary code in order to achieve greater understanding of brain function and the ability to stimulate these neurons back. Currently, electrodes are still too big to record the firing of individual neurons, so they can record only the firing of a group of neurons; Neuralink representatives believe this issue might get mitigated algorithmically, but it's computationally expensive and does not produce exact results.[34]
+
+In July 2020, according to Musk, Neuralink obtained a FDA breakthrough device designation which allows limited human testing under the FDA guidelines for medical devices.[35][36]
+
+Several neurology scientists have commented on the intention of Musk and members of Neuralink to build a brain-computer interface.[37] The response from the scientific community has been mixed.
+
+At a live demonstration in August 2020, Musk described one of their early devices as "a Fitbit in your skull" which could soon cure paralysis, deafness, blindness, and other disabilities. Many neuroscientists and publications criticized these claims.[11][12][38] For example, MIT Technology Review described them as "highly speculative" and "neuroscience theater".[11]
+
+Mary Lou Jepsen, founder of Openwater, a company that also works in the area of brain-computer interfaces, has expressed concern about the rejection reactions that probes can cause.[39] Professor Andrew Jackson, professor of neural interfaces at Newcastle University, commented that he didn't "think there was anything revolutionary in [Neuralink's pig implant] presentation" but that the wireless features were "nice".[40] Thiago Arzua of the Medical College of Wisconsin argued Neuralink has "showed little more than a flashy new design for a BMI with more electrodes".
+
+Neuralink tests their devices by surgically implanting them in the brains of live monkeys, pigs and other animals.[41] These methods have been criticized by groups such as PETA.[42]

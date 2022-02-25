@@ -1,0 +1,11 @@
+The Russell 2000 Index is a small-cap stock market index that makes up the smallest 2,000 stocks in the Russell 3000 Index. It was started by the Frank Russell Company in 1984. The index is maintained by FTSE Russell, a subsidiary of the London Stock Exchange Group.
+
+The Russell 2000 is by far the most common benchmark for mutual funds that identify themselves as "small-cap",
+while the S&P 500 index is used primarily for large capitalization stocks. It is the most widely quoted measure of the overall performance of the small-cap to mid-cap company shares. The index represents approximately 10% of the total market capitalization of the Russell 3000 Index. As of 31 January 2021[update], the weighted average market capitalization for a company in the index is around $3.8 billion; the median market cap is $922 million. The market cap of the largest company in the index is $28.65 billion.[1]
+
+It first traded above the 1,000 level on May 20, 2013, and above the 2,000 level on December 23, 2020.
+
+Similar small-cap indices include the S&P 600 from Standard & Poor's,
+which is less commonly used, along with those from other financial information providers.
+
+Many fund companies offer mutual funds and exchange-traded funds (ETFs) that attempt to replicate the performance of the Russell 2000.  Their results will be affected by stock selection, trading expenses, and market impact of reacting to changes in the constituent companies of the index.  It is not possible to invest directly in an index.

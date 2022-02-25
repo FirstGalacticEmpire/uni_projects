@@ -1,0 +1,47 @@
+Density-based spatial clustering of applications with noise (DBSCAN) is a data clustering algorithm proposed by Martin Ester, Hans-Peter Kriegel, Jörg Sander and Xiaowei Xu in 1996.[1]
+It is a density-based clustering non-parametric algorithm: given a set of points in some space, it groups together points that are closely packed together (points with many nearby neighbors), marking as outliers points that lie alone in low-density regions (whose nearest neighbors are too far away).
+DBSCAN is one of the most common clustering algorithms and also most cited in scientific literature.[2]
+
+In 2014, the algorithm was awarded the test of time award (an award given to algorithms which have received substantial attention in theory and practice) at the leading data mining conference, ACM SIGKDD.[3] As of July 2020[update], the follow-up paper "DBSCAN Revisited, Revisited: Why and How You Should (Still) Use DBSCAN"[4] appears in the list of the 8 most downloaded articles of the prestigious ACM Transactions on Database Systems (TODS) journal.[5]
+
+In 1972, Robert F. Ling published a closely related algorithm in "The Theory and Construction of k-Clusters"[6] in The Computer Journal with an estimated runtime complexity of O(n³).[6] DBSCAN has a worst-case of O(n²), and the database-oriented range-query formulation of DBSCAN allows for index acceleration. The algorithms slightly differ in their handling of border points.
+
+Consider a set of points in some space to be clustered. Let ε be a parameter specifying the radius of a neighborhood with respect to some point. For the purpose of DBSCAN clustering, the points are classified as core points, (density-) reachable points and outliers, as follows:
+
+Now if p is a core point, then it forms a cluster together with all points (core or non-core) that are reachable from it. Each cluster contains at least one core point; non-core points can be part of a cluster, but they form its "edge", since they cannot be used to reach more points.
+
+Reachability is not a symmetric relation: by definition, only core points can reach non-core points. The opposite is not true, so a non-core point may be reachable, but nothing can be reached from it. Therefore, a further notion of connectedness is needed to formally define the extent of the clusters found by DBSCAN. Two points p and q are density-connected if there is a point o such that both p and q are reachable from o. Density-connectedness is symmetric.
+
+A cluster then satisfies two properties:
+
+DBSCAN requires two parameters: ε (eps) and the minimum number of points required to form a dense region[a] (minPts). It starts with an arbitrary starting point that has not been visited. This point's ε-neighborhood is retrieved, and if it contains sufficiently many points, a cluster is started. Otherwise, the point is labeled as noise. Note that this point might later be found in a sufficiently sized ε-environment of a different point and hence be made part of a cluster.
+
+If a point is found to be a dense part of a cluster, its ε-neighborhood is also part of that cluster. Hence, all points that are found within the ε-neighborhood are added, as is their own ε-neighborhood when they are also dense. This process continues until the density-connected cluster is completely found. Then, a new unvisited point is retrieved and processed, leading to the discovery of a further cluster or noise.
+
+DBSCAN can be used with any distance function[1][4] (as well as similarity functions or other predicates).[7] The distance function (dist) can therefore be seen as an additional parameter.
+
+The algorithm can be expressed in pseudocode as follows:[4]
+
+where RangeQuery can be implemented using a database index for better performance, or using a slow linear scan:
+
+The DBSCAN algorithm can be abstracted into the following steps:[4]
+
+A naive implementation of this requires storing the neighborhoods in step 1, thus requiring substantial memory. The original DBSCAN algorithm does not require this by performing these steps for one point at a time.
+
+DBSCAN visits each point of the database, possibly multiple times (e.g., as candidates to different clusters). For practical considerations, however, the time complexity is mostly governed by the number of regionQuery invocations. DBSCAN executes exactly one such query for each point, and if an indexing structure is used that executes a neighborhood query in O(log n), an overall average runtime complexity of O(n log n) is obtained (if parameter ε is chosen in a meaningful way, i.e. such that on average only O(log n) points are returned). Without the use of an accelerating index structure, or on degenerated data (e.g. all points within a distance less than ε), the worst case run time complexity remains O(n²). The distance matrix of size (n²-n)/2 can be materialized to avoid distance recomputations, but this needs O(n²) memory, whereas a non-matrix based implementation of DBSCAN only needs O(n) memory.
+
+See the section below on extensions for algorithmic modifications to handle these issues.
+
+Every data mining task has the problem of parameters. Every parameter influences the algorithm in specific ways. For DBSCAN, the parameters ε and minPts are needed. The parameters must be specified by the user. Ideally, the value of ε is given by the problem to solve (e.g. a physical distance), and minPts is then the desired minimum cluster size.[a]
+
+OPTICS can be seen as a generalization of DBSCAN that replaces the ε parameter with a maximum value that mostly affects performance. MinPts then essentially becomes the minimum cluster size to find. While the algorithm is much easier to parameterize than DBSCAN, the results are a bit more difficult to use, as it will usually produce a hierarchical clustering instead of the simple data partitioning that DBSCAN produces.
+
+Recently, one of the original authors of DBSCAN has revisited DBSCAN and OPTICS, and published a refined version of hierarchical DBSCAN (HDBSCAN*),[8] which no longer has the notion of border points. Instead, only the core points form the cluster.
+
+DBSCAN can be seen as special (efficient) variant of spectral clustering: Connected components correspond to optimal spectral clusters (no edges cut – spectral clustering tries to partition the data with a minimum cut); DBSCAN finds connected components on the (asymmetric) reachability graph.[10] However, spectral clustering can be computationally intensive (up to  without approximation and further assumptions), and one has to choose the number of clusters  for both the number of eigenvectors to choose and the number of clusters to produce with k-means on the spectral embedding. Thus, for performance reasons, the original DBSCAN algorithm remains preferable to a spectral implementation, and this relationship is so far only of theoretical interest.
+
+Generalized DBSCAN (GDBSCAN)[7][11] is a generalization by the same authors to arbitrary "neighborhood" and "dense" predicates. The ε and minPts parameters are removed from the original algorithm and moved to the predicates. For example, on polygon data, the "neighborhood" could be any intersecting polygon, whereas the density predicate uses the polygon areas instead of just the object count.
+
+Various extensions to the DBSCAN algorithm have been proposed, including methods for parallelization, parameter estimation, and support for uncertain data. The basic idea has been extended to hierarchical clustering by the OPTICS algorithm. DBSCAN is also used as part of subspace clustering algorithms like PreDeCon and SUBCLU. HDBSCAN[8] is a hierarchical version of DBSCAN which is also faster than OPTICS, from which a flat partition consisting of the most prominent clusters can be extracted from the hierarchy.[12]
+
+Different implementations of the same algorithm were found to exhibit enormous performance differences, with the fastest on a test data set finishing in 1.4 seconds, the slowest taking 13803 seconds.[13] The differences can be attributed to implementation quality, language and compiler differences, and the use of indexes for acceleration.

@@ -1,0 +1,50 @@
+In English, the plural form of words ending in -us, especially those derived from Latin,  often replaces -us with -i. There are many exceptions, some because the word does not derive from Latin, and others due to custom (e.g., campus, plural campuses). Conversely, some non-Latin words ending in -us and Latin words that did not have their  Latin plurals with -i form their English plurals with -i. Some words' plurals end in -i even though they are not Latin, or that is not the Latin plural, e.g., octopi is sometimes used as a plural for octopus (the standard English plural is octopuses). Prescriptivists consider these forms incorrect, but descriptivists may simply describe them as a natural evolution of language.
+
+Some English words of Latin origin do not commonly take the Latin plural, but rather the regular English plurals in -(e)s: campus, bonus, and anus; while others regularly use the Latin forms: radius (radii) and alumnus (alumni). Still others may use either: corpus (corpora or corpuses), formula (formulae in technical contexts, formulas otherwise), index (indices mostly in technical contexts, indexes otherwise).
+
+In Latin, most second declension masculine nouns ending in -us form their plural in -i. However, some Latin nouns ending in -us are not second declension (cf. Latin grammar). For example, third declension neuter nouns such as opus and corpus have plurals opera and corpora, and fourth declension masculine and feminine nouns such as sinus and tribus have plurals sinūs and tribūs.
+
+Some English words derive from Latin idiosyncratically. For example, bus is a shortened form of omnibus 'for everyone', the ablative (and dative) plural of omnis, and ignoramus is a verb form, 'we do not know'. Syllabus is a Late Latin (16th c.) word, derived from a misreading of the Greek sittybos "table of contents"; since it is not a classical word, it does not have a classical plural.[1]
+
+The English plural of virus is viruses.[2] In most speaking communities, this is non-controversial and speakers would not attempt to use the non-standard plural in -i. However, in computer enthusiast circles in the late 20th century and early 21st, the non-standard viri form (sometimes even virii) was well attested, generally in the context of computer viruses.[3] Viri is also found in some nineteenth-century sources.[4][5]
+
+While the number of users employing these non-standard plural forms of virus was always a small percentage of the English-speaking population, the variation was notable because it coincided with the growth of the web, a medium on which users of viri were over-represented. As the distribution of Internet users shifted to be more representative of the population as a whole during the 2000s, the non-standard forms saw decline in usage. A tendency towards prescriptivism in the computer enthusiast community, combined with the growing awareness that viri and virii are not etymologically supported plural forms, also played a part.[citation needed]
+
+Vīrus in Classical Latin was a mass noun, denoting something uncountable. These pluralize only under special circumstances, and no plural form of the word can be found in contemporary texts.[6]
+
+The Latin word vīrus (the ī indicates a long i) means "slimy liquid, slime" or "poison, venom", as that of a snake. The word is probably related to the Greek ἰός (ios) meaning "venom" or "rust" and the Sanskrit word viṣam meaning "toxic, poison".[7] It is regarded as a neuter of the second declension, but neuter second declension nouns ending in -us (rather than -um) are rare enough that inferring rules is difficult. (One of the rare attested plurals, pelage as a plural of pelagus, is borrowed from Greek, so does not give guidance for virus.) Plural neuter nouns of other declensions always end in -a (in the nominative, accusative and vocative).
+
+In Neo-Latin, a plural form is necessary in order to express the modern concept of ‘viruses’, which lead to the following declension:[8][9][10]
+
+If vīrus were a masculine second declension term like alumnus, it would be correct to use vīrī as its plural. However, it is neuter.
+
+There does exist a Latin word virī, meaning "men" (the plural of vir, a second declension masculine noun), but it has a short i in the first syllable.
+
+The form vīriī is impossible as a plural of vīrus, since we only find the ending -iī in the plural form of masculine and feminine words ending in -ius.  For instance, radius is pluralized by removing -us, to isolate the stem radi-, and then adding the plural suffix -ī.  Thus the -iī ending of the resulting word radiī is not a suffix: it is simply the consequence of adding the actual suffix ī to a stem that has an i as its last letter.  Vīriī would be the plural form of the putative, nonexistent word vīrius.
+
+The form viruses appears in the official Scrabble words list,[11] but neither viri nor virii does. Similarly, the spellchecker built into the Mozilla Firefox browser[12] accepts viruses but neither viri nor virii.
+
+Usage of virii within Internet communities has met with some resistance, most notably by Tom Christiansen, a figure in the Perl community, who researched the issue and wrote what eventually became referred to in various online discussions as the authoritative essay on the subject,[13] favoring viruses instead of virii. The impetus of this discussion was the potential irony that the use of virii could be construed as a claim of superior knowledge of language when in fact more detailed research finds the native viruses is actually more appropriate. In other words, virii is a hypercorrection.
+
+In life sciences, "viruses" generally refers to several distinct strains or species of virus. "Virus" is used in the original way as an uncountable mass noun, e.g. "a vial of virus". Individual, physical particles are called "virions" or "virus particles".
+
+There are three plural forms of octopus: octopuses, octopi, and octopodes. A fourth form octopods  is occasionally used by scientists for taxonomic purposes.[14]
+
+Currently, octopuses is the most common form in the UK as well as the US; octopodes is rare, and octopi is often objected to as incorrect.[15]
+
+The Oxford English Dictionary[16] lists octopi, octopuses and octopodes (in that order); it labels octopodes "rare", and notes that octopi derives from the mistaken assumption that octōpūs is a second declension Latin noun. (The long "ū" is not used in the 2nd declension.) Rather, it is (Latinized) Ancient Greek, from oktṓpous (ὀκτώπους, gender masculine), whose plural is oktṓpodes (ὀκτώποδες). If the word were native to Latin, it would be octōpēs ('eight-foot') and the plural octōpedēs, analogous to centipedes and mīllipedēs, as the plural form of pēs ('foot') is pedēs. In modern Greek, it is called khtapódi (χταπόδι, gender neuter), with plural form khtapódia (χταπόδια).
+
+Chambers 21st Century Dictionary[17] and the Compact Oxford Dictionary[18] list only octopuses, although the latter notes that octopodes is "still occasionally used"; the British National Corpus has 29 instances of octopuses, 11 of octopi and 4 of octopodes.  Merriam-Webster 11th Collegiate Dictionary lists octopuses and octopi, in that order; Webster's New World College Dictionary lists octopuses, octopi and octopodes (in that order).
+
+A search on PubMed for titles or abstracts of peer-reviewed scientific papers found 
+octopuses in 176 papers,[19] octopi in 15 papers,[20] and no records for octopodes.[21] However, octopods was found in 53 papers.[22] When expanding the search to all fields, found octopods, octopi, and octopodes all stayed the same, but octopuses increased to 1054 papers.[23] Indicating octopuses is the most preferred in the scientific record, whereas octopodes is never used.
+
+Fowler's Modern English Usage states that "the only acceptable plural in English is octopuses," and that octopi is misconceived and octopodes pedantic.[24]
+
+The term octopod (plural octopods or octopodes) is taken from the taxonomic order Octopoda but has no classical equivalent. The collective form octopus is usually reserved for animals consumed for food.
+
+The situation with the word platypus is similar to that of octopus; the word is etymologically Greek despite its Latinized ending, and so pluralizing it as if it were Latin (i.e. as platypi) is sometimes ill-considered. As with octopus, importing Greek morphology into English would have platypodes as the plural, but in practice this form is hardly attested outside of discussions about pluralization. In scientific contexts, biologists often use platypus as both the singular and plural form of the word, in the tradition of sheep or fish, but laypersons and scientists alike often use the simple English plural platypuses. Different dictionaries make different recommendations.
+
+As a word in Botanical Latin (as distinct from Classical Latin), cactus follows standard Latin rules for pluralization and becomes cacti, which has become the prevalent usage in English.  Regardless, cactus is popularly used as both singular and plural, and is cited as both singular and plural.[25] Cactuses is also an acceptable plural in English.
+
+Facetious mock-erudite plurals in -i or even -ii are sometimes found for words ending with a sound (vaguely) similar to -us. Examples are stewardi (supposed plural of stewardess) and Elvi (as a plural for Elvis imitators). The Toyota corporation has determined that their Prius model should have the plural form Prii, even though the Latin word prius has a plural priora, the Lada Priora having prior claim to that name—though the common plural is "Priuses".[26][27] Conversely, Toyota has also said that the plural of their Lexus line is Lexus.[28]   The Winklevoss twins were famously referred to as "the Winklevi" in The Social Network.[29]

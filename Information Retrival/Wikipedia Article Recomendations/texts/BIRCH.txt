@@ -1,0 +1,24 @@
+BIRCH (balanced iterative reducing and clustering using hierarchies) is an unsupervised data mining algorithm used to perform hierarchical clustering over particularly large data-sets.[1] With modifications it can also be used to accelerate k-means clustering and Gaussian mixture modeling with the expectation–maximization algorithm.[2] An advantage of BIRCH is its ability to incrementally and dynamically cluster incoming, multi-dimensional metric data points in an attempt to produce the best quality clustering for a given set of resources (memory and time constraints). In most cases, BIRCH only requires a single scan of the database.
+
+Its inventors claim BIRCH to be the "first clustering algorithm proposed in the database area to handle 'noise' (data points that are not part of the underlying pattern) effectively",[1] beating DBSCAN by two months. The BIRCH algorithm received the SIGMOD 10 year test of time award in 2006.[3]
+
+Previous clustering algorithms performed less effectively over very large databases and did not adequately consider the case wherein a data-set was too large to fit in main memory. As a result, there was a lot of overhead maintaining high clustering quality while minimizing the cost of additional IO (input/output) operations. Furthermore, most of BIRCH's predecessors inspect all data points (or all currently existing clusters) equally for each 'clustering decision' and do not perform heuristic weighting based on the distance between these data points.
+
+It is local in that each clustering decision is made without scanning all data points and currently existing clusters.
+It exploits the observation that the data space is not usually uniformly occupied and not every data point is equally important.
+It makes full use of available memory to derive the finest possible sub-clusters while minimizing I/O costs.
+It is also an incremental method that does not require the whole data set in advance.
+
+The BIRCH algorithm takes as input a set of N data points, represented as real-valued vectors, and a desired number of clusters K. It operates in four phases, the second of which is optional.
+
+The first phase builds a clustering feature () tree out of the data points, a height-balanced tree data structure, defined as follows:
+
+In the second step, the algorithm scans all the leaf entries in the initial  tree to rebuild a smaller  tree, while removing outliers and grouping crowded subclusters into larger ones. This step is marked optional in the original presentation of BIRCH.
+
+In step three an existing clustering algorithm is used to cluster all leaf entries. Here an agglomerative hierarchical clustering algorithm is applied directly to the subclusters represented by their  vectors. It also provides the flexibility of allowing the user to specify either the desired number of clusters or the desired diameter threshold for clusters. After this step a set of clusters is obtained that captures major distribution pattern in the data. However, there might exist minor and localized inaccuracies which can be handled by an optional step 4. In step 4 the centroids of the clusters produced in step 3 are used as seeds and redistribute the data points to its closest seeds to obtain a new set of clusters. Step 4 also provides us with an option of discarding outliers. That is a point which is too far from its closest seed can be treated as an outlier.
+
+Given only the clustering feature , the same measures can be calculated without the knowledge of the underlying actual values.
+
+In multidimensional cases the square root should be replaced with a suitable norm.
+
+Unfortunately, there are numerical issues associated with the use of the term  in BIRCH. When subtracting  or similar in the other distances such as , catastrophic cancellation can occur and yield a poor precision, and which can in some cases even cause the result to be negative (and the square root then become undefined).[2] This can be resolved by using BETULA cluster features  instead, which store the count , mean , and sum of squared deviations instead based on numerically more reliable online algorithms to calculate variance. For these features, a similar additivity theorem holds. When storing a vector respectively a matrix for the squared deviations, the resulting BIRCH CF-tree can also be used to accelerate Gaussian Mixture Modeling with the expectation–maximization algorithm, besides k-means clustering and hierarchical agglomerative clustering.

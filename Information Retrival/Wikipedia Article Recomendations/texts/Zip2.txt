@@ -1,0 +1,17 @@
+Zip2 was a company that provided and licensed online city guide software to newspapers.[4] The company was founded in Palo Alto, California as Global Link Information Network in 1995, by brothers Elon and Kimbal Musk and Greg Kouri.[5] Initially, Global Link provided local businesses with an Internet presence,[6]: 61  but later began to assist newspapers in designing online city guides before being purchased by Compaq Computer in 1999.[7]
+
+Global Link Information Network was founded in 1995 by brothers Elon and Kimbal Musk and Greg Kouri in Palo Alto, California with money raised from a small group of angel investors,[8][9][10] plus US$6,000 from Kouri.[6] In Ashlee Vance's biography of Elon Musk, it is claimed that the Musks' father, Errol Musk, provided them with US$28,000 during this time,[6]: Ch.4  but Elon Musk later denied this.[8] He later clarified that his dad provided around 10% of US$200,000 as part of a later funding round.[11]
+
+Initially, Global Link provided local businesses with an Internet presence by linking their services to searchers and providing directions.[6]: 61  Elon Musk combined a free Navteq database with a Palo Alto business database to create the first system.[6]
+
+In 1996, Global Link received US$3 million in investments from Mohr Davidow Ventures and officially changed its name to Zip2.[6] Davidow Ventures changed the fundamental strategy of Zip2 from localised direct to business sales to instead selling national back end software packages to newspapers to build their own directories.[6] Elon Musk was appointed the Chief Technology Officer and Rich Sorkin became the Chief Executive Officer. Zip2 trademarked "We Power the Press" as its official slogan and continued to grow.[6] Zip2 struck deals with The New York Times, Knight Ridder, and Hearst Corporation,[6] and its collaboration with newspapers made it a major component of "the U.S. newspaper industry's response to the online city guide industry", according to the Editor & Publisher.[12]
+
+By 1998, the company had partnered with about 160 newspapers to develop guides to cities, either locally or at full scale. According to chairman and founder Elon Musk, twenty of those newspapers led to full-scale city guides. The New York Times reported that Zip2 also provided newspapers with an online directory, calendar, and email alongside their core offering.[13]
+
+Zip2 allowed for two-way communication between users and advertisers. Users could message advertisers and have that message forwarded to their fax machine. Likewise, advertisers could fax users and users could view that fax using specific URLs.[14][15]
+
+One Zip2 product was called "Auto Guide". AutoGuide connected online newspaper users with local dealership or private party car sellers.[14]
+
+In April 1998, Zip2 attempted to merge with CitySearch, its main competitor. While Musk initially supported the merger,[16] he persuaded the board of directors not to proceed with it.[17] According to The New York Times, The two companies "cited incompatibilities in cultures and technology" as the reason for the merger's failure.[18]
+
+In February 1999, Compaq Computer paid US$305 million to acquire Zip2.[6]: 109  Elon and Kimbal Musk, the original founders, netted US$22 million and $15 million respectively.[6]: 109 [19] The company was purchased to enhance Compaq's AltaVista web search engine.[7][20]

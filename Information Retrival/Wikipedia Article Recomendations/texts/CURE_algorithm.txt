@@ -1,0 +1,19 @@
+CURE (Clustering Using REpresentatives) is an efficient data clustering algorithm for large databases[citation needed]. Compared with K-means clustering it is more robust to outliers and able to identify clusters having non-spherical shapes and size variances.
+
+The popular K-means clustering algorithm minimizes the sum of squared errors criterion:
+
+Given large differences in sizes or geometries of different clusters, the square error method could split the large clusters to minimize the square error, which is not always correct. Also, with hierarchic clustering algorithms these problems exist as none of the distance measures between clusters () tend to work with different cluster shapes.  Also the running time is high when n is large.
+
+The problem with the BIRCH algorithm is that once the clusters are generated after step 3, it uses centroids of the clusters and assigns each data point to the cluster with the closest centroid.[citation needed] Using only the centroid to redistribute the data has problems when clusters lack uniform sizes and shapes.
+
+To avoid the problems with non-uniform sized or shaped clusters, CURE employs a hierarchical clustering algorithm that adopts a middle ground between the centroid based and all point extremes. In CURE, a constant number c of well scattered points of a cluster are chosen and they are shrunk towards the centroid of the cluster by a fraction α. The scattered points after shrinking are used as representatives of the cluster. The clusters with the closest pair of representatives are the clusters that are merged at each step of CURE's hierarchical clustering algorithm. This enables CURE to correctly identify the clusters and makes it less sensitive to outliers.
+
+Running time is O(n2 log n), making it rather expensive, and space complexity is O(n).
+
+The algorithm cannot be directly applied to large databases because of the high runtime complexity. Enhancements address this requirement.
+
+CURE (no. of points,k)
+
+Input : A set of points S
+
+Output : k clusters

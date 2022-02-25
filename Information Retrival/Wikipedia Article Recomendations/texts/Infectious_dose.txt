@@ -1,0 +1,32 @@
+The concept of minimal infective dose (MID) has traditionally been used for bacteria that contaminate foods that cause infection in or from the digestive tract. MID was defined as the number of bacteria ingested (the dose) from which a pathology is observed in the consumer. Examples such as this are found in textbooks:[which?] to cause gastrointestinal disorders, the food must contain more than 100,000 Salmonella per gram. However, in such a formulation, we immediately see an inaccuracy: to know the dose ingested, concentration is not enough. It is also necessary to know the mass of the portion:
+
+where:
+
+Nevertheless, this formulation has served as a basis for very useful reasoning to establish the maximum concentrations permitted by the microbiological regulatory criteria intended to protect the health of consumers. Thus in 1992, as the outbreaks previously caused by Listeria monocytogenes involved only food containing more than 1000 L. monocytogenes cells per gram, lawmakers on both sides of the Atlantic - keeping a margin of safety - fixed its maximum concentration at 100 L. monocytogenes per gram.
+
+The concept of a dose-response relationship developed from 1995 onward, as quantitative risk assessment matured as a discipline within the field of food safety.
+
+An infectious bacterium in a food can cause various effects: diarrhea, vomiting, sepsis, meningitis, abortion, Guillain-Barré syndrome, death, etc. As the dose increases, the severity of the pathological effects increases, and a "dose-effect relationship" can often be established. For example, the higher the dose of Salmonella, the more diarrhea occurs soon after ingestion and the more stressful it is.
+
+However, among people who have ingested the same dose, not all are affected. The proportion of people affected is called the response. The dose-response relationship for a given effect (e.g., diarrhea) is therefore the relationship between the dose and the likelihood of experiencing this effect. When the response is less than about 10%, it is observed that there is a strictly proportional relationship between dose and response:
+
+where:
+
+The dose-effect relationship and the dose-response relationship should not be confused.
+
+The existence of this relation has a first important consequence: the proportionality factor, symbolized by the letter r, corresponds precisely to the probability of the effect considered when the dose is equal to one bacterial cell. As a result, the minimum infective dose is exactly equal to one bacterial cell: this is far from the traditional notion mentioned at the beginning of this article.
+
+Proportionality has a second consequence, which is obvious: when the dose is divided by ten, the probability of observing the effect is also divided by ten.
+
+There is a third consequence, which is not so obvious: it is a relationship without threshold. Of course, if a portion of food does not contain the bacterium, there will be no effect. But in industrial practice, everything is done to reduce the probability that a serving contains the bacterium. There is therefore on the market food in which, for example, only one serving in a hundred is contaminated. The probability of the effect considered is then r / 100. If one in ten thousand is contaminated, the probability goes to r / 10,000, and so on. The line representing the relation can be extended towards zero: there is no threshold.
+
+If the probability of not being infected when exposed to one bacterium is  then the probability of not being infected by n bacteria would be  so the probability of being infected is 
+For readers familiar with the notion of D50 (the dose that causes the effect in 50% of consumers exposed to the hazard), in most cases the following relationship thus applies:
+
+To compare the dose-response relationships for different effects caused by the same bacterium, or for the same effect caused by different bacteria, we can of course directly compare the values of r. However, experience shows that it may be easier for the mind to compare the doses causing the effect in 50% or 1% of consumers. Here are some values of D1 (dose causing the effect considered in 1% of consumers exposed to the hazard):
+
+These examples highlight two important things:
+
+It may seem that if the contamination of food with a pathogenic bacterium is low and infrequent, the risk of becoming ill is such that there will be no public health problem. Such a view is incomplete: admittedly, consuming a low dose of this bacterium is associated with a low probability of disease. But this probability is not zero. This explains the sporadic cases observed in the population. And that is also why there is no concentration in food below which there will be no epidemic.
+
+Some food-borne bacteria can cause disease by producing toxins, rather than infection. Some synthesize a toxin only when their concentration in the food before ingestion exceeds a threshold. This is the case of Staphylococcus aureus and Bacillus cereus, for example. The concept of MID does not apply to them, but there is indeed a concentration (not a dose) below which they do not constitute a danger to the health of the consumer.

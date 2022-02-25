@@ -1,0 +1,26 @@
+
+
+This article is a list of the countries of the world by gross domestic product (at purchasing power parity) per capita, i.e., the purchasing power parity (PPP) value of all final goods and services produced within a country in a given year, divided by the average (or mid-year) population for the same year.
+
+As of 2019, the estimated average GDP per capita (PPP) of all of the countries of the world is Int$18,381.[n 1] For rankings regarding wealth, see list of countries by wealth per adult.
+
+The gross domestic product (GDP) per capita figures on this page are derived from PPP calculations. Such calculations are prepared by various organizations, including the IMF and the World Bank. As estimates and assumptions have to be made, the results produced by different organizations for the same country are not hard facts and tend to differ, sometimes substantially, so they should be used with caution.
+
+Comparisons of national wealth are frequently made on the basis of nominal GDP and savings (not just income), which do not reflect differences in the cost of living in different countries (see List of countries by GDP (nominal) per capita); hence, using a PPP basis is arguably more useful when comparing generalized differences in living standards between nations because PPP takes into account the relative cost of living and the inflation rates of the countries, rather than using only exchange rates, which may distort the real differences in income.
+
+This is why GDP (PPP) per capita is often considered one of the indicators of a country's standard of living,[3][4] although this can be problematic because GDP per capita is not a measure of personal income. (See Standard of living and GDP.)
+
+All figures are in current international dollars, and rounded up or down to the nearest whole number.
+
+The table is initially ranked by the average of the available estimates for each country or territory, and can be reranked by either of the sources.
+
+* indicates "Income in COUNTRY or TERRITORY" or "Economy of COUNTRY or TERRITORY" links.
+
+The share of the shadow economy is significant in many European countries, ranging from less than 10 to over 40 percent of GDP.[8]
+Since 2014, EU member states have been encouraged by Eurostat, the official statistics body, to include some illegal activities.[9][10][11]
+
+There are many natural economic reasons for GDP-per-capita to vary between jurisdictions (e.g. places rich in Oil & Gas reserves tend to have high GDP-per-capita figures).  However, it is increasingly being recognized that tax havens, or corporate tax havens, have distorted economic data which produces artificially high, or inflated, GDP-per-capita figures.[12]  It is estimated that over 15% of global jurisdictions are tax havens (see tax haven lists).[13] An IMF investigation estimates that circa 40% of global FDI flows, which heavily influence the GDP of various jurisdictions, are described as "phantom" transactions.[14]
+
+In 2017, Ireland's economic data became so distorted by U.S. multinational tax avoidance strategies (see leprechaun economics), also known as BEPS actions, that Ireland effectively abandoned GDP (and GNP) statistics as credible measures of its economy, and created a replacement statistic called modified gross national income (or GNI*).  Ireland is one of the world's largest corporate tax havens.
+
+A list of the top 15 GDP-per-capita countries from 2016 to 2017, contains most of the major global tax havens (see GDP-per-capita tax haven proxy for more detail):

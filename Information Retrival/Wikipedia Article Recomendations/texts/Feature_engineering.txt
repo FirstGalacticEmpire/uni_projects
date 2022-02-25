@@ -1,0 +1,27 @@
+Feature engineering is the process of using domain knowledge to extract features (characteristics, properties, attributes) from raw data.[1]  The motivation is to use these extra features to improve the quality of results from a machine learning process, compared with supplying only the raw data to the machine learning process.
+
+The feature engineering process is:[2]
+
+The following list[4] provides some typical ways to engineer useful features
+
+Features vary in significance.[6] Even relatively insignificant features may contribute to a model. Feature selection can reduce the number of features to prevent a model from becoming too specific to the training data set (overfitting).[7]
+
+Feature explosion occurs when the number of identified features grows inappropriately. Common causes include:
+
+Feature explosion can be limited via techniques such as: regularization, kernel methods, and feature selection.[8]
+
+Automation of feature engineering is a research topic that dates back to the 1990s.[9] Machine learning software that incorporates automated feature engineering has been commercially available since 2016.[10] Related academic literature can be roughly separated into two types:
+
+MRDTL generates features in the form of SQL queries by successively adding clauses to the queries.[11] For instance, the algorithm might start out with
+
+The query can then successively be refined by adding conditions, such as "WHERE t1.charge <= -0.392".[12]
+
+However, most  MRDTL studies base implementations on relational databases, which results in many redundant operations. These redundancies can be reduced by using tricks such as tuple id propagation.[13][14] Efficiency can be increased by using incremental updates, which eliminates redundancies.[15]
+
+The Deep Feature Synthesis algorithm beat 615 of 906 human teams in a competition.[16][17]
+
+Libraries:
+
+A feature store includes the ability to store code used to generate features, apply the code to raw data, and serve those features to models upon request. Useful capabilities include feature versioning and policies governing the circumstances under which features can be used.[22]
+
+Feature stores can be standalone software tools or built into machine learning platforms. For example, Feast[23] is an open source feature store, while platforms like Uber's Michelangelo use feature stores as a component.[24]
