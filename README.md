@@ -1,2 +1,2 @@
-# uni_projects
-Projects done during while studying at Poznań Polytechnic 
+# University Assigments and Projects
+Projects completed during my studies at Poznan University of Technology.
